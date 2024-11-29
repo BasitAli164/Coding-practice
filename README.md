@@ -9,3 +9,5 @@ Day-2(26/11/2024)
     Learn about some build-in javaScript funtion which are alert, prompt and confirm
 Day-3(27/11/2024)
     Learn about the type conversion in JavaScript
+Day-4(28/11/2024)
+    Learn about the basic operators and mathematics in JavaScript
