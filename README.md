@@ -11,3 +11,5 @@ Day-3(27/11/2024)
     Learn about the type conversion in JavaScript
 Day-4(28/11/2024)
     Learn about the basic operators and mathematics in JavaScript
+Day-5(29/11/2024)
+    Learn about the operator precedence in javaScript
