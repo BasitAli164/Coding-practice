@@ -32,3 +32,26 @@ document.write("<br> the value of q is: ",--q)
 document.write("<br> the value of q is: ",q--)  
 document.write("<br> the value of q is: ",q)
 
+// task
+let h=1,g=1;
+let i=++h;
+let j=g++;
+document.write("<br> the value of i is: ",i," the value of j is: ",j)
+
+
+let l=2;
+let k=1+(l*=3)
+document.write("<br> the value of k is: ",k);
+
+
+document.write("<br> true + false =", true+false);
+document.write("<br> '' +1 +0 is :", ''+1+0);
+
+
+
+
+
+let num1=prompt("Enter the first number:");
+let num2=prompt("Enter the second number:");
+alert("The sum of "+num1+" and "+num2+" is "+(parseInt(num1)+parseInt(num2)))
+
