@@ -27,3 +27,8 @@ document.write("<br> the value of p is: ",++p)
 document.write("<br> the value of p is: ",p++)
 document.write("<br> the value of p is: ",p)
 
+let q=10;
+document.write("<br> the value of q is: ",--q)
+document.write("<br> the value of q is: ",q--)  
+document.write("<br> the value of q is: ",q)
+
