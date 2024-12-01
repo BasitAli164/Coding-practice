@@ -38,4 +38,20 @@ document.write("<br> '01' is equal to the 1 is :",diff3==diff4)
 document.write("<br> '01' is greater than to 1 is: " ,diff3>diff4)
 document.write("<br> '01' is less than to 1 is: " ,diff3<diff4)
 
+let boolt=true
+let boolf=false
+document.write("<br> true is equal to 1 is: ",boolt==1)
+document.write("<br> false is equal to 0 is: ",boolf==1)
+document.write("<br> '' is equal to 0 ",''==0)
+document.write("<br> '' is equal to false ",''==false)
 
+// comparison with null and undefine
+document.write("<br> the null === undefine:  ",null===undefined)
+document.write("<br> the null == undefine:  ",null==undefined)
+document.write("<br> null>0 : ",null>0)
+document.write("<br> null==0 : ",null==0)
+document.write("<br> null>=0 : ",null>=0)
+
+document.write("<br> undefined>0 : ",undefined>0)
+document.write("<br> undefined<0 : ",undefined<0)
+document.write("<br> undefined==0 : ",undefined==0)
