@@ -37,3 +37,5 @@ let diff4=1;
 document.write("<br> '01' is equal to the 1 is :",diff3==diff4)
 document.write("<br> '01' is greater than to 1 is: " ,diff3>diff4)
 document.write("<br> '01' is less than to 1 is: " ,diff3<diff4)
+
+
