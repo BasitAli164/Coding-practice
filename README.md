@@ -13,3 +13,5 @@ Day-4(28/11/2024)
     Learn about the basic operators and mathematics in JavaScript
 Day-5(29/11/2024)
     Learn about the operator precedence in javaScript
+Day-6(30/11/2024)
+    Learn about the Comparison operators in JavaScript
