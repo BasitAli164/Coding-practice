@@ -22,3 +22,8 @@ let hour=9;
 if(hour<10||hour>18){
     document.write("<br>The office  is closed");
 }
+let isWeakend=false;
+if(isWeakend||hour<10||hour>18){
+    console.log("Go to bed");
+}
+
