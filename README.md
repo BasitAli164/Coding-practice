@@ -15,3 +15,5 @@ Day-5(29/11/2024)
     Learn about the operator precedence in javaScript
 Day-6(30/11/2024)
     Learn about the Comparison operators in JavaScript
+Day-7(01/12/2024)
+    Learn about the Conditional statements in JavaScript
