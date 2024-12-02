@@ -43,4 +43,4 @@ login == "Employee" ?
         login == '' ?
             message = "No login " :
             message = '';
-            document.write("<br> The message is: ",message)
+            document.write("<br> The message is: ",message);

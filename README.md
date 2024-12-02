@@ -17,3 +17,5 @@ Day-6(30/11/2024)
     Learn about the Comparison operators in JavaScript
 Day-7(01/12/2024)
     Learn about the Conditional statements in JavaScript
+Day-8(02/12/2024)
+    Learn about the Logical operators in JavaScript
