@@ -16,6 +16,16 @@ if(1){
     console.log("This will be printed in console ")
 }
 // Eles cluase:
-if(age>=18){
+ let personage=prompt("Enter your age again : ")
+if(personage>=18){
     document.write("<br>You are right person for this work ")
+}else{
+    document.write("<br> Sorry you are a wrong person for this work")
+}
+
+let marks=prompt("Enter you marks: ")
+if(marks>=40){
+    document.write("<br>Congratulations you are eligible for promotion")
+}else{
+    document.write("<br>Sorry you are not eligible for promotion")
 }
