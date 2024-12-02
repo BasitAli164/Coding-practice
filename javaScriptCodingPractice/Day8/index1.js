@@ -26,4 +26,11 @@ let isWeakend=false;
 if(isWeakend||hour<10||hour>18){
     console.log("Go to bed");
 }
+//Task on logical operator:
+alert(null|| 2||undefined)
 
+alert(alert(1)||2||alert(3))
+
+
+alert( 1 && null && 2 );
+alert( alert(1) && alert(2) );
