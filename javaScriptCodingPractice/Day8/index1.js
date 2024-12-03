@@ -22,4 +22,7 @@ if(hours<10 || hours>18){
  if(hours<5 || hours>10||isWeakend){
     document.write("<br>The office is closed confirmly.....")
  }
- 
+
+ let firstName="",lastName="",nickName="<br>PariZad";
+document.write( firstName||lastName||nickName||"Basit ali")
+document.write(true||alert("not printend"))
