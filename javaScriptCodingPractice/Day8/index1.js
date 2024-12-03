@@ -26,3 +26,4 @@ if(hours<10 || hours>18){
  let firstName="",lastName="",nickName="<br>PariZad";
 document.write( firstName||lastName||nickName||"Basit ali")
 document.write(true||alert("not printend"))
+document.write(false||alert("<br>printend"))
