@@ -24,10 +24,18 @@ do{
     document.write("<br>The value of b is : ",b);
     b++
 }while(b<=20);
-let x=0;
+let sum=0
+for(let y=0;y<=10;y++){
+   
+    sum+=y;
+}
+document.write("<br>total number is: ",sum)
+
+let reuslt=0; let x=1;
+
 do{
-    let sum=0;
-    sum=sum+x;
-    document.write("<br> Sum of : ",sum);
+    reuslt+=x;
     x++;
-}while(x<11);
+    
+}while(x<=100)
+    document.write(" <br>the result is : ",reuslt)
