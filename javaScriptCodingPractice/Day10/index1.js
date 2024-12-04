@@ -11,6 +11,11 @@ while(j<=8){
 }
 let k=1;
 while(k<=10){
-    document.write("<br>The value of i is : ",i)
+    document.write("<br>The value of i is : ",k)
     k++
+}
+let a=10
+while(a>=1){
+    document.write("<br>The value of a is : ",a);
+    a--
 }
