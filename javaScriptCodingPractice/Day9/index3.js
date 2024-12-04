@@ -1,17 +1,18 @@
-// mini project (login project)
-let userName=prompt("Who is there:  ", "");
+// Login page:
+let userName=prompt("Enter you userName: ");
 if(userName=="admin"){
-    let password=prompt("Password ?");
+    let password=prompt("Password!");
     if(password=="12345"){
-        alert("Welcome Admin");
-    }else if(password=="" || password==null){
-        alert("Wrong password")
+        alert("Welcom !")
+    }else if(password==''||password==null){
+        alert("I don't know you")
+
     }else{
         alert("Cancel")
     }
 }
-else if(userName==""||userName==null){
+else if(userName==''||userName==null){
     alert("I don't know you")
 }else{
-    alert("Access denied")
+    alert("Cancel")
 }
