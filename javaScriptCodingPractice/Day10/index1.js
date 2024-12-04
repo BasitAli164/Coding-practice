@@ -52,4 +52,4 @@
       addition += value;
     
     }
-    alert( 'Sum: ' + addition );
+    alert( 'Sum: ' + addition ); 
