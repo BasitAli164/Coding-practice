@@ -19,3 +19,15 @@ while(a>=1){
     document.write("<br>The value of a is : ",a);
     a--
 }
+let b=10;
+do{
+    document.write("<br>The value of b is : ",b);
+    b++
+}while(b<=20);
+let x=0;
+do{
+    let sum=0;
+    sum=sum+x;
+    document.write("<br> Sum of : ",sum);
+    x++;
+}while(x<11);
