@@ -15,3 +15,9 @@ if(hour==12 && miniute==30){
 if(hour==12&&miniute==23){
     document.write("<br>Time is 12:23");
 }
+
+if(1&&0){
+    document.write("<br>1 and 0 is true");
+}
+alert( 1 && 0 ); // 0
+alert( 1 && 5 ); // 5
