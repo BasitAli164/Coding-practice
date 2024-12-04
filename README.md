@@ -19,3 +19,5 @@ Day-7(01/12/2024)
     Learn about the Conditional statements in JavaScript
 Day-8(02/12/2024)
     Learn about the Logical operators in JavaScript
+Day-9(03/12/2024)
+    Learn about the logical operators in JavaScript
