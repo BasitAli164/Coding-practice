@@ -53,3 +53,13 @@
     
     }
     alert( 'Sum: ' + addition ); 
+
+for(let t=0;t<=10;t++){
+    if(t==4)break
+    document.write("<br>The value of t is : ",t)
+}
+
+for (let c=0;c<=10;c++){
+    if(c%2==0)continue;
+    document.write("<br>The value of c is : ",c)
+}
