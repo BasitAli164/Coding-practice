@@ -15,6 +15,30 @@ for(let k=0;k<15;k++){
 // task
 let a=3
 while(a){
-    document.write("<br> the value of a is :",a);
-    a--
+    alert(a--);
+    
+}
+// post and pre fix
+for(let i=10;i<=12;i++){
+    console.log("the value of i is:",i)
+    document.write("<br> The value of i is: ",i)
+}
+for(let j=10;j<=12;++j){
+    console.log("The value of j is:", j)
+    document.write("<br> The value of i is: ",j)
+
+}
+for(let even=0;even<10;even+=2){
+    document.write("<br>the even number is: ",even)
+}
+for(let i=0;i<21;i++){
+    if(i%2==0){
+        document.write("<br>The even number is: ",i)
+    }
+}
+
+let x=0;
+while(x<4){
+    alert(`Number is ${x}`)
+    x++
 }
