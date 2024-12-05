@@ -92,12 +92,12 @@ else{
 // task
 let agr=prompt("agr?",'');
 switch(agr){
-  case 0: document.write("You give in prompt: ",agr);
+  case '0': document.write("<br>You give in prompt: ",agr);
   break;
-  case 1: document.write("You give in prompt:",agr);
+  case '1': document.write("<br>You give in prompt:",agr);
   break;
-  case 2:
-  case 3:document.write("You give in prompt: ",agr)
+  case '2':
+  case '3':document.write("<br>You give in prompt: ",agr)
   break;
-  default
+  default: document.write("<br>You don't give any prompt")
 }
