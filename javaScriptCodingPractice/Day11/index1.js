@@ -90,4 +90,8 @@ else{
 
 }
 // task
-let agr=prompt("agr?")
+let agr=prompt("agr?",'');
+switch(agr){
+  case 0: document.write("You give in prompt: ",agr);
+  break;
+}
