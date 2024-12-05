@@ -89,3 +89,5 @@ else{
     document.write("<br> We hope you enjoying in our website..")
 
 }
+// task
+let agr=prompt("agr?")
