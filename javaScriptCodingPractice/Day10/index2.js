@@ -42,3 +42,9 @@ while(x<4){
     alert(`Number is ${x}`)
     x++
 }
+
+let num;
+do{
+    num=prompt("Enter a number greater than 100: ",0)
+    console.log("num is: ",num)
+}while(num<=100 && num);
