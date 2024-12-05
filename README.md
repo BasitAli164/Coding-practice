@@ -21,3 +21,5 @@ Day-8(02/12/2024)
     Learn about the Logical operators in JavaScript
 Day-9(03/12/2024)
     Learn about the logical operators in JavaScript
+Day-10(04/12/2024)
+    Learn about the loops in JavaScript
