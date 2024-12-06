@@ -23,3 +23,5 @@ Day-9(03/12/2024)
     Learn about the logical operators in JavaScript
 Day-10(04/12/2024)
     Learn about the loops in JavaScript
+Day-11(05/12/2024)
+    Learn about the switch statment in JavaScript
