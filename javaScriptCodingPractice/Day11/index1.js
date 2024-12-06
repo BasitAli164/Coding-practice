@@ -31,3 +31,16 @@ switch (+a1) {
   default:
     alert("this doesn't run");
 }
+// Grouping case:
+let name="Basit";
+switch(name){
+    case "ali": document.write("<br>My father name is Ali");
+    break;
+    case "Basit":
+    case "Basit Ali": document.write("<br>My name is Basit Ali ");
+    break;
+    case "Muhammad":document.write("<br> My brother name is  Muhammad Ali")
+    break;
+    default:
+        document.write("Wrong name!")
+}
