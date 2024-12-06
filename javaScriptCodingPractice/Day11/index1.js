@@ -62,3 +62,30 @@ switch (arg) {
   default:
     alert( 'An unknown value' );
 }
+// Task
+let browser=prompt("Enter your favorate Browser Name: ");
+if(browser=="Edge"){
+    document.write("<br>Welcom to Edge Browser!")
+}
+else if(browser=="chrome"){
+    document.write("<br>Welcome to Chrome Browser")
+}
+else if(browser=="Firefox"){
+    document.write("<br>Welcome to Firefox Browser")
+
+}
+else if(browser=="Safari"){
+    document.write("<br>Welcome to Safari Browser")
+
+}
+else if(browser=="Brave"){
+    document.write("<br>Welcome to Brave Browser")
+}
+else if(browser=="opera"){
+    document.write("<br>Welcome to Opera Browser")
+
+}
+else{
+    document.write("<br> We hope you enjoying in our website..")
+
+}
