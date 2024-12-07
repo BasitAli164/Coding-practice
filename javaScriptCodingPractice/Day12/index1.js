@@ -27,4 +27,9 @@ function showAge(){
 document.write("<br> Age is down of the function: ",age)
 showAge()
 document.write("<br> Age is after execution of function:",age)
+//Paramaterized function
+function introduction(name,age){
+    document.write(`<br>My name is ${name} and i am ${age} year old person.`)
+}
+introduction()
 
