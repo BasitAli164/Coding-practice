@@ -83,7 +83,7 @@ document.write("<br>The power of 5 and 14 is: ",basicArithmetic(5,14,"^"));
 
 function checkAge(age){
     if(age>18){
-        return true;
+        return true
     }else{
         return confirm("Do you have permission from your parents?")
     }
@@ -94,3 +94,31 @@ if(checkAge(age)){
 }else{
     document.write("<br>Access denied")
 }
+
+function doNothing() {
+confirm("This funciton is not an empty function")
+return; // empty return also empty
+}
+
+alert( doNothing() === undefined ); // true
+
+// return function rule
+function ruleOfReturn(){
+    return 
+    "basit"+2;
+}
+console.log("Rule-1",ruleOfReturn())
+function rule2OfReturn(){
+    return;
+    "basit" + "ali"
+}
+console.log("Rule 2:",rule2OfReturn())
+function rule3OfReturn(){
+    return(
+        "basit"
+        +
+        "Ali"
+    )
+    "is it print..."
+}
+console.log("Rule 3: ",rule3OfReturn())
