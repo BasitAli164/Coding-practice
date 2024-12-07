@@ -1,4 +1,4 @@
-// function 
+// naming function 
 function showMessage1(){
     alert("My name is Basit Ali...")
 }
@@ -16,3 +16,15 @@ function showMessage3(){
     document.write(message)
 }
 showMessage3()
+
+let age=25;
+document.write("<br>Age is outside of the function:",age)
+function showAge(){
+    age=23;
+    let message="My age is :"+age;
+    document.write("<br> Age in function ",message)
+}
+document.write("<br> Age is down of the function: ",age)
+showAge()
+document.write("<br> Age is after execution of function:",age)
+
