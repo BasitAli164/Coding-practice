@@ -79,3 +79,18 @@ document.write("<br>The modulus of 5 and 4 is: ",basicArithmetic(5,4,"%"));
 document.write("<br>The modulus of 5 and 14 is: ",basicArithmetic(5,14,"%"));
 document.write("<br>The power of 5 and 4 is: ",basicArithmetic(5,4,"^"));
 document.write("<br>The power of 5 and 14 is: ",basicArithmetic(5,14,"^"));
+
+
+function checkAge(age){
+    if(age>18){
+        return true;
+    }else{
+        return confirm("Do you have permission from your parents?")
+    }
+}
+let age=prompt("Enter your age: ",18);
+if(checkAge(age)){
+    document.write("<br>Access Granted")
+}else{
+    document.write("<br>Access denied")
+}
