@@ -5,7 +5,14 @@ function showMessage1(){
 showMessage1();
 
 function showMessage2(){
-    let message="Hellow World!"; // local variable
+    let message="Hellow World! I am JavaScript"; // local variable
     alert(message);
 }
 showMessage2()
+
+let userName="Basit Ali"; // outer variable
+function showMessage3(){
+    let message="Hello "+userName;
+    document.write(message)
+}
+showMessage3()
