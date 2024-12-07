@@ -25,3 +25,4 @@ Day-10(04/12/2024)
     Learn about the loops in JavaScript
 Day-11(05/12/2024)
     Learn about the switch statment in JavaScript
+Day-12(06/12/2024)
