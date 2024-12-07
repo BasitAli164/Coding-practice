@@ -31,5 +31,13 @@ document.write("<br> Age is after execution of function:",age)
 function introduction(name,age){
     document.write(`<br>My name is ${name} and i am ${age} year old person.`)
 }
-introduction()
+introduction("Basit Ali ",23)
+ // Default parameterized function 
 
+ function sum(a,b=10){
+    document.write(`<br>The sum of ${a} and ${b} is ${a+b}`)
+ }
+sum()
+sum(0)
+sum(12)
+sum(10,20)
