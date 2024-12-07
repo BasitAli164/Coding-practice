@@ -26,3 +26,7 @@ Day-10(04/12/2024)
 Day-11(05/12/2024)
     Learn about the switch statment in JavaScript
 Day-12(06/12/2024)
+    Learn about the function in JavaScript
+Day-13(07/12/2024)
+    Learn about the Function(part-2) in javaScript
+    
