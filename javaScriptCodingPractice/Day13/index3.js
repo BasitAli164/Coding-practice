@@ -19,4 +19,28 @@ document.write("<br>By using arrow function, the sum of 5 and 6 is: ",sum1(5,6))
 let sum2=(a,b)=>{
     return a+b;
 }
-document.write("<br> By uisng the arrow function block ,the sum of 7 and 8 is: ",sum2(7,8))
+document.write("<br> By uisng the arrow function block ,the sum of 7 and 8 is: ",sum2(7,8));
+
+let age=prompt("Enter your age:",18);
+let welcom3=(age>18)?
+()=>{alert("Welcome to the website")}:
+()=>{alert("Sorry, you are not eligible to access the website")};
+welcom3();
+
+let sum3=(a,b)=>{
+    let result=a+b;
+    return result;
+}
+
+document.write("<br>The sum of 9 and 10 is: ",sum3(9,10))
+//Task:
+let ask=(question,yes,no)=>{
+    if(confirm(question)) yes();
+    else no();
+
+};
+ask(
+    "Do you want to continue?",
+    ()=>alert("You have chosen to continue"),
+    ()=>alert("You have chosen to stop")
+);
