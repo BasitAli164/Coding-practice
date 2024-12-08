@@ -42,3 +42,16 @@ ask1(
     function(){ alert("You Agreed")  },// this type of function called anonymous
     function(){ alert("You Cancel your execution")}
 )
+
+let age=prompt("Enter you age: ",18);
+let welcom;
+if(age>18){
+    welcom=function(){
+        alert("Hello!")
+    };
+}else{
+    welcom=function(){
+        alert("Greetings!")
+    }
+}
+welcom()
