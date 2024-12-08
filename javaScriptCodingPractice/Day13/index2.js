@@ -20,3 +20,25 @@ document.write("<br>",copyFunc());
 document.write(funcExpression());
 
 // Call Back
+function ask(question,yes,no){
+    if(confirm(question)) yes()
+    else no();
+}
+function showOk(){
+alert("You Agreed.")
+}
+function showCancel(){
+    alert("You cancel your execution.")
+}
+ask("Do you agree ?",showOk,showCancel)
+
+
+function ask1(question,yes,no){
+    if(confirm(question))yes();
+    else no()
+}
+ask(
+    "Are you agreed?",
+    function(){ alert("You Agreed")  },
+    function(){ alert("You Cancel your execution")}
+)
