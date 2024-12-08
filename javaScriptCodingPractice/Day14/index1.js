@@ -65,3 +65,17 @@ let obj1 = {
   };
   
   alert("test" in obj1)
+  // How to iterate any object
+  let teacher={
+    id:1,
+    name:"Imtiaz Ahmed",
+    age:50,
+    gender:'male',
+    status:true,
+
+  };
+  document.write("<br> Object iterate:")
+
+  for(let key in teacher){
+    document.write("<br> Key:   ",key,"     Value:    ",teacher[key])
+}
