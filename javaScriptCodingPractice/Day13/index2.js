@@ -55,3 +55,10 @@ if(age>18){
     }
 }
 welcom()
+// alternative program
+
+let age1=prompt("Enter again your aga: ",20);
+let welcom2=(age>20)?
+function(){alert("Hello!")}:
+function(){alert("Greetings!")};
+welcom2();
