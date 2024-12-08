@@ -104,7 +104,7 @@ alert( doNothing() === undefined ); // true
 
 // return function rule
 function ruleOfReturn(){
-    return 
+     
     "basit"+2;
 }
 console.log("Rule-1",ruleOfReturn())
@@ -122,3 +122,20 @@ function rule3OfReturn(){
     "is it print..."
 }
 console.log("Rule 3: ",rule3OfReturn())
+
+//Task
+function min(a,b){
+    if(a<b){
+        return a;
+    }else if(a>b){
+        return b;
+    }else{
+        return "Invalid parameter"
+    }
+}
+document.write("<br>The minimum value is: ",min(4,5))
+
+function pow(x,n){
+    return x**n
+}
+document.write("<br>The power is: ",pow(2,3))
