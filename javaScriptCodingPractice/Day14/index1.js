@@ -46,3 +46,22 @@ let makeUser2=(name,age)=>{
 }
 let userDetail2=makeUser2("Apo Ali",45)
 console.log(userDetail2)
+
+let obj={
+    0:"test",
+}
+alert(obj[0])
+alert(obj["0"])
+
+let student={
+    name:"Muhammad",
+    age:12
+}
+console.log("Name of student in student object:","name" in student);
+document.write("<br>Name of student in student object:","name" in student);
+
+let obj1 = {
+    test: undefined
+  };
+  
+  alert("test" in obj1)
