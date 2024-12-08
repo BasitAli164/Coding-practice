@@ -50,8 +50,8 @@ console.log(userDetail2)
 let obj={
     0:"test",
 }
-alert(obj[0])
-alert(obj["0"])
+// alert(obj[0])
+// alert(obj["0"])
 
 let student={
     name:"Muhammad",
@@ -64,7 +64,7 @@ let obj1 = {
     test: undefined
   };
   
-  alert("test" in obj1)
+//   alert("test" in obj1)
   // How to iterate any object
   let teacher={
     id:1,
@@ -79,3 +79,64 @@ let obj1 = {
   for(let key in teacher){
     document.write("<br> Key:   ",key,"     Value:    ",teacher[key])
 }
+let codes = {
+    "+41": "Switzerland",
+    "+49": "Germany",
+    "+44": "Great Britain",
+    // ..,
+    "+1": "USA"
+  };
+  
+  for (let code in codes) {
+    console.log(+code, " and ",codes[code]); // 1, 41, 44, 49
+  }
+  // task in object:
+let employee={};
+employee.name="Basit";
+employee.surName="ali";
+console.log("Task1 :",employee)
+employee.name="Aahil";
+delete employee.name;
+console.log("Task1 :",employee)
+
+
+//Task-2
+function isEmpty(obj){
+    if(obj===undefined || obj===null || obj===""){
+        return true;
+    }else{
+        return false;
+    }
+}
+console.log(isEmpty(undefined))
+console.log(isEmpty(employee))
+
+
+let saleries={
+    "basit":100,
+    "Ali":160,
+    "Sakina":130
+}
+let total=0;
+
+for(sal in saleries){
+//    if (sal===undefined) return 0;
+   total+=saleries[sal];
+}
+console.log("total salry is :",total)
+
+// Task-3
+let  menu={
+    width:200,
+    height:300,
+    title:"My menu"
+}
+function multiplyNumber(obj){
+    for(let key in obj){
+        if(typeof obj[key]=="number"){
+            obj[key]*=2;
+        }
+    }
+}
+console.log("Before multiplying: ",menu)
+console.log("After multiplying: ",multiplyNumber(menu))
