@@ -19,3 +19,11 @@ document.write("<br> My Favourate color is: ",user["my fav color"])
 delete user.age // delete age property from object
 delete user["my fav color"];
 console.log("Second time: ",user);
+
+let admine={
+    name:"Ali",
+    age:45,
+}
+let key=prompt("Enter your Name:");
+alert(user[key])
+console.log(user)
