@@ -24,6 +24,25 @@ let admine={
     name:"Ali",
     age:45,
 }
-let key=prompt("Enter your Name:");
-alert(user[key])
+// let key=prompt("Enter your Name:");
+// alert(user[key])
 console.log(user)
+
+// object in function ;
+let makeUser=(name,age)=>{
+    return{
+        name:name,
+        age:age,
+    };
+}
+let userDetail=makeUser("Basit",45);
+console.log(userDetail)
+
+let makeUser2=(name,age)=>{
+    return{
+        name,
+        age,
+}
+}
+let userDetail2=makeUser2("Apo Ali",45)
+console.log(userDetail2)
