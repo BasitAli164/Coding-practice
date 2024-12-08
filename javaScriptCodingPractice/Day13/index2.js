@@ -37,8 +37,8 @@ function ask1(question,yes,no){
     if(confirm(question))yes();
     else no()
 }
-ask(
+ask1(
     "Are you agreed?",
-    function(){ alert("You Agreed")  },
+    function(){ alert("You Agreed")  },// this type of function called anonymous
     function(){ alert("You Cancel your execution")}
 )
