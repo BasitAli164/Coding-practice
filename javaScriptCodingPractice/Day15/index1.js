@@ -10,3 +10,19 @@ user.sayHi=sayHi;
 let func=user.sayHi;
 let button=document.getElementById("btn");
 button.addEventListener('click',func)
+
+let employee={
+    name:"Ali",
+    age:48,
+    introduction(){
+        alert(`My name is : ${this.name}`)
+
+    }
+}
+employee.introduction();
+console.log("Employee Detail:",employee);
+let boss=employee;
+boss.introduction();
+
+// Task
+
