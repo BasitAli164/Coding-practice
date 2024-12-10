@@ -38,3 +38,10 @@ console.log("255 with base 16 is: ",num.toString(16))
 // Tow dot operator
 console.log("Two dot operator to call any function in JS :",122132..toString(2))
 
+// Rounding decimal number 
+let number=23.234;
+console.log("Apply Math.floor on Number: ",Math.floor(number))
+console.log("Apply Math.ceil on number: ",Math.ceil(number))
+console.log(`Apply Math.round on Number: ${Math.round(number)}`)
+console.log(`Apply Math.trunc on Number: ${Math.trunc(number)}`)
+console.log(`Apply number.tofixed on Number: ${number.toFixed(1)}`)
