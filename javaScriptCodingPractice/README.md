@@ -29,3 +29,8 @@ Day-13(07/12/2024)
     Learn about the Function(part-2) in javaScript
 Day-14(08/12/2024)
     Learn about the Object in JavaScript
+Day-15(09/12/2024)
+    Learn about topic related with objects in JavaScript
+Day-16(10/12/2024)
+    Learn about DataType in JavaScript
+        i-Array
