@@ -4,6 +4,10 @@
     box-sizing: border-box;
     text-align: center;
 }
+div{
+    margin-top: 50px;
+
+}
 .button{
     background-image:linear-gradient(60deg,#2373b4 10%,#0b3fdb 50%,#00ff99);
     padding: 12px 48px;
