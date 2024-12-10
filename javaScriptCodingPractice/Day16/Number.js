@@ -57,3 +57,34 @@ let str1="12.3 PRs."
 console.log("The dolloar is:",parseInt(str))
 console.log("The the pak rupees is:",parseFloat(str1))
 console.log("The url is:",parseInt("https://en.wikipedia.org/wiki/IEEE_754",36))
+
+
+
+//Task:
+//Method-1
+let a=prompt("Enter first number:");
+let b=prompt("Enter Second number:");
+let sum=a+b;
+alert(`Sum of ${a} and ${b} is: ${parseInt(a)+parseInt(b)}`)
+
+let c=+prompt("Enter a number: ",0);
+let d=+prompt("Enter a number: ",0);
+
+alert(`Sum of ${c} and ${d} is: ${c+d}` )
+
+//task2
+function readNumber(){
+    let num;
+    do{
+        num=prompt("Enter a number pleaes? :",0);
+
+    }while(!isFinite(num));
+    if(num===null || num==='') return null
+
+    return +num;
+}
+alert(`Read: ${readNumber()}`);
+
+alert( Math.random(1, 5) ); // 1.2345623452
+alert( Math.random(1, 5) ); // 3.7894332423
+alert( Math.random(1, 5) ); // 4.3435234525
