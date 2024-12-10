@@ -45,3 +45,15 @@ console.log("Apply Math.ceil on number: ",Math.ceil(number))
 console.log(`Apply Math.round on Number: ${Math.round(number)}`)
 console.log(`Apply Math.trunc on Number: ${Math.trunc(number)}`)
 console.log(`Apply number.tofixed on Number: ${number.toFixed(1)}`)
+
+if(0.1+0.3===0.4){
+    console.log(0.1+0.3)
+    alert(true)
+}
+
+
+let str="12$"
+let str1="12.3 PRs."
+console.log("The dolloar is:",parseInt(str))
+console.log("The the pak rupees is:",parseFloat(str1))
+console.log("The url is:",parseInt("https://en.wikipedia.org/wiki/IEEE_754",36))
