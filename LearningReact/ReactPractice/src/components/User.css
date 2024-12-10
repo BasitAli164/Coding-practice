@@ -1,0 +1,26 @@
+.btn{
+    background-image: linear-gradient(60deg,#4634e8 10%,#42f1ef 50%,#f23ce9 100%);
+    padding: 10px;
+    border: 0;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    outline: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    letter-spacing: 1px;
+    
+}
+.btn:hover{
+    transform: translate(-10px);
+
+
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+}

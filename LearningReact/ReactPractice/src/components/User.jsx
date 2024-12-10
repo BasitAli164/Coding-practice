@@ -1,17 +1,17 @@
 import React from 'react'
+import './User.css'
 
 const User = () => {
-    let userDetail={
-        name:"Basit Ali",
-        age:23,
-        email:"AbduPa911@gmail.com"
+    let userDetail=`User Name is: Basit \n UserAge: 23 \nEmail: AbduPa911@gmail.com\nGender: Male`;
+    let userFunc=()=>{
+        alert(userDetail)
     }
+   
   return (
     <div>
       <h1 >User Detail</h1>
-      <h4>UserName:{userDetail.name}</h4>
-      <h4>UserAge:{userDetail.age}</h4>
-      <h4>UserEmail:{userDetail.email}</h4>
+      <button className='btn' onClick={userFunc}>Click to Display user Detail</button>
+
     </div>
   )
 }

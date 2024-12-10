@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div>
       <h1>Hello world!</h1>
-      <button onClick={sayHi}>Click Me</button>
+      <button className='button' onClick={sayHi}>Click Me</button>
       <User/>
 
       
