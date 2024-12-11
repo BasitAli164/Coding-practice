@@ -25,3 +25,20 @@
     transform: scale(0.93);
 
 } */
+ .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    flex-wrap: wrap;
+    flex-direction: column;
+ }  
+ .child{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    flex-wrap: wrap;
+ }  
+
+

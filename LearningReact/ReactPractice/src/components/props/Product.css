@@ -9,6 +9,8 @@
     margin-top: 25%;
     transform: translate(-50%,-50%);
     cursor: pointer;
+    transition: all 2s ease-in-out;
+
 
 }
 .card{
@@ -18,7 +20,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: -5px 10px 1px 0 rgb(228,219,219,0.11);
+    box-shadow: 0 2px 25px 0 rgba(111,30,138,0.35);
     background: #f8f7f1;
 }
 .media{
@@ -35,5 +37,8 @@
     align-items: center ;
     gap: 50px;
     margin-bottom: 20px;
+}
+.container:hover{
+    transform: scale(0.95);
 }
 
