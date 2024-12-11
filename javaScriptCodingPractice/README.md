@@ -33,3 +33,5 @@ Day-15(09/12/2024)
     Learn about topic related with objects in JavaScript
 Day-16(10/12/2024)
     Learn about premitive DataType in JavaScript(Number)
+Day-17(11/12/2024)
+    Learn about premitive DataType in JavaScript(String)
