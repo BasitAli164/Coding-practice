@@ -1,14 +1,18 @@
 import React from 'react'
+import './Product.css'
 
 const Product = (props) => {
   return (
     <div className='container'>
-        <div className="media">
-            <img src="" alt="" />
+      <h1>Product Detail</h1>
+        <div className="card">
+          <div className="media">
+            <img src={props.productImage} alt=""   />
         </div>
         <div className="mediaContent">
-            <h4>Product Name: {props.productName}</h4>
-            <h4>Product Price: {props.productPrice}</h4>
+            <h4>{props.productName}</h4>
+            <h4><span>$</span>{props.productPrice}</h4>
+        </div>
         </div>
     </div>
   )
