@@ -85,6 +85,5 @@ function readNumber(){
 }
 alert(`Read: ${readNumber()}`);
 
-alert( Math.random(1, 5) ); // 1.2345623452
-alert( Math.random(1, 5) ); // 3.7894332423
-alert( Math.random(1, 5) ); // 4.3435234525
+
+

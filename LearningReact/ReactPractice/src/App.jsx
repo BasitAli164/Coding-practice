@@ -11,7 +11,7 @@ const App = () => {
     <div>
       <h1>Hello world!</h1>
       <button className='button' onMouseOver={sayHi}>Click Me</button>
-      <User/>
+      <User name="Basit"/>
       <State/>
       <AgainState/>
 
