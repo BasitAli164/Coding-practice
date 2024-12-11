@@ -33,7 +33,10 @@ document.write(`<br>${str} indexOf: ${str.indexOf('name')} StartWith: ${str.star
 // Getting substring:
 document.write(`<br>Slice: ${str.slice(8)} or ${str.slice(1,10)}` )
 document.write(`<br>Substr: ${str.substr(4,6)} or ${str.substring(1,9)}`)
+document.write(`<br>Repeat: ${str.repeat('i')}`)
+document.write(`Repeat: ${str.repeat(5)}`)
 
-
-
+let text="bas,it";
+text.split("a")
+console.log("text is:",text.split(","))
 
