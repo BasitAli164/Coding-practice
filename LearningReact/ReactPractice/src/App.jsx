@@ -1,9 +1,11 @@
 import React from 'react'
-// import './App.css'
+import './App.css'
 import User from './components/User'
 import State, { AgainState } from './components/State'
 import Product from './components/props/Product'
 import productImage from './assets/image/box1/shoes1.avif'
+import InputText from './components/input/InputText'
+import InputPart2 from './components/input/InputPart2'
 
 const App = () => {
   const sayHi=()=>{
@@ -19,7 +21,10 @@ const App = () => {
       <State/>
       <AgainState/> */}
       
-      <Product productName="Laddies Shoes" productPrice={5000} productImage={productImage}/>
+      {/* <Product productName="Laddies Shoes" productPrice={5000} productImage={productImage}/> */}
+
+      {/* <InputText/> */}
+      <InputPart2/>
         
     
       
