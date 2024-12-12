@@ -5,7 +5,7 @@ let arr=[1,2,3,4,5,6]
 let fruit=['apple','banana','orange'];
 // alert(-fruit)
 
-let  mixArray=["Apple",{name:"Basit"},true,50,function(){alert("Hello!")},[3,4,5]]
+let  mixArray=["Apple",{name:"Basit"},true,50,function(){alert("Hello!")},[3,[12,"ali"],4,5]]
 // alert(mixArray)
 
 let speacial=[null,undefined]
