@@ -34,4 +34,6 @@ Day-15(09/12/2024)
 Day-16(10/12/2024)
     Learn about premitive DataType in JavaScript(Number)
 Day-17(11/12/2024)
-    Learn about premitive DataType in JavaScript(String) and html practice
+    Learn about premitive DataType in JavaScript(String) 
+Day-18(12/12/2024)
+    Learn about premitive DattType in JavaScript(Array)
