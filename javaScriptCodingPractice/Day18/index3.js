@@ -18,7 +18,7 @@ console.log("First Element:",style.at(0))
 //Task-3
 let arr=["a","b"];
 arr.push(function(){
-    alert(this);
+    // alert(this);
 })
 arr[2]();
 //Task-4
@@ -52,3 +52,26 @@ function getSum(arr){
 console.log("Sum of postive Number: ",getSum([1,2,3,-4,-5,4]))
 
 //Task-6
+function problem(arr,userName){
+    console.log(arr," and :",userName)
+    for (const element of arr) {
+        if(element==userName){
+            return element
+        };
+        
+    }
+}
+console.log("The Problem is that: ",problem(["Basit","Ali","Sakina"],"Ali"))
+
+//Task-7
+const groceries=['milk','bread','eggs','flour','choose','sugar'];
+const searchForItem=(item)=>{
+    for (const element of groceries) {
+        if(element===item){
+            console.log("Found:",element)
+            
+        }  
+           
+    }
+}
+searchForItem(      'flour')
