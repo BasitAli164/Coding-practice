@@ -23,4 +23,17 @@ console.log("User Detail:",user);
 
 //Implementation of deque data structure by using an array in JavaScript
 
-
+let course=[];
+course.push("Programming Fundamental");
+course.push("Object Oriented Programming");
+course.unshift("Data Strcuture and Alogorithm");
+course.unshift("Introduction to Database");
+course.push("Networking");
+course.unshift("Operating System");
+console.log(course)
+course.pop();
+course.shift()
+console.log(course)
+course.pop();
+course.pop();
+console.log(course)
