@@ -6,6 +6,7 @@ import Product from './components/props/Product'
 import productImage from './assets/image/box1/shoes1.avif'
 import InputText from './components/input/InputText'
 import InputPart2 from './components/input/InputPart2'
+import Simple from './components/input/Simple'
 
 const App = () => {
   const sayHi=()=>{
@@ -24,8 +25,8 @@ const App = () => {
       {/* <Product productName="Laddies Shoes" productPrice={5000} productImage={productImage}/> */}
 
       {/* <InputText/> */}
-      <InputPart2/>
-        
+      {/* <InputPart2/> */}
+        <Simple/>
     
       
     </div>
