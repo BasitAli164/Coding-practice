@@ -7,6 +7,7 @@ import productImage from './assets/image/box1/shoes1.avif'
 import InputText from './components/input/InputText'
 import InputPart2 from './components/input/InputPart2'
 import Simple from './components/input/Simple'
+import InputPractice from './components/againPractice/InputPractice'
 
 const App = () => {
   const sayHi=()=>{
@@ -26,7 +27,8 @@ const App = () => {
 
       {/* <InputText/> */}
       {/* <InputPart2/> */}
-        <Simple/>
+        {/* <Simple/> */}
+        <InputPractice/>
     
       
     </div>
