@@ -19,8 +19,10 @@
             <label>Email:</label><br />
             <input type="email" placeholder="Enter Your Email" title="Enter Your Eamil in Correct Form"
                 name="email" /><br />
-            <label>Password:</label><br/>
-            <input type="password" pattern="[0-9A-Za-z]{4,20}" title="Password must be strong and minimum 4 character and maximum 20" placeholder="Enter a strong password"/><br/>
+            <label>Password:</label><br />
+            <input type="password" pattern="[0-9A-Za-z]{4,20}"
+                title="Password must be strong and minimum 4 character and maximum 20"
+                placeholder="Enter a strong password" /><br />
             <label>Phone:</label><br />
             <input type="tel" pattern="[0-9]{11}" name="phoneNumber" title="Number must be 0-9 and must 11 digit"
                 placeholder="Enter Your Phone Number" /><br />
@@ -29,19 +31,32 @@
             <input type="radio" value="female" name="gender" />Female <br />
             <label>DOB:</label><br />
             <input type="date" /><br />
-            <label>Course:</label><br/>
-            <input type="checkbox" value="C" />C <br/> <input type="checkbox" value="C++"/> C++<br/>
-            <input type="checkbox" value="Java"/>Java<br/> <input type="checkbox" value="Js"/>JavaScript <br/><input type="checkbox" value="python"/>Python <br/>
-            <labe>Photo:</labe><br/>
-            <input type="file"/><br/>
-            <label>Country:</label><br/>
+            <label>Course:</label><br />
+            <input type="checkbox" value="C" />C <br /> <input type="checkbox" value="C++" /> C++<br />
+            <input type="checkbox" value="Java" />Java<br /> <input type="checkbox" value="Js" />JavaScript <br /><input
+                type="checkbox" value="python" />Python <br />
+            <labe>Photo:</labe><br />
+            <input type="file" /><br />
+            <label>Country:</label><br />
             <select>
-                <option >----Select Country----</option>
+                <option>----Select Country----</option>
                 <option value="Pakistan">Pakistan</option>
                 <option value="China">China</option>
                 <option value="India">India</option>
                 <option value="Bangaldesh">Bangaldesh</option>
-            </select><br/>
+            </select><br />
+            <select>
+                <optgroup label="Frontend">
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JS</option>
+                </optgroup>
+                <optgroup label="Backend">
+                    <option>Node Js</option>
+                    <option>Express Js</option>
+                    <option>MongoDb</option>
+                </optgroup>
+            </select><br />
             <label>Message:</label><br />
             <textarea placeholder="Give FeedBack Here"></textarea><br />
             <input type="submit" value="save">
