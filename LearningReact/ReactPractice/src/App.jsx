@@ -8,6 +8,7 @@ import InputText from './components/input/InputText'
 import InputPart2 from './components/input/InputPart2'
 import Simple from './components/input/Simple'
 import InputPractice from './components/againPractice/InputPractice'
+import FormHandling from './components/formhandling/FormHandling'
 
 const App = () => {
   const sayHi=()=>{
@@ -28,8 +29,8 @@ const App = () => {
       {/* <InputText/> */}
       {/* <InputPart2/> */}
         {/* <Simple/> */}
-        <InputPractice/>
-    
+        {/* <InputPractice/> */}
+    <FormHandling/>
       
     </div>
   )
