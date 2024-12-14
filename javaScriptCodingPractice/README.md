@@ -38,4 +38,6 @@ Day-17(11/12/2024)
 Day-18(12/12/2024)
     Learn about premitive DattType in JavaScript(Array)
 Day-19(13/12/2024)
-    Learn about array methods
+    Learn about array methods(part-1)
+Day-20(14/12/2024)
+    Learn about array methods(Part-2)
