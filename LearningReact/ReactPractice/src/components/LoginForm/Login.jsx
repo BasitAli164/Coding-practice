@@ -8,17 +8,17 @@ const Login = () => {
         email: '',
         password: ''
     });
-    const handleChange=(e)=>{
-        const{name,type,value}=e.target;
-        const valueType=type=="text"||"email"||"password"?value:null;
+    const handleChange = (e) => {
+        const { name, type, value } = e.target;
+        const valueType = type == "text" || "email" || "password" ? value : null;
         setFormData({
             ...formData,
-            [name]:valueType
+            [name]: valueType
         })
     }
-    const handleReset=(e)=>{
-        let clear=e.target.value;
-        clear="";
+    const handleReset = (e) => {
+        let clear = e.target.value;
+        clear = "";
         setFormData(clear)
 
     }
@@ -27,7 +27,7 @@ const Login = () => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("Form Data is:",formData)
+        console.log("Form Data is:", formData)
     }
 
     return (
@@ -90,7 +90,7 @@ const Login = () => {
                                     :
                                     <button className='isSubmitted' >Login</button>
                             }
-                            <input type="reset" value="Reset" onClick={handleReset}  className='isSubmitted'/>
+                            <input type="reset" value="Reset" onClick={handleReset} className='isSubmitted' />
 
                         </div>
 
