@@ -1,17 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Login.css'
 
 const Login = () => {
+    const [status, setSatus] = useState(false);
+    const [formData, setFormData] = useState({
+        username: '',
+        email: '',
+        password: ''
+    });
+    const handleStatus = () => {
+        setSatus(!status)
+    }
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    }
+
     return (
         <>
             <div className="container">
                 <div className="header">
-                    <h1>Login form</h1>
+                    <h1>{status === true ? "SignUp Form" : "Login Form"}</h1>
                 </div>
                 <div className="underline"></div>
                 <div className="form">
-                    <form >
-                        <div className='formdiv'>
+                    <form onSubmit={handleSubmit}>
+                        {status === true ? <div className='formdiv'>
                             <label htmlFor="Username:">Username:</label>
                             <input
                                 type="text"
@@ -23,7 +36,7 @@ const Login = () => {
                                 title="Username must be more than 5 character"
 
                             />
-                        </div>
+                        </div> : null}
                         <div className='formdiv'>
                             <label htmlFor="email">Email:</label>
                             <input
@@ -46,13 +59,25 @@ const Login = () => {
                                 title="Enter a strong password"
                             />
                         </div>
+
                         <div className="button">
-                            <button className='isSubmitted'>Login</button>
-                            <button className='isSubmitted'>SignUp</button>
+
+
+                            {
+                                status === true ?
+                                    <button className='isSubmitted'>SignUp</button>
+                                    :
+                                    <button className='isSubmitted' >Login</button>
+                            }
+
                         </div>
 
-
+                        <div className="message">
+                            <p>Alredy have an account <button onClick={handleStatus}>{status === true ? "Login" : "SignUp"}</button></p>
+                        </div>
                     </form>
+
+
                 </div>
 
             </div>

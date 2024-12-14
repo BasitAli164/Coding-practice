@@ -45,10 +45,11 @@
     margin: 25px auto;
     font-size: 1.5em;
     color: #785f5f;
+    font-weight: 600;
     
 }
 .formdiv input{
-    width: 75%;
+    width: 70%;
     height: 40px;
     text-align: center;
     word-spacing: 2px;
