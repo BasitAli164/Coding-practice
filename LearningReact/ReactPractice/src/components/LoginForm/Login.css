@@ -88,3 +88,25 @@
     cursor: pointer;
     opacity: 1;
 }
+.message{
+    font-size: 18px;
+    text-align: center;
+    margin-top: -25px;
+
+}
+.message p{
+    font-weight: 600;
+    
+}
+.message p button{
+    padding: 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #191cbf;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 17px;
+}

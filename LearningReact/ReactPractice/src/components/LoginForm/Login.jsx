@@ -8,11 +8,26 @@ const Login = () => {
         email: '',
         password: ''
     });
+    const handleChange=(e)=>{
+        const{name,type,value}=e.target;
+        const valueType=type=="text"||"email"||"password"?value:null;
+        setFormData({
+            ...formData,
+            [name]:valueType
+        })
+    }
+    const handleReset=(e)=>{
+        let clear=e.target.value;
+        clear="";
+        setFormData(clear)
+
+    }
     const handleStatus = () => {
         setSatus(!status)
     }
     const handleSubmit = (e) => {
         e.preventDefault();
+        console.log("Form Data is:",formData)
     }
 
     return (
@@ -25,15 +40,17 @@ const Login = () => {
                 <div className="form">
                     <form onSubmit={handleSubmit}>
                         {status === true ? <div className='formdiv'>
-                            <label htmlFor="Username:">Username:</label>
+                            <label htmlFor="username:">Username:</label>
                             <input
                                 type="text"
-                                name="Username"
-                                id="Username"
+                                name="username"
+                                id="username"
                                 placeholder="Enter your username"
                                 minLength={5}
                                 maxLength={100}
                                 title="Username must be more than 5 character"
+                                value={formData.username}
+                                onChange={handleChange}
 
                             />
                         </div> : null}
@@ -45,6 +62,8 @@ const Login = () => {
                                 id="email"
                                 placeholder="Enter your email"
                                 title="Email should be in proper email format"
+                                value={formData.email}
+                                onChange={handleChange}
                             />
                         </div>
                         <div className='formdiv'>
@@ -57,6 +76,8 @@ const Login = () => {
                                 min={5}
                                 max={30}
                                 title="Enter a strong password"
+                                value={formData.password}
+                                onChange={handleChange}
                             />
                         </div>
 
@@ -69,11 +90,12 @@ const Login = () => {
                                     :
                                     <button className='isSubmitted' >Login</button>
                             }
+                            <input type="reset" value="Reset" onClick={handleReset}  className='isSubmitted'/>
 
                         </div>
 
                         <div className="message">
-                            <p>Alredy have an account <button onClick={handleStatus}>{status === true ? "Login" : "SignUp"}</button></p>
+                            <p>Alredy have an account: <button onClick={handleStatus}>{status === true ? "Login" : "SignUp"}</button></p>
                         </div>
                     </form>
 
