@@ -2,11 +2,15 @@ import React, { useState } from 'react'
 import './ConditionalRendering.css'
 
 const ConditionalRendering = () => {
-    const [isLogin,setIslogin]=useState(false)
+    const [isLogin,setIslogin]=useState(false);
+    const[isAuth,setIsAuth]=useState(true)
     const studentName=["Basit","Ali","Muhammad","Sakina","Kubra","Khatija"]
 
     const handleClick=()=>{
         setIslogin(!isLogin)
+    }
+    const handleAuth=()=>{
+        setIsAuth(!isAuth)
     }
   return (
     <>
@@ -28,12 +32,12 @@ const ConditionalRendering = () => {
                     {
                         
                         
-                        studentName.map((item,index)=>{
-                       return (
+                        studentName.map((item,index)=>(
+                        
                             <li key={index}>{item}</li>
 
-                        )                            
-                        })
+                                                   
+                        ))
                     }
 
                 </ul>
@@ -44,7 +48,14 @@ const ConditionalRendering = () => {
         
 
         </div>
+
+        <div>
+            {isAuth &&(
+                <button onClick={handleAuth}>LogOut</button>
+            )}
+        </div>
       </div>
+      
      
     </>
   )

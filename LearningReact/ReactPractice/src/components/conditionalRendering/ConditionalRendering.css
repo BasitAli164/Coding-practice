@@ -32,7 +32,7 @@ button{
 
 }
 .body ul{
-    height: 210px;
+    height: 190px;
     width: 1000px;
     display: flex;
     /* flex-direction: column; */
