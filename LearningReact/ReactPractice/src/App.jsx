@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
-import Login from './components/LoginForm/Login'
+import ConditionalRendering from './components/conditionalRendering/ConditionalRendering'
 
 
 const App = () => {
   return (
     <div>
-      <Login/>     
+          <ConditionalRendering/>
     </div>
   )
 }
