@@ -33,3 +33,14 @@ const numberReverse=(num)=>{
 console.log(numberReverse(1212 ))
 
 // Challenge-4
+
+const numberPalindrom=(num)=>{
+    let str=String(num).split('').reverse().join('');
+    return num===Number(str)?"Palindrom":"Not Palindrom";
+
+}
+console.log(numberPalindrom(1221))
+console.log(numberPalindrom(1111))
+
+// Challenge-5
+
