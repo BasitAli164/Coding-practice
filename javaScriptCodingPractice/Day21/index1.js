@@ -43,4 +43,8 @@ console.log(numberPalindrom(1221))
 console.log(numberPalindrom(1111))
 
 // Challenge-5
-
+const capitalizeStr=(str)=>{
+    return str.toLowerCase().split(' ').map((word)=>word[0].toUpperCase() + word.slice(1)).join('');
+}
+console.log(capitalizeStr("basit Ali ")
+)
