@@ -8,14 +8,4 @@ const sumOfNthNumber=function(n){
 }
 console.log(sumOfNthNumber(5))
 
-const dynamicSum=function(){
-    let n;
-    do{
-        let num=+prompt("Enter a number",0)
-        n+=1
-        num+=n;
-    }while(n>0||n=='');
-    return num;
-
-}
-console.log(dynamicSum())
+// Challenge-10
