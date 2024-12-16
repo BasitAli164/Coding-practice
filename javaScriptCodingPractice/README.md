@@ -42,4 +42,6 @@ Day-19(13/12/2024)
 Day-20(14/12/2024)
     Learn about array methods(Part-2)
 Day-21(15/12/2024)
-    JavaScript Challenges
+    JavaScript Challenges(Part-1)
+Day-22(16/12/2024)
+    JavaScript Challenges(Part-2)
