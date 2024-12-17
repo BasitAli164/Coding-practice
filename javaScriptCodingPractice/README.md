@@ -45,3 +45,6 @@ Day-21(15/12/2024)
     JavaScript Challenges(Part-1)
 Day-22(16/12/2024)
     JavaScript Challenges(Part-2) and Array methods (Part-3)
+Day-23(17/12/2024)
+    Advance Level looping methods on  array 
+    
