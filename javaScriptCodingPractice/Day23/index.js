@@ -74,3 +74,9 @@ console.log("Through FOR OF LOOP")
             
         }    
   }
+dummyProducts.forEach((item)=>{
+    item.availableSizes.forEach((val)=>{
+        console.log(" val is:",val)
+
+    })
+})
