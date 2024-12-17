@@ -73,3 +73,9 @@ const mixing=dummyProducts.filter((item)=>{
     }).find((item)=>{
         return item.includes('n')
     })
+
+let reduceArr=[1,2,3,4,5,6,7];
+let reduceValue=reduceArr.reduce((acc,cur)=>{
+    return acc+cur;
+},0);
+console.log("reduce Value:",reduceValue)
