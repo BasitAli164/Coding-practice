@@ -44,17 +44,32 @@ const dummyProducts = [
   let newArr=dummyProducts.filter((item)=>{
     return item.id==2;
   })
-  console.log("New Array is:",newArr)
+//   console.log("New Array is:",newArr)
 
   const newPirce=dummyProducts.filter((item)=>{
     return item.price>5000&&item.price<6000;
   })
-  console.log("All Price:",newPirce)
+//   console.log("All Price:",newPirce)
 
   const categoryBase=dummyProducts.filter((item)=>{
     return item.category=='men'&&item.id<10&&item.color=='Black';
   })
-  console.log(categoryBase)
+//   console.log(categoryBase)
 
-  const findMethod=dummyProducts.find((item)=>{return item.id==3})// it return first matching data set from an array
-  console.log("Through find method:",findMethod)
+  const findMethod=dummyProducts.find((item,index,arr)=>{
+    // console.log("index is:",index ," and array is:",arr )
+    
+    return item.id==5
+})// it return first matching data set from an array
+//   console.log("Through find method:",findMethod)
+
+const mixing=dummyProducts.filter((item)=>{
+    return item.id>5;
+}).map((item)=>{
+    return item.category;
+}).filter((item)=>{
+    return item=='men'
+        
+    }).find((item)=>{
+        return item.includes('n')
+    })
