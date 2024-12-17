@@ -1,27 +1,5 @@
-// Advance level methods
-//for each;
-let arr=[1,2,3,"Basit"];
-arr.forEach((item)=>{
-    // console.log(item)
-})
-
-let newArr=arr.forEach((item)=>{
-    return item
-
-})
-// console.log("New array:",newArr)
-
-arr.forEach((item,index,arr)=>{
-    // console.log("Items are:",item)
-    // console.log("Index are:",index)
-    // console.log("Arr is:",arr)
-})
-
-
-
-
- const dummyProducts = [
-    { id: '6713b377d4939c535104d410', title: 'Running Shoes', price: '5000', availableSizes: ['5', '6', '7', '8', '9', '10'], color: 'Red', category: 'men' ,rating:4,
+const dummyProducts = [
+    { id: '1', title: 'Running Shoes', price: '5000', availableSizes: ['5', '6', '7', '8', '9', '10'], color: 'Red', category: 'men' ,rating:4,
       description: "Lightweight and breathable running shoes designed for speed and comfort. Perfect for your morning jog or evening runs."
     },
     { id: 2, title: 'Hiking Boots', price: '7500  ',  availableSizes: ['7','8', '9', '10', '11'], color: 'Black', category: 'women',rating:3,
@@ -63,24 +41,20 @@ arr.forEach((item,index,arr)=>{
     },
    
   ];
-
-  dummyProducts.forEach((item,index,arr)=>{
-    console.log(item)
+  let newArr=dummyProducts.filter((item)=>{
+    return item.id==2;
   })
-console.log("Through FOR OF LOOP")
-  for (const el of dummyProducts) {
-        for (const element of el.availableSizes) {
-            // console.log(element)
-            
-        }    
-  }
-dummyProducts.forEach((item,index)=>{
-    console.log(item)
-    item.availableSizes.forEach((val,index,arr)=>{
-        index<2&&
-        console.log(" val is:",val)
-        console.log("Index is:",index)
-        console.log("Array is :",arr)
+  console.log("New Array is:",newArr)
 
-    })
-})
+  const newPirce=dummyProducts.filter((item)=>{
+    return item.price>5000&&item.price<6000;
+  })
+  console.log("All Price:",newPirce)
+
+  const categoryBase=dummyProducts.filter((item)=>{
+    return item.category=='men'&&item.id<10&&item.color=='Black';
+  })
+  console.log(categoryBase)
+
+  const findMethod=dummyProducts.find((item)=>{return item.id==3})// it return first matching data set from an array
+  console.log("Through find method:",findMethod)
