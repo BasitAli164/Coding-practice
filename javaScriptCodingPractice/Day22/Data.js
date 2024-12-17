@@ -1,4 +1,6 @@
- const dummyProducts = [
+
+
+export const dummyProducts = [
     { id: '6713b377d4939c535104d410', title: 'Running Shoes', price: '5000', availableSizes: ['5', '6', '7', '8', '9', '10'], color: 'Red', category: 'men' ,rating:4,
       description: "Lightweight and breathable running shoes designed for speed and comfort. Perfect for your morning jog or evening runs."
     },
@@ -41,11 +43,3 @@
     },
    
   ];
-let list=document.querySelector("#list");
-list=dummyProducts.map((item)=>{
-    return `<p>${item}</p>`
-    
-})
-
-
-

@@ -1,13 +1,10 @@
 import React from 'react'
 import './App.css'
-import ConditionalRendering from './components/conditionalRendering/ConditionalRendering'
-import UseEffect from './components/LifeCycle/UseEffect'
-
-
+import Map from './components/mapMethod/Map'
 const App = () => {
   return (
     <div>
-      <UseEffect/>
+      <Map/>
     </div>
   )
 }
