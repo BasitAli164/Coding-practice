@@ -7,7 +7,7 @@ export const dummyProducts = [
     { id: 2, title: 'Hiking Boots', price: '7500  ',  availableSizes: ['7','8', '9', '10', '11'], color: 'Black', category: 'women',rating:3,
       description: "Durable hiking boots with excellent traction and support. Ideal for rugged terrains and long hikes."
      },
-    { id: 3, title: 'Casual Sneakers', price: '4000  ', availableSizes: ['6', '7', '8', '9','10'], color: 'Blue', category: 'men',rating:"****",
+    { id: 3, title: 'Casual Sneakers', price: '4000  ', availableSizes: ['6', '7', '8', '9','10'], color: 'Blue', category: 'men',rating:"4",
        description: "Stylish and versatile casual sneakers suitable for everyday wear. Comfortable for walking and relaxing."
      },
     { id: 4, title: 'Basketball Shoes', price: '6000  ', availableSizes: ['7', '8', '9', '10', '11'], color: 'White', category: 'women',rating:5,
