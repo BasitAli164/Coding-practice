@@ -14,3 +14,11 @@ const multiply=function(){
     return product;
 }
 console.log("Multiply: ",multiply(1,2,3));
+
+const add2=(...num)=>{// rest parameter
+   console.log(num)
+   return num.map((item)=>{
+    return item*2
+   })
+}
+console.log("Addition :",add2(1,2,3,4,5,56));
