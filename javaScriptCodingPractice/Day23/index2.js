@@ -79,3 +79,4 @@ let reduceValue=reduceArr.reduce((acc,cur)=>{
     return acc+cur;
 },0);
 console.log("reduce Value:",reduceValue)
+
