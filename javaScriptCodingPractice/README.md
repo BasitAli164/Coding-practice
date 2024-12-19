@@ -49,4 +49,6 @@ Day-23(17/12/2024)
     Learn about array methods (Part-4)
 Day-24(18/12/2024)
     Learn about Argument key word
+Day-25(19/12/2024)
+    Learn about Ecma Script Feature
     
