@@ -1,15 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './App.css'
-import Memo from './components/ReactHook/Memo'
+import Form from './components/Form/Form'
+
 const App = () => {
-  const [count,setCount]=useState(0);
-  console.log(`From Parent`)
   return (
-    <div>
-      <Memo/>
-      <h3>{count}</h3>
-      <button onClick={()=>setCount(count+1)}>Click me</button>
-    </div>
+    <>
+     <Form/> 
+    </>
   )
 }
 
