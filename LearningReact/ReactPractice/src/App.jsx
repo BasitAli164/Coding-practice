@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
-import Map from './components/mapMethod/Map'
+import Memo from './components/ReactMemo/Memo'
+import UseMemo from './components/ReactMemo/UseMemo';
 const App = () => {
+  const [count,setCount]=useState(0);
+  console.log(`From Parent`)
   return (
     <div>
-      <Map/>
+      <Memo/>
+      <h3>{count}</h3>
+      <button onClick={()=>setCount(count+1)}>Click me</button>
+      <UseMemo/>
     </div>
   )
 }
