@@ -51,4 +51,6 @@ Day-24(18/12/2024)
     Learn about Argument key word
 Day-25(19/12/2024)
     Learn about Ecma Script Feature
+Day-26(20/12/2024)
+    Learn about Document Object Model (DOM)
     
