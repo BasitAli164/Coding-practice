@@ -37,3 +37,30 @@
   };
 
 console.log(`range is:`,range)
+
+for (const element of "Basit Ali") {
+    console.log(element)
+}
+
+let str="Basit";
+let iterator=str[Symbol.iterator]();
+while(true){
+    let result=iterator.next();
+    if(result.done)break;
+    console.log("Value is: ",result.value);
+
+}
+const user={
+    fullName:"Basit Ali",
+    age:23,
+    status:true,
+}
+
+let array=[];
+console.log("array is:",array)
+let convertedArray=Array.from(user);
+console.log("Converted Array is 1:",convertedArray)
+console.log("Type of converted array is: ",typeof convertedArray)
+convertedArray.push("male");
+console.log("Converted Array is:",convertedArray)
+console.log("user:",user)
