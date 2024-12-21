@@ -52,5 +52,8 @@ Day-24(18/12/2024)
 Day-25(19/12/2024)
     Learn about Ecma Script Feature
 Day-26(20/12/2024)
-    Learn about Document Object Model (DOM)
+    Learn about itrables in JavaScript
+Day-27(21/12/2024)
+    Learn about the array methods (Part-5)
+    
     
