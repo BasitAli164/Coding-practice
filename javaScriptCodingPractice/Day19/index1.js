@@ -38,3 +38,13 @@ console.log(`befor splice: `,arr3)
 
 arr3.splice(3,4,"Basit")
 console.log(`splice: `,arr3)
+// Array methods
+let array=[1,2,3,4,5];
+let arr21=["basit","Muhammad","sakina","khatija",'kubra'];
+let arr31=arr21.concat(array)
+console.log(arr31) 
+console.log(`new trick:`,arr3.concat([true,false],"basit",3,5))
+
+let arrary2=array.concat(["basit",true],[3,4,5],{age:23,status:true},"king ali",5,false)
+console.log(`array2 is:`,arrary2)
+
