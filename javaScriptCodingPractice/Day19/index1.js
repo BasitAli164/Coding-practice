@@ -1,27 +1,40 @@
-//Array methods
-//toString Method
-let arr=[1,2,3,4,5,6,7];
-console.log("Array is:",arr);
-// console.log("Array coverted in String :",arr.toString());
-let arr1=['Basit',"Ali",`king`];
-console.log("Array is:",arr1)
-// console.log("Arr1 is converted into string:",arr1.toString())
+// Array Methods:
+//splice()
+let arr=["I","am","Study","abroad","Inshallah","upComming",3,"Year"]
+console.log(`Before ${arr}`)
+console.log(arr.length)
+arr.splice(2,3,"Basit")
+console.log("After apply splice method:",arr)
+console.log(arr.length)
 
-let arr3=arr.concat(arr1);
-console.log("Combination of Array is:",arr3);
-console.log("Converte the combination of array:",arr3.toString())
+let arr2=[1,2,3,4,5,6,7,8]
+arr2.splice(0,2)
+console.log("Array 2 is:",arr2)
+arr2.splice(length-1,"basit","muhammad","king")
+console.log(arr2)
 
-let arr4=[12,3,4,"Basit",{age:43},function(){let a=4;console.log(a)},undefined,null,[12,34,"vas"]];
-console.log("Array 4 is:",arr4);
-console.log("Now Array 4 is converted in string:",arr4.toString())
+arr2.splice(3,0,"Apo Ali","Safia")
+console.log("last: ",arr2)
 
-//join Method
-let arr5=[1,2,3,"Basit",{age:23},9,true,[12,3,4,"king"],function(){let a=4; console.log(a)}];
-console.log("Array 5 is:",arr5)
-console.log("Array 5 is:",arr5.join(" and "));
+let mix=[1,2,"Basit","ali",{age:23,gender:"male"},[1,"abc",true],false,function(){console.log("hello world")}];
+console.log("Mix Array is: ",mix)
+mix.splice(0,0,function(){console.log(`object`)},[12,"baist",false,{key:"value",userName:"basit"}])
+console.log("Mix array part 2:",mix)
 
-delete arr5[8]
-console.log(arr5)
 
-let arr6=arr5.concat(arr,arr1,arr3,arr4);
-console.log("Concatenate all array is :",arr6)
+
+
+let arr3=[1,2,3,4,5,6,"aahil","king"];
+console.log("Before:",arr3)
+let slice=arr3.slice(1,4)
+console.log("After: ",arr3)
+console.log(slice.filter((item)=>{
+  
+  return item>2
+}))
+
+
+console.log(`befor splice: `,arr3)
+
+arr3.splice(3,4,"Basit")
+console.log(`splice: `,arr3)
