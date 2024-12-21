@@ -19,3 +19,11 @@ arr2.forEach((item,index,arr)=>{
     console.log("item is: ",item, "index is:",index,"", "and"," array is :",arr)
 })
 
+let search=[1,2,3,4,"apple","banana",true,false,1,NaN]
+console.log(`By using indexOf:  ${search.indexOf("apple")}`)
+console.log(`By using indexOf:  ${search.indexOf("applee")}`)
+console.log(`By using indexOf:  ${search.indexOf(1)}`)
+console.log(`By using lastindexOf:  ${search.lastIndexOf(1)}`)
+console.log(`By using includes:  ${search.includes(1)}`)
+console.log(`By using includes:  ${search.includes("basit")}`)
+console.log(`By using includes:  ${search.includes(NaN)}`)
