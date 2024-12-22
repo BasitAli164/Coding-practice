@@ -55,5 +55,7 @@ Day-26(20/12/2024)
     Learn about itrables in JavaScript
 Day-27(21/12/2024)
     Learn about the array methods (Part-5)
+Day-28(22/12/2024)
+    Learn about the array methods (Part-6)
     
     
