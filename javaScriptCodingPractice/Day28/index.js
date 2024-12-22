@@ -60,3 +60,17 @@ console.log("Through filter id > 1 is:",throughFilter1);
 console.log("Through filter id > 10 is:",throughFilter2);// retrun [] because there no element which are id>10
 
 
+let array=[1,3,4,"basit","aahil"];
+
+let mapMethod=array.map((item)=>{
+    return item.length
+})
+
+let mapMethod2=array.map((item)=>{
+    if( Number(item)){
+        return item*3
+    }
+});
+
+console.log("Length of each item through map method:",mapMethod)
+console.log("Length of each item through map method:",mapMethod2)
