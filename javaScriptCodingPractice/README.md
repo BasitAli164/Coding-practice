@@ -57,5 +57,7 @@ Day-27(21/12/2024)
     Learn about the array methods (Part-5)
 Day-28(22/12/2024)
     Learn about the array methods (Part-6)
+Day-29(23/12/2024)
+    Learn about the array methods (Part-7)
     
     
