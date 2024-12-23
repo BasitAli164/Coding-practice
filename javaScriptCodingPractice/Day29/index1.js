@@ -10,3 +10,13 @@ console.log("Sorting a number :",sortingNumber.sort((a,b)=>a-b))
 // reverse()
 console.log("Without Reverse :",sortingArray)
 console.log("Reverse the Array",sortingArray.reverse())
+console.log("Reverse the second Array:",sortingAlphbet.reverse())
+console.log("Reverse the third Array:",sortingNumber.reverse());
+
+// split and join
+let str="My name is Basit Ali";
+console.log("Apply split method on str: ",str.split(''))
+console.log("Apply split method:",str.split(''))
+
+let introduction="My,name,is,Apo,ali".split(',');
+console.log(introduction);
