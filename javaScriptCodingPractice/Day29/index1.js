@@ -20,3 +20,9 @@ console.log("Apply split method:",str.split(''))
 
 let introduction="My,name,is,Apo,ali".split(',');
 console.log(introduction);
+let str1=introduction.join('');
+console.log("Apply join method: ",str1)
+
+let userName="basit ali".split('');
+console.log("User-name is:",userName)
+console.log("Now convert the array intor string with the help of the join method:",userName.join(''))
