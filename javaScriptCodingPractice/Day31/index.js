@@ -19,3 +19,13 @@ function filterRange(arr,a,b){
 }
 let arr=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
 console.log(filterRange(arr,8,12))
+
+// Task-3
+let filterRangePlace=(arr,a,b)=>{
+    return arr.filter((item)=>{
+        if(item==a || item==b){
+            return item
+        }
+    })
+}
+console.log("Filter Place: ",filterRangePlace(arr,2,1))
