@@ -56,4 +56,4 @@ let user=[
 let convert=user.map((item)=>{
     return item.name.split('').join('')
 })
-console.log("Coverted array is: ",convert)
+console.log("Coverted array is: ",convert);
