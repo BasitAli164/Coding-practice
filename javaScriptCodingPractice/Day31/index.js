@@ -32,4 +32,12 @@ console.log("Filter Place: ",filterRangePlace(arr,2,1))
 
 //Task-4
 let sortingDecreasing=[5,2,1,-10,8].sort((a,b)=>b-a);
-console.log("Sorting in Decreasing Order: ",sortingDecreasingtask)
+console.log("Sorting in Decreasing Order: ",sortingDecreasing)
+
+//Task-5
+let sortedFun=function(arr){
+    return arr.sort();
+}
+
+let sortingPurpose = ["HTML", "JavaScript", "CSS"];
+console.log("Sorted Array is: ",sortedFun(sortingPurpose));
