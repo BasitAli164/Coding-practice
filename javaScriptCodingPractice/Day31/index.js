@@ -29,3 +29,7 @@ let filterRangePlace=(arr,a,b)=>{
     })
 }
 console.log("Filter Place: ",filterRangePlace(arr,2,1))
+
+//Task-4
+let sortingDecreasing=[5,2,1,-10,8].sort((a,b)=>b-a);
+console.log("Sorting in Decreasing Order: ",sortingDecreasingtask)
