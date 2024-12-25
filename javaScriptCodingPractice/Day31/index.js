@@ -41,3 +41,4 @@ let sortedFun=function(arr){
 
 let sortingPurpose = ["HTML", "JavaScript", "CSS"];
 console.log("Sorted Array is: ",sortedFun(sortingPurpose));
+
