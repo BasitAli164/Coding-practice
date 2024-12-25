@@ -61,4 +61,6 @@ Day-29(23/12/2024)
     Learn about the array methods (Part-7)
 Day-30(24/12/2024)
     Learn about the array methods (part-8)
+Day-31(25/12/2024)
+    Learn about the array method task 
        
