@@ -29,3 +29,13 @@ function getAverage(arr){
 
 }
 console.log(getAverage(userOldDetail))
+
+
+
+let map=new Map();
+console.log("map is: ",map)
+map.set(true,"Apo k beta")
+map.set(1,100,"name","king");
+console.log("After set the map is:",map)
+map.clear();
+console.log("After clear the map is:",map)
