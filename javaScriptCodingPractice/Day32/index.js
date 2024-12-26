@@ -37,5 +37,19 @@ console.log("map is: ",map)
 map.set(true,"Apo k beta")
 map.set(1,100,"name","king");
 console.log("After set the map is:",map)
+map.values()
+console.log("After apply the values method on map: ",map)
+map.forEach((item,index,map)=>{
+    console.log("item through the forEach: ",item," and the index or keys are:",index, " and the map is: ",map)
+})
+console.log("the map has the key: ",map.has(true))
+console.log("the map delete method is: ",map.delete(1))
+console.log("After delete :",map)
+map.set("age",23)
+map.set("gender","male")
+console.log("map entries methods is :",map.entries())
 map.clear();
 console.log("After clear the map is:",map)
+
+let map2=new Map(userOldDetail);
+console.log(map2)
