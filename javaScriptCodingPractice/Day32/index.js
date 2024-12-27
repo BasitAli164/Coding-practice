@@ -53,3 +53,5 @@ console.log("After clear the map is:",map)
 
 let map2=new Map(userOldDetail);
 console.log(map2)
+
+

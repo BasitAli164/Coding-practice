@@ -15,3 +15,23 @@ set.forEach((item)=>{
 })
 set.clear();
 console.log("After clear the set is: ",set)
+
+//Tasks:
+//T-1
+
+
+function unique(arr){
+    let set=new Set();
+   for (const element of arr) {
+    if(element!==set ){
+        set.add(element)
+    }
+    
+   }
+return set;
+}
+let values = ["Hare", "Krishna", "Hare", "Krishna",
+    "Krishna", "Krishna", "Hare", "Hare", ":-O","basit","basit"
+  ];
+  console.log("Length of the values is :",values.length)
+  console.log("The unique funtion return ",unique(values))
