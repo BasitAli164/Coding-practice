@@ -35,3 +35,34 @@ let values = ["Hare", "Krishna", "Hare", "Krishna",
   ];
   console.log("Length of the values is :",values.length)
   console.log("The unique funtion return ",unique(values))
+
+
+  function aclean(arr) {
+    let obj = {};
+  
+    for (let i = 0; i < arr.length; i++) {
+      let sorted = arr[i].toLowerCase().split("").sort().join("");
+      obj[sorted] = arr[i];
+    }
+  
+    return Object.values(obj);
+  }
+  
+  let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+  
+console.log(aclean(arr))
+
+
+
+const user={
+    userName:"basit",
+    age:23,
+    gender:"male"
+}
+console.log("user Detail is: ",user)
+
+
+let convertedArr=Array.from(user.age)
+console.log("The coverted: ",convertedArr)
+convertedArr.push("Apo ali")
+console.log("The coverted: ",convertedArr)
