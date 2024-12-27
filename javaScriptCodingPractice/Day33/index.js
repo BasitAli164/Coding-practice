@@ -66,3 +66,17 @@ let convertedArr=Array.from(user.age)
 console.log("The coverted: ",convertedArr)
 convertedArr.push("Apo ali")
 console.log("The coverted: ",convertedArr)
+
+
+let map = new Map();
+
+map.set("name", "John");
+map.set("beta", "John");
+map.set("beti", "John");
+
+let keys = Array.from(map.keys());
+console.log("After keys is: ",keys)
+
+keys.push("more");
+console.log("After keys is: ",keys)
+
