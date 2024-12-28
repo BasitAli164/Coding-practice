@@ -67,4 +67,6 @@ Day-32(26/12/2024)
     Learn about the Map data type
 Day-33(27/12/2024)
     Learn about the Set data type
+Day-34(28/12/2024)
+    Learn about the de-structuring of array and object
        
