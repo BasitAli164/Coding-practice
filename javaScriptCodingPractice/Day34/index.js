@@ -34,10 +34,14 @@ console.log(`By using the rest operator with array destructuring : ${name1} and 
 
 
 let option={
-    title:"Square",
+    title1:"Square",
     lenght:200,
     widht:400
 };
+
+let {title1,...rest1}=option;
+console.log("By using the rest operator with object destructuring : ",title1," and another part is:",rest1)
+
 
 
 // Task of Destructuring
