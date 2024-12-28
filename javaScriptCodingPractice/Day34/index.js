@@ -39,8 +39,8 @@ let option={
     widht:400
 };
 
-let {title1,...rest1}=option;
-console.log("By using the rest operator with object destructuring : ",title1," and another part is:",rest1)
+let {title1,widht,lenght}=option;
+console.log("By using the rest operator with object destructuring : ",title1," and another part is:",lenght,"hieght is: ",widht)
 
 
 
