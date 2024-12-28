@@ -27,6 +27,18 @@ let user={
 let {userName,gender}=user;
 console.log(`UesrName is: ${userName} and gender is: ${gender}`)
 
+// Destructuring of object and array with rest operator
+let [name1,...rest] = ["Julius", "Caesar", "Consul", "of the Roman Republic"];
+console.log(`By using the rest operator with array destructuring : ${name1} and the another part is: ${rest}`)
+
+
+
+let option={
+    title:"Square",
+    lenght:200,
+    widht:400
+};
+
 
 // Task of Destructuring
 let users={
