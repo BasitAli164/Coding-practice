@@ -19,5 +19,44 @@ console.log("A : ",a," B: ",b," and C: ",c, " and f is: ",f)
 
 
 // Object Destructuring
+let user={
+    userName:"Basit",
+    age:23,
+    gender:"male"
+};
+let {userName,gender}=user;
+console.log(`UesrName is: ${userName} and gender is: ${gender}`)
+
+
+// Task of Destructuring
+let users={
+    name:"Basit",
+        year:30,
+}
+let {name,year:age,isAdmin=false}=users;
+console.log(`Name is: ${name}  and Year is: ${age} and the last is admin: ${isAdmin}`)
+
+
+function topSalary(salaries) {
+
+    let maxSalary = 0;
+    let maxName = null;
+  
+    for(const [name, salary] of Object.entries(salaries)) {
+      if (maxSalary < salary) {
+        maxSalary = salary;
+        maxName = name;
+      }
+    }
+  
+    return maxName;
+  }
+let salaries = {
+    "John": 100,
+    "Pete": 300,
+    "Mary": 250
+  };
+
+  console.log("Top Salary Person is: ",topSalary(salaries))
 
 
