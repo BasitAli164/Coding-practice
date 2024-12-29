@@ -25,3 +25,10 @@ let miliSecon=now.getMilliseconds();
 
 console.log(`Hours: ${hours} Minutes: ${minute} Second: ${second} Mili_second: ${miliSecon}`)
 
+
+
+console.log(`Time is: ${now.getTime()}`)
+console.log(`Time is: ${now.getTimezoneOffset()}`)
+
+console.log(`Date dot now is: ${Date.now()}`)
+
