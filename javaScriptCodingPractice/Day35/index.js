@@ -19,4 +19,9 @@ console.log(`Year: ${getYear} Month: ${getMonth} Date: ${getDayOfMonth} Day: ${g
 
 
 let hours=now.getHours();
+let minute=now.getMinutes();
+let second=now.getSeconds();
+let miliSecon=now.getMilliseconds();
+
+console.log(`Hours: ${hours} Minutes: ${minute} Second: ${second} Mili_second: ${miliSecon}`)
 
