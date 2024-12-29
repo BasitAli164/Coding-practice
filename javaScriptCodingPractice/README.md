@@ -69,4 +69,7 @@ Day-33(27/12/2024)
     Learn about the Set data type
 Day-34(28/12/2024)
     Learn about the de-structuring of array and object
+Day-35(29/12/2024)
+    Learn about the date and time object in Javascript
+    
        
