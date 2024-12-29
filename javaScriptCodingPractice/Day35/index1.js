@@ -27,3 +27,16 @@ let convertString=JSON.parse(convertJSON);
 console.log("Converting the Stringify into the parse is: ",convertString);
 
 // Starting Task on JSON format
+
+
+//T-1
+let user1 = {
+    name: "John Smith",
+    age: 35
+  };
+
+let convertIntoJSON=JSON.stringify(user1)
+console.log("Task-1 is to convert into json format : ",convertIntoJSON);
+
+//T-2
+console.log("Task-2 is to covert into object format again the task-1: ",JSON.parse(convertIntoJSON))
