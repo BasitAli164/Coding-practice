@@ -35,5 +35,20 @@ console.log(`Date dot now is: ${Date.now()}`)
 
 // Task: 
 //T-1
+let task1 = new Date(2012, 1, 20, 3, 12);
+console.log(`Task-1 is: ${task1}`);
 
+//T-2
 
+function getWeekDay(date){
+    let weekDayName=['MO','TU','WE','TH','FR','SA','SU']
+    return weekDayName[date.getDay()-1];
+}
+let date = new Date(2012, 0, 3);
+console.log(getWeekDay(date))
+//T-3
+function getLastDayOfMonth(year, month) {
+    let date = new Date(year, month + 1, 0);
+    return date.getDate();
+  }
+console.log(getLastDayOfMonth(2012, 1))
