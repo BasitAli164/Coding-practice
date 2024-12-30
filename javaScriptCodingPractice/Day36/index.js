@@ -55,3 +55,30 @@ let company = {
 
 
   //Task
+  //T-1
+  function sumTo(n){
+    let sum=0;
+    for(let i=1;i<=n;i++){
+        sum+=i;
+    }
+    return sum;
+  }
+  function sumThroughRecursion(n){
+    if(n==1){
+        return 1;
+    }else{
+        return n+sumThroughRecursion(n-1);
+    }
+  }
+console.log("Through loop: ",sumTo(5))
+console.log("Through Recursion: ",sumTo(10))
+
+
+function fact(n){
+    if(n==1){
+        return 1
+    }else{
+        return n*fact(n-1);
+    }
+}
+console.log("Factorial through recursion is: ",fact(5))
