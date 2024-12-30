@@ -42,3 +42,16 @@ let company = {
     }
   }
   console.log("Detail are:",sumOfSalaries(company))
+
+
+  let user={
+    name:"basit",
+    age:23,
+    status:true
+  }
+  for (const element of Object.values(user)) {
+    console.log("User element are: ",element)    
+  }
+
+
+  //Task
