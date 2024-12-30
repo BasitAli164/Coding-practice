@@ -33,7 +33,9 @@ console.log("Maximum number is: ",Math.max(...arr))
 
 let arr1 = [1, -2, 3, 4];
 let arr2 = [8, 3, -8, 1];
-alert( Math.max(...arr1, ...arr2) );
+console.log( Math.max(...arr1,0,4, ...arr2,43,33) );
 
 
-
+let str="basit ali";
+console.log(...str)
+console.log("Spread syntax: ",[...str])
