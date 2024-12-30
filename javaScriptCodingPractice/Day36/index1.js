@@ -39,3 +39,16 @@ console.log( Math.max(...arr1,0,4, ...arr2,43,33) );
 let str="basit ali";
 console.log(...str)
 console.log("Spread syntax: ",[...str])
+
+
+// setTimeout and setTimeInterval
+
+setInterval(() => {
+    console.log("By using set interval")
+    
+}, 1000);
+// clearTimeout(1000)
+
+setTimeout(() => {
+    console.log("By using the setTimeout")
+}, 3000);
