@@ -20,3 +20,12 @@ function restParams2(firstArg,...rest){
 }
 console.log("Second varient of rest parameter is: ",restParams2(1,2,3,4,5,6))
 
+// Argument
+
+function argumentVariable(parmaeter){
+    console.log("Argument variable is:",arguments)
+}
+argumentVariable(); 
+
+
+
