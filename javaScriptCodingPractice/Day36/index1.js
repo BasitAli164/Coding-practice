@@ -28,4 +28,12 @@ function argumentVariable(parmaeter){
 argumentVariable(); 
 
 
+let arr=[1,2,3,4,5,0,2,4,6,7];
+console.log("Maximum number is: ",Math.max(...arr))
+
+let arr1 = [1, -2, 3, 4];
+let arr2 = [8, 3, -8, 1];
+alert( Math.max(...arr1, ...arr2) );
+
+
 
