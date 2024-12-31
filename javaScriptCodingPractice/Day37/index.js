@@ -41,4 +41,19 @@ try {
     console.log("Error Name is: ",error.name)
     console.log("Error Message is: ",error.message)
     
+}finally{
+    console.log("I am finaally")
+}
+
+
+
+try {
+    console.log("first time")
+    dfjsk
+    console.log("second time")
+} catch (error) {
+    console.log("Error are : ",error)
+    
+}finally{
+    console.log("Finally I run")
 }
