@@ -71,5 +71,10 @@ Day-34(28/12/2024)
     Learn about the de-structuring of array and object
 Day-35(29/12/2024)
     Learn about the date and time object in Javascript
+Day-36(30/12/2024)
+    Learn about rest parameter, spread syntax, argument variable
+Day-37(31/12/2-24)
+    Learn about scheduling funciton setTimeout and setTimeInterval and error handling like try catch block
+    
     
        
