@@ -74,7 +74,7 @@ Day-35(29/12/2024)
 Day-36(30/12/2024)
     Learn about rest parameter, spread syntax, argument variable
 Day-37(31/12/2-24)
-    Learn about scheduling funciton setTimeout and setTimeInterval and error handling like try catch block
+    Learn about scheduling funciton which are setTimeout and setTimeInterval and error handling like try catch block
     
     
        
