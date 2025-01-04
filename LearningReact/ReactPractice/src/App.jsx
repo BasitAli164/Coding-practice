@@ -1,13 +1,12 @@
 import React, { useState ,useCallback} from 'react'
 import './App.css'
-import UseReducer from './components/ReactHook/UseReducer'
+import CustomHook from './components/ReactHook/CustomHook/CustomHook'
 
 const App = () => {
  
   return (
     <>
-  <UseReducer/>
-   
+   <CustomHook/>
     </>
   )
 }
