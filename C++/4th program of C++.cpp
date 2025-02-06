@@ -1,19 +1,20 @@
+/* 
+Type casting and Coversion
+i-Coversion(implicitly): through compiler means compiler done it through itself
+ii-Casting(explicitly): through programmer means type casting perferm by programmer not compiler
+*/
+
 #include<iostream>
 using  namespace std;
-//type casting in C++ 
-/* 
-i-Implicit: through compiler
-ii-explicit: through programmer and this must be from large to small data type
-*/
 int main(){
 	
-	// implicit
+	// Coversion
 	
 	char grad='a';
 	int change=grad;
 	cout<<change<<endl;
 	
-	// explicit
+	// type casting
 	
 	double price=12.897;
 //	float newPrice=int(price);
