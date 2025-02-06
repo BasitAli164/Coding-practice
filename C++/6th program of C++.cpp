@@ -25,6 +25,12 @@ int main(){
 	// Logical Operators
 	cout<<"Logical Operators"<<endl;
 	cout<<!(2<1)<<endl; // true or 1
+	cout<<((2<3)||(4>23))<<endl;// true or 1
+	cout<<((2<1)&&(4<23))<<endl; // true or 1
+	
+	// Unary Operators
+	int n= 3;
+	cout<<"\n Unary Operators: \n"<<n++<<endl<<++n<<endl;
 	
 	return 0;
 }
