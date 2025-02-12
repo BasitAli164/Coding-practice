@@ -41,6 +41,8 @@ let mix = [
   [234, "basti"],
 ];
 let onlyNumber: number[] = [3, 4, 45];
+onlyNumber.push(34);
+onlyNumber.push(0);
 let onlyString: string[] = ["king", "false"];
 let onlyBool: boolean[] = [true, false];
 
@@ -58,9 +60,18 @@ let obj1 = {
 };
 console.log("type 1 of", typeof obj1);
 
+let obj2:{age:number,name:string,status:boolean}={
+    age:34,
+    name:"basit",
+    status:false
+
+}
+
 let variable4: object = ["king", "ali"];
 console.log("variable 4", variable4);
 
 let variable5;
 console.log("Type of the variable  5 is:", typeof variable5);
 console.log("Type of the variable  5 is:", variable5);
+
+

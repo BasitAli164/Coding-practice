@@ -35,6 +35,8 @@ let mix = [
     [234, "basti"],
 ];
 let onlyNumber = [3, 4, 45];
+onlyNumber.push(34);
+onlyNumber.push(0);
 let onlyString = ["king", "false"];
 let onlyBool = [true, false];
 // object
@@ -49,6 +51,11 @@ let obj1 = {
     rollNo: 34,
 };
 console.log("type 1 of", typeof obj1);
+let obj2 = {
+    age: 34,
+    name: "basit",
+    status: false
+};
 let variable4 = ["king", "ali"];
 console.log("variable 4", variable4);
 let variable5;
