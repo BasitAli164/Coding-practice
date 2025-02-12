@@ -1,3 +1,3 @@
 "use strict";
 var a = 2;
-var b = 34;
+var b = 343;
