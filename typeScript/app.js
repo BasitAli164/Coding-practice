@@ -7,3 +7,4 @@ function hellow(hello) {
     console.log(hello);
 }
 hellow("Basit");
+a = 90;

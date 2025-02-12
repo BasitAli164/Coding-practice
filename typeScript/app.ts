@@ -6,3 +6,4 @@ function hellow(hello:string){
     console.log(hello)
 }
 hellow("Basit")
+a=90;
