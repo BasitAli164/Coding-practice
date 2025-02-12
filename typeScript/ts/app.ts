@@ -15,4 +15,13 @@ let lastName:string="ali";
 firstName="Akram";
 console.log(`fullName is: ${firstName}${lastName}`);
 
+//boolean
+let ispending:boolean=true;
+let loading=false;
+
+// Array
+let mix=[3,45,343,56,"basit",false,undefined,null,{name:"basit"},[234,"basti"]];
+let onlyNumber:number[]=[3,4,45];
+let onlyString:string[]=["king","false"];
+
 
