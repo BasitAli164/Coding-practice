@@ -19,9 +19,35 @@ console.log(`fullName is: ${firstName}${lastName}`);
 let ispending:boolean=true;
 let loading=false;
 
+//undefinded
+let variable:undefined=undefined; // this is for the undefined
+let variable1=undefined; // this is demonstrate for any 
+
+// null
+let variable2=null; // this is also demonstrate for any data type
+let variable3:null=null; // this is for the null data type
+
 // Array
 let mix=[3,45,343,56,"basit",false,undefined,null,{name:"basit"},[234,"basti"]];
 let onlyNumber:number[]=[3,4,45];
 let onlyString:string[]=["king","false"];
+let onlyBool:boolean[]=[true,false];
+
+// object
+let obj:object={
+    name:"basit",
+    rollNo:34,
+    status:true
+}
+console.log("type of",typeof(obj))
+
+let obj1={
+    name:"ali",
+    rollNo:34,
+}
+console.log("type 1 of",typeof(obj1))
+
+
+
 
 
