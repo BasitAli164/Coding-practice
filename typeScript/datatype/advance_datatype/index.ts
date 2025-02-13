@@ -30,3 +30,12 @@ hello(4);
 
 
 
+// array advance concept in typeScript
+
+const arr:number[]=[2,3,34,2,2]
+arr.forEach(val=>console.log(val*2))
+let arr1:string[]=["basit","muhammad","Kubra","khatija","sakina"];
+arr1.map(item=>console.log(item));
+
+// tuples
+

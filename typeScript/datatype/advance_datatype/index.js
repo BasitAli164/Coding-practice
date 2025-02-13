@@ -23,3 +23,9 @@ hello([3, 34, "basit"]);
 hello(undefined);
 hello(null);
 hello(4);
+// array advance concept in typeScript
+const arr = [2, 3, 34, 2, 2];
+arr.forEach(val => console.log(val * 2));
+let arr1 = ["basit", "muhammad", "Kubra", "khatija", "sakina"];
+arr1.map(item => console.log(item));
+// tuples
