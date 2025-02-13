@@ -38,4 +38,5 @@ let arr1:string[]=["basit","muhammad","Kubra","khatija","sakina"];
 arr1.map(item=>console.log(item));
 
 // tuples
+const axis:[number,number,number]=[1,2,3];// this is the syntax of tuple
 

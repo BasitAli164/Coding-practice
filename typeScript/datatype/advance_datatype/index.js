@@ -29,3 +29,4 @@ arr.forEach(val => console.log(val * 2));
 let arr1 = ["basit", "muhammad", "Kubra", "khatija", "sakina"];
 arr1.map(item => console.log(item));
 // tuples
+const axis = [1, 2, 3]; // this is the syntax of tuple
