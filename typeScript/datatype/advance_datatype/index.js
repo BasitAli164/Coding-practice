@@ -35,3 +35,22 @@ const fullName = ["basit", "ali"];
 // this is used to work with fixed size but the drawback is that if we add something through array method then its size automatically increase
 fullName.push("king");
 console.log(fullName);
+// enum
+var Color;
+(function (Color) {
+    Color[Color["red"] = 0] = "red";
+    Color[Color["green"] = 1] = "green";
+    Color[Color["blue"] = 2] = "blue";
+})(Color || (Color = {}));
+console.log(Color.blue);
+var size;
+(function (size) {
+    size[size["small"] = 0] = "small";
+    size[size["medium"] = 1] = "medium";
+    size[size["large"] = 2] = "large";
+})(size || (size = {}));
+console.log(size.small);
+console.log(typeof size);
+console.log(typeof Color);
+;
+console.log(1 /* gender.female */);

@@ -46,3 +46,22 @@ fullName.push("king")
 console.log(fullName);
 
 
+// enum
+enum Color{
+    red,
+   green,
+    blue
+}
+console.log(Color.blue)
+enum size{
+    small,medium,large
+}
+console.log(size.small)
+console.log(typeof size)
+console.log(typeof Color)
+
+const  enum gender{
+    male,female
+};
+console.log(gender.female)
+
