@@ -17,8 +17,11 @@ console.log("number type is:",typeof(number));
 number=null;
 console.log("number type is:",typeof(number));
 number=[12,34,"basit"];
-console.log("number type is:",typeof(number));
 
+function hello(object:any){
+    console.log(object)
+}
+hello("34")
 
 
 
