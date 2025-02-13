@@ -45,12 +45,14 @@ var Color;
 console.log(Color.blue);
 var size;
 (function (size) {
-    size[size["small"] = 0] = "small";
-    size[size["medium"] = 1] = "medium";
-    size[size["large"] = 2] = "large";
+    size[size["small"] = 1] = "small";
+    size[size["medium"] = 2] = "medium";
+    size[size["large"] = 3] = "large";
 })(size || (size = {}));
 console.log(size.small);
 console.log(typeof size);
 console.log(typeof Color);
 ;
 console.log(1 /* gender.female */);
+let gen = 0 /* gender.male */;
+console.log("gender is:", gen);

@@ -54,7 +54,7 @@ enum Color{
 }
 console.log(Color.blue)
 enum size{
-    small,medium,large
+    small=1,medium,large
 }
 console.log(size.small)
 console.log(typeof size)
@@ -64,4 +64,7 @@ const  enum gender{
     male,female
 };
 console.log(gender.female)
+
+let gen:gender=gender.male;
+console.log("gender is:",gen)
 
