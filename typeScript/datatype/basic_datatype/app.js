@@ -1,5 +1,5 @@
 "use strict";
-// data type in typescript
+// Normal/Basic datatype in typescript which are same with javaScript
 //number
 let num = 34;
 console.log("num is:", num);

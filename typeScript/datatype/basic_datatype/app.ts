@@ -1,4 +1,4 @@
-// data type in typescript
+// Normal/Basic datatype in typescript which are same with javaScript
 
 //number
 let num: number = 34;
@@ -73,5 +73,9 @@ console.log("variable 4", variable4);
 let variable5;
 console.log("Type of the variable  5 is:", typeof variable5);
 console.log("Type of the variable  5 is:", variable5);
+
+
+
+
 
 
