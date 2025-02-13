@@ -21,7 +21,12 @@ number=[12,34,"basit"];
 function hello(object:any){
     console.log(object)
 }
-hello("34")
+hello("34");
+hello({age:34});
+hello([3,34,"basit"]);
+hello(undefined);
+hello(null);
+hello(4);
 
 
 
