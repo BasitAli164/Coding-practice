@@ -9,6 +9,7 @@ int main(){
 	vec.push_back(90);
 	vec.push_back(34);
 	vec.push_back(292);
+	vec.pop_back();
 	
 	for(int item:vec){ //this is the syntax of the for each loop in c++ i think 
 		cout<<item<<ends;
