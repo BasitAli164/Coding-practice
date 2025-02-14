@@ -88,5 +88,11 @@ function throwError(message:string):never{
     throw new Error(message)
 
 }
-throwError("Error comming..")
+// throwError("Error comming..")
 
+// void 
+
+function logMessage(message:string):void{ // this is used with function when that don't return anything means you don't return from the function if you use this datatype
+    console.log("The void function..",message)
+}
+logMessage("basit ali is comming")

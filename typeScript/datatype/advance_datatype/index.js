@@ -71,4 +71,9 @@ function inifinitLoop() {
 function throwError(message) {
     throw new Error(message);
 }
-throwError("Error comming..");
+// throwError("Error comming..")
+// void 
+function logMessage(message) {
+    console.log("The void function..", message);
+}
+logMessage("basit ali is comming");
