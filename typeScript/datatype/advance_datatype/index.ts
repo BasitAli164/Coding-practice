@@ -96,3 +96,26 @@ function logMessage(message:string):void{ // this is used with function when tha
     console.log("The void function..",message)
 }
 logMessage("basit ali is comming")
+
+// type inference
+let str="basit" // the typescript automatically keep its type string
+
+
+// type asserstion
+
+let nums:any="basit ali";
+let strg1:string=(nums as string).toUpperCase()
+console.log("the str1 is:",strg1)
+
+// union type
+let id:string|number|boolean; // the id will be string or number 
+id=true;
+id="bsit"
+id=34
+
+function printId(id:number|string|boolean){
+    console.log(id)
+}
+printId(3)
+printId("WORKING")
+printId(false  )

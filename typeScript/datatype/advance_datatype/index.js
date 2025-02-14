@@ -77,3 +77,20 @@ function logMessage(message) {
     console.log("The void function..", message);
 }
 logMessage("basit ali is comming");
+// type inference
+let str = "basit"; // the typescript automatically keep its type string
+// type asserstion
+let nums = "basit ali";
+let strg1 = nums.toUpperCase();
+console.log("the str1 is:", strg1);
+// union type
+let id; // the id will be string or number 
+id = true;
+id = "bsit";
+id = 34;
+function printId(id) {
+    console.log(id);
+}
+printId(3);
+printId("WORKING");
+printId(false);
