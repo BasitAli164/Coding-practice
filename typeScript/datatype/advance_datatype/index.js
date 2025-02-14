@@ -56,3 +56,19 @@ console.log(typeof Color);
 console.log(1 /* gender.female */);
 let gen = 0 /* gender.male */;
 console.log("gender is:", gen);
+// unknown
+let notSure = 'a'; //  this data type is used when we don't known/sure what the exact datatype 
+if (typeof (notSure) == 'string') {
+    console.log(notSure.toUpperCase());
+}
+//never
+function inifinitLoop() {
+    while (true) {
+        console.log("object");
+    }
+}
+// inifinitLoop();
+function throwError(message) {
+    throw new Error(message);
+}
+throwError("Error comming..");

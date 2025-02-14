@@ -77,3 +77,16 @@ if(typeof(notSure)=='string'){
 //never
 
 
+function inifinitLoop():never{ // this datatype used in that situation when we don't return something, infinit loop and also used for throw error
+    while(true){
+        console.log("object")
+    }
+}
+// inifinitLoop();
+
+function throwError(message:string):never{
+    throw new Error(message)
+
+}
+throwError("Error comming..")
+
