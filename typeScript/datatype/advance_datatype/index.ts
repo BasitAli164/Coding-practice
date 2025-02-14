@@ -68,3 +68,10 @@ console.log(gender.female)
 let gen:gender=gender.male;
 console.log("gender is:",gen)
 
+
+// unknown
+let notSure:unknown='a'; //  this data type is used when we don't known/sure what the exact datatype 
+
+//never
+
+
