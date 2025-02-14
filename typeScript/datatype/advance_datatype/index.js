@@ -94,3 +94,7 @@ function printId(id) {
 printId(3);
 printId("WORKING");
 printId(false);
+// type narrowing 
+function printIds(id) {
+    typeof (id) === "string" ? console.log("id is string", id.toUpperCase()) : console.log("id is number", id);
+}
