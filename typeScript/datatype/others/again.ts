@@ -166,7 +166,7 @@ const teacher:{ // without using alias
 }
 console.log("Teacher is:",teacher);
 
-type teacher={ // here we define an alias type
+type teacherType={ // here we define an alias type
     teacherId:number;
     name:string;
     address:string;
@@ -174,10 +174,15 @@ type teacher={ // here we define an alias type
     attendance:boolean;
 
 }
-let teachers:teacher={ // here we use that alias which easy to write and it is also reuseable anywhere we want to  age create teachers object 
+let teachers:teacherType={ // here we use that alias which easy to write and it is also reuseable anywhere we want to  age create teachers object 
     teacherId:3434,
     address:"Pakistan",
     attendance:false,
-    name:"basit",
-    ph:343894839
+    name:"Basit Ali",
+    ph:343894839    
 }
+
+function greet(teacher:teacherType){
+    console.log(`Welcom Mr. ${teacher.name}`)
+}
+greet(teachers);

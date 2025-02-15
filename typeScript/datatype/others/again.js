@@ -120,6 +120,10 @@ let teachers = {
     teacherId: 3434,
     address: "Pakistan",
     attendance: false,
-    name: "basit",
+    name: "Basit Ali",
     ph: 343894839
 };
+function greet(teacher) {
+    console.log(`Welcom Mr. ${teacher.name}`);
+}
+greet(teachers);
