@@ -63,7 +63,7 @@ favLanguage=["Balti","shina","urdu"];
 console.log(favLanguage);
 
 
-let skills:any[]; // if you want to add any datatype of data inside the array then you use the any datatype of the typescript but it is not a better approach ,through this approach you lose the powre of the typescript
+let skills:any[]; // if you want to add any datatype of data inside the array then you use the any datatype of the typescript but it is not a better approach ,through this approach you lose the powre of the typescript because this is alos done with javascript so the purpose of the typescript is fail so don't use or avoid this approach more ,i recommend the solution  in below as soon as possible!
 
 skills=[34,"basit",true,[34,false],{age:34}]
 console.log(skills)
