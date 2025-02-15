@@ -23,7 +23,7 @@ let user: {
   age: 34,
 };
 console.log(user.age);
-
+// array in object
 let employee:{
     name:string;
     age:number;
@@ -32,7 +32,10 @@ let employee:{
         employeeId:number;
         salar:number;
         employeeDestination:string;
-        attendence:boolean
+        attendence:boolean,
+        address:string,
+        skill:string[],
+        phoneNo:number[]
 
     }
 }={
@@ -43,9 +46,24 @@ let employee:{
         employeeId:301,
         attendence:false,
         employeeDestination:"CEO",
-        salar:983948398439489384938,
+        salar:983343,
+        skill:["HTML","CSS","Js"],
+        address:"Kushmarah Gound",
+        phoneNo:[123223,2323232,3434343,454545]
 
 
     }
 }
 console.log(employee)
+
+
+// array
+let favLanguage:string[]; // through this you can store only one datatype of the data in the array mean in this case you add or store data only string type
+favLanguage=["Balti","shina","urdu"];
+console.log(favLanguage);
+
+
+let skills:any[]; // if you want to add any datatype of data inside the array then you use the any datatype of the typescript but it is not a better approach ,through this approach you lose the powre of the typescript
+
+skills=[34,"basit",true,[34,false],{age:34}]
+console.log(skills)
