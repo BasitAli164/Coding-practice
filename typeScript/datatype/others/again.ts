@@ -1,6 +1,6 @@
-// again from begining
+//! again from begining
 
-// this fucntion indicate the basic data type which are string ,number ,boolean
+//! string ,number ,boolean
 function add1(num1: number, num2: number, msg: string, cod: boolean) {
   if (cod) {
     console.log(`${msg} ${num1 + num2}`);
@@ -14,7 +14,7 @@ const msg: string = "sum of two number is: ";
 const bool: boolean = true;
 add1(n1, n2, msg, bool);
 
-// object data type in typescript
+//! object data type in typescript
 let user: {
   name: string;
   age: number;
@@ -23,7 +23,7 @@ let user: {
   age: 34,
 };
 console.log(user.age);
-// array in object
+//! array in object
 let employee:{
     name:string;
     age:number;
@@ -57,7 +57,7 @@ let employee:{
 console.log(employee)
 
 
-// array datatype in typescript
+//! array datatype in typescript
 let favLanguage:string[]; // through this you can store only one datatype of the data in the array mean in this case you add or store data only string type
 favLanguage=["Balti","shina","urdu"];
 console.log(favLanguage);
@@ -69,7 +69,7 @@ skills=[34,"basit",true,[34,false],{age:34}]
 console.log(skills)
 
 
-// tupple datatype in typescript
+//! tupple datatype in typescript
 let student:{
     sName:string;
     sReg:number;
@@ -83,7 +83,7 @@ student.sCourse.push('Basit')
 console.log(student.sCourse)
 
 
-// enum
+//! enum
 
 enum Role{Admin,User,Author};
 const person3:{
