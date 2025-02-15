@@ -20,3 +20,15 @@ let user = {
     age: 34,
 };
 console.log(user.age);
+let employee = {
+    name: "basit",
+    age: 30,
+    status: true,
+    employeeDetail: {
+        employeeId: 301,
+        attendence: false,
+        employeeDestination: "CEO",
+        salar: 983948398439489384938,
+    }
+};
+console.log(employee);

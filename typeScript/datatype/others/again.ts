@@ -23,3 +23,29 @@ let user: {
   age: 34,
 };
 console.log(user.age);
+
+let employee:{
+    name:string;
+    age:number;
+    status:boolean;
+    employeeDetail:{
+        employeeId:number;
+        salar:number;
+        employeeDestination:string;
+        attendence:boolean
+
+    }
+}={
+    name:"basit",
+    age:30,
+    status:true,
+    employeeDetail:{
+        employeeId:301,
+        attendence:false,
+        employeeDestination:"CEO",
+        salar:983948398439489384938,
+
+
+    }
+}
+console.log(employee)
