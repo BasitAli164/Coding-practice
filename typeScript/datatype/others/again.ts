@@ -79,4 +79,8 @@ let student:{
     sReg:12,
     sCourse:[1,"DSA",2,"DAA"]
 }
+student.sCourse.push('Basit')
 console.log(student.sCourse)
+
+
+// enum
