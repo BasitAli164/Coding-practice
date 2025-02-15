@@ -52,3 +52,25 @@ let student = {
 student.sCourse.push('Basit');
 console.log(student.sCourse);
 // enum
+var Role;
+(function (Role) {
+    Role[Role["Admin"] = 0] = "Admin";
+    Role[Role["User"] = 1] = "User";
+    Role[Role["Author"] = 2] = "Author";
+})(Role || (Role = {}));
+;
+const person3 = {
+    name: "basit ali",
+    age: 23,
+    role: Role.Admin
+};
+if (person3.role === Role.Admin) {
+    console.log("Admin");
+}
+else if (person3.role === Role.Author) {
+    console.log("Author");
+}
+else {
+    console.log("User");
+}
+// union

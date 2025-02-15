@@ -84,3 +84,23 @@ console.log(student.sCourse)
 
 
 // enum
+
+enum Role{Admin,User,Author};
+const person3:{
+    name:string;
+    age:number,
+    role:Role
+}={
+    name:"basit ali",
+    age:23,
+    role:Role.Admin
+}
+if(person3.role===Role.Admin){
+    console.log("Admin")
+}else if(person3.role===Role.Author){
+    console.log("Author")
+}else{
+    console.log("User")
+}
+
+// union
