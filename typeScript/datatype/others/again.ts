@@ -103,7 +103,7 @@ if(person3.role===Role.Admin){
     console.log("User")
 }
 
-// union
+//! union
 
 function combine(num1:number|string,num2:number|string){// this type of the datatype used when we want or add  on variable flexibility mean i want a single variable take number or string both in single varible see in above or example to more understand 
     if(typeof(num1)==="number"&& typeof(num2)==="number"){

@@ -77,7 +77,7 @@ function logMessage(message) {
     console.log("The void function..", message);
 }
 logMessage("basit ali is comming");
-// type inference
+//! type inference
 let str = "basit"; // the typescript automatically keep its type string
 // type asserstion
 let nums = "basit ali";

@@ -73,7 +73,7 @@ else if (person3.role === Role.Author) {
 else {
     console.log("User");
 }
-// union
+//! union
 function combine(num1, num2) {
     if (typeof (num1) === "number" && typeof (num2) === "number") {
         return num1 + num2;
