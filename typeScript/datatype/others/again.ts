@@ -104,3 +104,14 @@ if(person3.role===Role.Admin){
 }
 
 // union
+
+function combine(num1:number|string,num2:number|string){// this type of the datatype used when we want or add  on variable flexibility mean i want a single variable take number or string both in single varible see in above or example to more understand 
+    if(typeof(num1)==="number"&& typeof(num2)==="number"){
+        return num1+num2
+    }else{
+        return num1.toString()+num2
+
+    }
+}
+console.log(combine(3,4))
+console.log(combine('basit','king'))
