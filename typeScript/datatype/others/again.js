@@ -44,3 +44,9 @@ let skills; // if you want to add any datatype of data inside the array then you
 skills = [34, "basit", true, [34, false], { age: 34 }];
 console.log(skills);
 // tupple datatype in typescript
+let student = {
+    sName: "Basit Ali",
+    sReg: 12,
+    sCourse: [1, "DSA", 2, "DAA"]
+};
+console.log(student);

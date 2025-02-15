@@ -70,3 +70,13 @@ console.log(skills)
 
 
 // tupple datatype in typescript
+let student:{
+    sName:string;
+    sReg:number;
+    sCourse:[number,string,number,string]
+}={
+    sName:"Basit Ali",
+    sReg:12,
+    sCourse:[1,"DSA",2,"DAA"]
+}
+console.log(student)
