@@ -14,7 +14,7 @@ const msg: string = "sum of two number is: ";
 const bool: boolean = true;
 add1(n1, n2, msg, bool);
 
-// object
+// object data type in typescript
 let user: {
   name: string;
   age: number;
@@ -57,7 +57,7 @@ let employee:{
 console.log(employee)
 
 
-// array
+// array datatype in typescript
 let favLanguage:string[]; // through this you can store only one datatype of the data in the array mean in this case you add or store data only string type
 favLanguage=["Balti","shina","urdu"];
 console.log(favLanguage);
@@ -67,3 +67,6 @@ let skills:any[]; // if you want to add any datatype of data inside the array th
 
 skills=[34,"basit",true,[34,false],{age:34}]
 console.log(skills)
+
+
+// tupple datatype in typescript
