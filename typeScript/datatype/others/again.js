@@ -84,3 +84,14 @@ function combine(num1, num2) {
 }
 console.log(combine(3, 4));
 console.log(combine('basit', 'king'));
+//! literal type
+//? this is used when we don't use the typescript data type ,instead of it we make our own datatype ,see more example
+function combine1(num1, num2, myDatatype) {
+    if (typeof num1 === 'number' && typeof num2 === 'number' || myDatatype == 'as-somthing') {
+        return +num1 + +num2;
+    }
+    else {
+        return num1.toString() + num2;
+    }
+}
+console.log(combine1(3, 34, "as-somthing"));
