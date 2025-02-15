@@ -87,6 +87,7 @@ console.log(combine('basit', 'king'));
 //! literal type
 //? this is used when we don't use the typescript data type ,instead of it we make our own datatype ,see more example
 function combine1(num1, num2, myDatatype) {
+    // the as-something and as-someone are our data type ,the arugment must be same as the parameter
     if (typeof num1 === 'number' && typeof num2 === 'number' || myDatatype == 'as-somthing') {
         return +num1 + +num2;
     }
@@ -95,3 +96,30 @@ function combine1(num1, num2, myDatatype) {
     }
 }
 console.log(combine1(3, 34, "as-somthing"));
+//! type-alias or custome types
+//? we make type-alias for our easyness means we don't write the string ,we wirte place of the string as str so there we use this technique
+//without alias type we write or use the core datatype which provide the typeScript
+function display(msg) {
+    console.log(msg);
+}
+display("Hellow Mr.Basit Ali");
+function show(msg) {
+    console.log(msg);
+}
+show(34);
+// pros or advantage of the alias type
+const teacher = {
+    name: "Apo ali",
+    address: 'Gound, Skardu',
+    teacherId: 12,
+    ph: 3434343,
+    attendance: true
+};
+console.log("Teacher is:", teacher);
+let teachers = {
+    teacherId: 3434,
+    address: "Pakistan",
+    attendance: false,
+    name: "basit",
+    ph: 343894839
+};

@@ -121,6 +121,7 @@ console.log(combine('basit','king'));
 //? this is used when we don't use the typescript data type ,instead of it we make our own datatype ,see more example
 
 function combine1(num1:number|string,num2:number|string,myDatatype:'as-somthing'|'as-someone'){
+    // the as-something and as-someone are our data type ,the arugment must be same as the parameter
     if(typeof num1==='number'&&typeof num2==='number'||myDatatype=='as-somthing'){
         return +num1+ +num2;
 
@@ -130,3 +131,53 @@ function combine1(num1:number|string,num2:number|string,myDatatype:'as-somthing'
     }
 }
 console.log(combine1(3,34,"as-somthing"))
+
+
+
+//! type-alias or custome types
+//? we make type-alias for our easyness means we don't write the string ,we wirte place of the string as str so there we use this technique
+//without alias type we write or use the core datatype which provide the typeScript
+function display(msg:string|number){
+    console.log(msg)
+}
+display("Hellow Mr.Basit Ali")
+
+// now we use the type -alias 
+//? syntax: 
+        // type yourTypeName=typeScript datatype
+type msgDataType=string|number;
+function show(msg:msgDataType){ // through the type-alias we replace whole string|number with msgDataType so it is easy for writing or write 
+    console.log(msg)
+}
+show(34);
+// pros or advantage of the alias type
+const teacher:{ // without using alias
+    teacherId:number;
+    name:string;
+    address:string;
+    ph:number;
+    attendance:boolean;
+}={
+    name:"Apo ali",
+    address:'Gound, Skardu',
+    teacherId:12,
+    ph:3434343,
+    attendance:true
+}
+console.log("Teacher is:",teacher);
+
+type teacher={ // here we define an alias type
+    teacherId:number;
+    name:string;
+    address:string;
+    ph:number;
+    attendance:boolean;
+
+}
+let teachers:teacher={ // here we use that alias which easy to write and it is also reuseable anywhere we want to  age create teachers object 
+    teacherId:3434,
+    address:"Pakistan",
+    attendance:false,
+    name:"basit",
+    ph:343894839
+}
