@@ -73,10 +73,10 @@ console.log(skills)
 let student:{
     sName:string;
     sReg:number;
-    sCourse:[number,string,number,string]
+    sCourse:[number,string,number,string]// this is tuple which is fixed array means you don't add more than what you define in that array which you define or declare and the format must be same what you declare in the sCourse means index 0 has a number  type data,1 has string type data and etc but the drawback is that when we apply any data method then the sCourse modified
 }={
     sName:"Basit Ali",
     sReg:12,
     sCourse:[1,"DSA",2,"DAA"]
 }
-console.log(student)
+console.log(student.sCourse)

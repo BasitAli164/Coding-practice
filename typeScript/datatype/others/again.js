@@ -49,4 +49,4 @@ let student = {
     sReg: 12,
     sCourse: [1, "DSA", 2, "DAA"]
 };
-console.log(student);
+console.log(student.sCourse);
