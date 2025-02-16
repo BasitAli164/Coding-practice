@@ -182,7 +182,7 @@ let teachers:teacherType={ // here we use that alias which easy to write and it 
     ph:343894839    
 }
 
-function greet(teacher:teacherType){
+function greet1(teacher:teacherType){
     console.log(`Welcom Mr. ${teacher.name}`)
 }
-greet(teachers);
+greet1(teachers);

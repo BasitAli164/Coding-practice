@@ -123,7 +123,7 @@ let teachers = {
     name: "Basit Ali",
     ph: 343894839
 };
-function greet(teacher) {
+function greet1(teacher) {
     console.log(`Welcom Mr. ${teacher.name}`);
 }
-greet(teachers);
+greet1(teachers);
