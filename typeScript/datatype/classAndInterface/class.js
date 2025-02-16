@@ -25,3 +25,17 @@ class School {
 }
 let inst = new School("University of Baltistan");
 inst.show();
+//? in this example we explore the inheritence
+class Student extends School {
+    sAddress;
+    constructor(n) {
+        super("Hi, How are you");
+        this.sAddress = n;
+    }
+    display() {
+        this.show();
+        console.log(this.sAddress);
+    }
+}
+let stud = new Student("Basit Ali is working on the new concept");
+stud.display();

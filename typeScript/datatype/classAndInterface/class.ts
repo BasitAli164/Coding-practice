@@ -25,3 +25,23 @@ class School{
 }
 let inst=new School("University of Baltistan")
 inst.show();
+
+
+//? in this example we explore the inheritence
+
+class Student extends School{ // through the extends we put/store all the attribute and method into Student class so we can access all attributes and methods of the School through Student and that attributes and methods also access which we are define or declare or used or write in the Student class    
+
+    sAddress:string;
+    constructor(n:string){
+        super("Hi, How are you")
+        this.sAddress=n
+    }
+    display(){
+        this.show()
+        console.log(this.sAddress)
+    }
+    
+    
+}
+let stud=new Student("Basit Ali is working on the new concept");
+stud.display()
