@@ -1,4 +1,5 @@
 //! class in type Script
+//? here we understand about the how class syntax and write some method(fucntion) and attribute(variable)
 class deparment{
     name:string="Computer Science";
     display(){
@@ -8,6 +9,7 @@ class deparment{
 let instance=new deparment();
 instance.display();
 
+//? know in this school example of class we explore the constructor and access specifiers(private,public, and readonly)
 class School{
     public name:string; // don't required the public because it by default apply
     private  stroll:number=304; // this is not access outside of the class
