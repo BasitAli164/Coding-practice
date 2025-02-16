@@ -29,4 +29,10 @@ addHandle(32, 4, (num) => { console.log(num); });
 //! unknown
 let userInput; // we cann't sure about what user enter in input 
 userInput = 34;
-userInput = "basit"; // so you can store any type of the data inside the userInput beacuse we don't sure about the data menas which type they enter in the inputField
+userInput = "basit"; // so you can store any type of the data inside the userInput beacuse we don't sure about the data menas which type they enter in the inputField but the limitation is that when we assign  the unknown variable (userInput) into another datatype then it is the reason of the error ,see example
+let userName;
+// userName=userInput; // this will make the cause of the error so it is the drawback of this
+//! any
+// it is like unknow but the main difference is that it can be assignable in another datatype beacuse through any ,it is posible , in any we can store any type of data or anything  see the same example
+let adminName;
+let string = adminName; // see here are not any type of error so understood the difference between any and unknown datatype in typeScript
