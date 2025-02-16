@@ -3,10 +3,30 @@
 function sum(num1, num2) {
     return num1 + num2;
 }
-console.log("Sum of two number is: ", sum(34, 6));
+// console.log("Sum of two number is: ",sum(34,6));
 function display(msg) {
     console.log(msg);
 }
-display("This is the message...");
-let functionType;
-functionType = (() => (console.log("object")));
+// display("This is the message...")
+let functionType; //? make sure this is not a good practice . Note: when you assign any function datatype then you must requried to tell everything about the function means how many parameter take that function and what the return type of that function
+// now the variable functionType store only function not any other datatype so don't put any other datatype like number , string, boolean ,array,object etc....
+functionType = () => { };
+functionType = sum;
+functionType = display;
+// functionType=34 error because we assign a number which is invalid for this because it take a function
+// console.log(functionType(34,3)
+functionType("working..."); // the fucntiontype run that function which initial or assign in last ,in this case the display function work because we assign it in last 
+//? the good or best practice to do the above work is
+let funtype;
+funtype = sum;
+console.log(funtype(3, 4));
+//! function types and callbacks
+function addHandle(num1, num2, cb) {
+    let result = num1 + num2;
+    cb(result);
+}
+addHandle(32, 4, (num) => { console.log(num); });
+//! unknown
+let userInput; // we cann't sure about what user enter in input 
+userInput = 34;
+userInput = "basit"; // so you can store any type of the data inside the userInput beacuse we don't sure about the data menas which type they enter in the inputField
