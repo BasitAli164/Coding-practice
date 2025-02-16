@@ -1,3 +1,4 @@
+//? here i disscuse the some topic about function and advance or more typescript datatype
 //! function return type in typeScrpt
 
 function sum(num1:number,num2:number):number{

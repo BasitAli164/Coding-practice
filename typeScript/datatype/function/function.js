@@ -1,4 +1,5 @@
 "use strict";
+//? here i disscuse the some topic about function and advance or more typescript datatype
 //! function return type in typeScrpt
 function sum(num1, num2) {
     return num1 + num2;
