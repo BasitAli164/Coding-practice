@@ -20,19 +20,26 @@ functionType("working..."); // the fucntiontype run that function which initial 
 let funtype;
 funtype = sum;
 console.log(funtype(3, 4));
-//! function types and callbacks
+//! function types and callbacks in typeScript
 function addHandle(num1, num2, cb) {
     let result = num1 + num2;
     cb(result);
 }
 addHandle(32, 4, (num) => { console.log(num); });
-//! unknown
+//! unknown data type in typeScript
 let userInput; // we cann't sure about what user enter in input 
 userInput = 34;
 userInput = "basit"; // so you can store any type of the data inside the userInput beacuse we don't sure about the data menas which type they enter in the inputField but the limitation is that when we assign  the unknown variable (userInput) into another datatype then it is the reason of the error ,see example
 let userName;
 // userName=userInput; // this will make the cause of the error so it is the drawback of this
-//! any
+//! any data type in typeScript
 // it is like unknow but the main difference is that it can be assignable in another datatype beacuse through any ,it is posible , in any we can store any type of data or anything  see the same example
 let adminName;
 let string = adminName; // see here are not any type of error so understood the difference between any and unknown datatype in typeScript
+//! never data type in typeScript
+// the never data type used in that situation when we don't juge or decide the function is returning or not so keep in mind this where helpful in these senario like throwing Errors ,see example for more understanding
+function generateError(msg, code) {
+    // throw {msg,code}
+    throw { message: msg, status: code }; // both throw structure  work same and it is also same in return  if we write something under the throw and return statement then that are not executable therefore don't write any more coding or statement under these built-in funciton (return and throw),
+}
+console.log(generateError("basit", 3434));

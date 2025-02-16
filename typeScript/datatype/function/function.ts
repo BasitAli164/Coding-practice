@@ -25,7 +25,7 @@ functionType("working...") // the fucntiontype run that function which initial o
 funtype=sum;
 console.log(funtype(3,4))
 
-//! function types and callbacks
+//! function types and callbacks in typeScript
 
 function addHandle(num1:number,num2:number,cb:(n:number)=>void){
     let result=num1+num2;
@@ -34,7 +34,7 @@ function addHandle(num1:number,num2:number,cb:(n:number)=>void){
 addHandle(32,4,(num:number)=>{console.log(num)})
 
 
-//! unknown
+//! unknown data type in typeScript
 let userInput:unknown; // we cann't sure about what user enter in input 
 userInput=34;
 userInput="basit"// so you can store any type of the data inside the userInput beacuse we don't sure about the data menas which type they enter in the inputField but the limitation is that when we assign  the unknown variable (userInput) into another datatype then it is the reason of the error ,see example
@@ -42,8 +42,16 @@ userInput="basit"// so you can store any type of the data inside the userInput b
 let userName:string;
 // userName=userInput; // this will make the cause of the error so it is the drawback of this
 
-//! any
+//! any data type in typeScript
 // it is like unknow but the main difference is that it can be assignable in another datatype beacuse through any ,it is posible , in any we can store any type of data or anything  see the same example
 
 let adminName:any;
 let string=adminName // see here are not any type of error so understood the difference between any and unknown datatype in typeScript
+
+//! never data type in typeScript
+// the never data type used in that situation when we don't juge or decide the function is returning or not so keep in mind this where helpful in these senario like throwing Errors ,see example for more understanding
+function generateError(msg:string,code:number):never{
+    // throw {msg,code}
+    throw {message:msg,status:code} // both throw structure  work same and it is also same in return  if we write something under the throw and return statement then that are not executable therefore don't write any more coding or statement under these built-in funciton (return and throw),
+}
+console.log(generateError("basit",3434))
