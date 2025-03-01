@@ -1,3 +1,4 @@
-let a=3; 
-let b=5;
-console.log(a+b);
+    const fs= require('fs');
+    const text=fs.readFileSync('./text.txt');
+    console.log(text)
+    console.log("object")
