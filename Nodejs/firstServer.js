@@ -1,10 +1,6 @@
 const http = require("http");
 
 const server = http.createServer((req, res) => {
-  // console.log("request on server",req) // this give  whole object
-  // console.log("Url is: ",req.url);
-  // console.log("Method is: ",req.method);
-  // console.log("Header is: ",req.headers);
 
   if (req.url === "/") {
     res.setHeader("Content-Type", "text/html");
