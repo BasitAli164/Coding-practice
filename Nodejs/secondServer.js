@@ -6,7 +6,7 @@ const server=http.createServer((req,res)=>{
         res.end()
     },2000)
     if(req.url==='/'){
-        res.setHeader("Content-Type","text/html")
+        res.setHeaders("Content-Type","text/html")
         res.write("<html>")
         res.write("<head>")
         res.write("<title>Form with Node js</title>")
