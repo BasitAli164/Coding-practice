@@ -7,7 +7,8 @@ const server=http.createServer((req,res)=>{
     },2000)
 })
 
-const port=5432;
+const port=4321;
+
 server.listen(port,()=>{
     console.log(`Server is Runing at http://localhost:${port}`);
     
