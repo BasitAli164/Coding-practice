@@ -1,5 +1,5 @@
 const http = require("http");
-
+const fs=require('fs');
 const server = http.createServer((req, res) => {
   res.write("<h1>Hello Every One this is my Second server in Node js</h1>");
   setTimeout(() => {
@@ -28,10 +28,16 @@ const server = http.createServer((req, res) => {
     return res.end();
   }else if (req.method=="POST" && req.url.toLowerCase() =="/submitfrom") {
    
-    res.write("<head><title>Submit Form</title></head>");
-    res.write("<body>");
-    res.write("<h1>Hello, Everyone I make a simple form by using Node JS</h1>");
-    res.write("<body/>");
+    // res.write("<head><title>Submit Form</title></head>");
+    // res.write("<body>");
+    // res.write("<h1>Hello, Everyone I make a simple form by using Node JS</h1>");
+    // res.write("<body/>");
+    req.on("data",(chunk)=>{
+      console.log("Chunk :",chunk)
+    })
+    fs.writeFileSync('user.txt',"basit ali")
+    res.statusCode=302;
+    res.setHeader("Location","/")
    
     return res.end();
   } else {
