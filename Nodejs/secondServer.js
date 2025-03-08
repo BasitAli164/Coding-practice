@@ -1,6 +1,9 @@
 const http = require("http");
 const fs=require('fs');
+
 const server = http.createServer((req, res) => {
+    console.log( req.method);
+    
   res.write("<h1>Hello Every One this is my Second server in Node js</h1>");
   setTimeout(() => {
     res.end();
