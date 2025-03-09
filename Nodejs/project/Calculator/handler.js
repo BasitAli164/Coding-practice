@@ -17,8 +17,10 @@ const requestHandler = (req, res) => {
             `);
 
     return res.end();
-  }else if(req.url.toLowerCase()==='/calculator'){
-    res.setHeader("Content-Type", "text/html");
+  }else if(req.url.toLowerCase()=='/calculator' && req.method=="POST"){
+    console.log(req.url, req.method);
+
+    // res.setHeader("Content-Type", "text/html");
     res.write(`
             <html>
             <head><title>Calcualtor  Page</title></head>
