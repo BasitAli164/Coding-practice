@@ -15,6 +15,34 @@ const requestHandler = (req, res) => {
             `);
 
     return res.end();
+  }else if(req.url.toLowerCase()==='/calculator'){
+    res.setHeader("Content-Type", "text/html");
+    res.write(`
+            <html>
+            <head><title>Calcualtor  Page</title></head>
+            <body>
+            <h1>Here is the Calculator</h1>
+            <br/>
+           <form action="/calculate-result" method="POST">
+            <div>
+             <label>Number-1: </label>
+            <input type='text' placeholder="Enter first number" name="first"/>
+            </div>   <br/>
+            <div>
+             <label>Number-1: </label>
+            <input type='text' placeholder="Enter second number" name="second"/>
+            </div>   <br/>
+            <div>
+            <input type="submit" value="sum"/>
+            </div>
+           </form>
+
+            </body>
+            
+            </html>
+            `);
+
+    return res.end();
   }
   res.setHeader("Content-Type", "text/html");
   res.write(`
