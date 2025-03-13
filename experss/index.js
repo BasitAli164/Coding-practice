@@ -39,6 +39,19 @@ app.get("/search", searchController);// Dynamic Route using Query(?)
  app.use('/admin',router)
 
 
+
+
+ //? Create POST route first time
+ app.post('/admin',express.json(),(req,res)=>{ // here we pass a middleware which is express.json()
+    const {name,email}=req.body
+    res.json({
+        message:`Admin ${name} with email ${email} created successfully`
+    })
+
+ })
+
+ //? Create PUT route first time
+ 
 //! server is listening
 app.listen(port, () => {
   console.log(`The server is running at http://localhost:${port}`);
