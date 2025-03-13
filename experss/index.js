@@ -1,5 +1,6 @@
 import express from "express";
 import { searchController, userLogin, usernameController, userRegister } from "./controller.js";
+import router from "./route.js";
 const app = express();
 
 const port = 3000;
@@ -31,9 +32,11 @@ app.get("/search", searchController);// Dynamic Route using Query(?)
 
 
 //! User Login and Register Route
- app.get('/user/login',userLogin)
- app.get('/user/register',userRegister)
+//  app.get('/admin/login',userLogin)
+//  app.get('/admin/register',userRegister)
 
+ //? Customize the above routes
+ app.use('/admin',router)
 
 
 //! server is listening
