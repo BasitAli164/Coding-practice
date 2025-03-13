@@ -9,6 +9,7 @@ app.get("/",(req,res)=>{
     console.log(req.method )
     res.send("Hello Experss")
 })
+
 app.listen(port, ()=>{
     console.log(`The server is running at http://localhost:${port}`)
 })
