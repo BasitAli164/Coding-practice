@@ -12,7 +12,16 @@ app.get("/",(req,res)=>{
 app.get("/about",(req,res)=>{
     res.send("This is about page")
 })
+app.get("/contact",(req,res)=>{
+    res.send("This is the contact page")
+})
 
+
+// Dynamic Route using params(:)
+app.get('/user/:username',(req,res)=>{
+    const username=req.params.username;
+    res.send(`Welcom ${username}`)
+})
 app.listen(port, ()=>{
     console.log(`The server is running at http://localhost:${port}`)
 })
