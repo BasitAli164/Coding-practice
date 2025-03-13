@@ -1,4 +1,4 @@
-const express=require('express')
+import express from 'express'
 const app=express();
 
 const port=3000;
@@ -7,7 +7,10 @@ const port=3000;
 
 app.get("/",(req,res)=>{
     console.log(req.method )
-    res.send("Hello Experss")
+    res.send("Hello Experss, this is the first response by using express js in backend series")
+})
+app.get("/about",(req,res)=>{
+    res.send("This is about page")
 })
 
 app.listen(port, ()=>{
