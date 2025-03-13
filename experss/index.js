@@ -22,6 +22,11 @@ app.get('/user/:username',(req,res)=>{
     const username=req.params.username;
     res.send(`Welcom ${username}`)
 })
+// Dynamic Route using Query(?)
+app.get('/search',(req,res)=>{
+    const keyword=req.query.keyword
+    res.send(`Searching of ${keyword}`)
+})
 app.listen(port, ()=>{
     console.log(`The server is running at http://localhost:${port}`)
 })
