@@ -50,15 +50,16 @@ app.get("/search", searchController);// Dynamic Route using Query(?)
 
  })
 
+ app.use(express.json()) // This is to keep clear the route means we don't require to put express.json() in each route like above
  //? Create PUT route first time
- app.put('/admin/:id',express.json(),(req,res)=>{
+ app.put('/admin/:id',(req,res)=>{ // here we don't put express.json() middleware because we handle it in above line no 53
     const userId=req.params.id;
     const  {name,email}=req.body
     res.json({
         message:`User ${userId} updated to ${name} and ${email}`
     })
  })
- app.get('/admin',express.json(),(req,res)=>{
+ app.get('/admin',(req,res)=>{// here we don't put express.json() middleware because we handle it in above line no 53
     const {name,email}=req.body
     res.json({
         message:`User ${name} with email ${email}`
