@@ -42,7 +42,7 @@ app.get("/search", searchController);// Dynamic Route using Query(?)
 
 
  //? Create POST route first time
- app.post('/admin',express.json(),(req,res)=>{ // here we pass a middleware which is express.json()
+ app.post('/admin',express.json(),(req,res)=>{ //! here we pass a middleware which is express.json(), this middleware convert the json formated body data and parse it in object and it will be added in request body
     const {name,email}=req.body
     res.json({
         message:`Admin ${name} with email ${email} created successfully`
@@ -51,7 +51,19 @@ app.get("/search", searchController);// Dynamic Route using Query(?)
  })
 
  //? Create PUT route first time
- 
+ app.put('/admin/:id',express.json(),(req,res)=>{
+    const userId=req.params.id;
+    const  {name,email}=req.body
+    res.json({
+        message:`User ${userId} updated to ${name} and ${email}`
+    })
+ })
+ app.get('/admin',express.json(),(req,res)=>{
+    const {name,email}=req.body
+    res.json({
+        message:`User ${name} with email ${email}`
+    })
+ })
 //! server is listening
 app.listen(port, () => {
   console.log(`The server is running at http://localhost:${port}`);
