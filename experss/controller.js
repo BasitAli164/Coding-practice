@@ -7,3 +7,11 @@ export const searchController=(req,res)=>{
     const keyword=req.query.keyword
     res.send(`Searching of ${keyword}`)
 }
+
+export const userLogin=(req,res)=>{
+    res.send("User Login Route")
+}
+
+export const userRegister=(req,res)=>{
+    res.send("Uer Register Route")
+}
