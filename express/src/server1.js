@@ -25,6 +25,6 @@ app.get("/contact", (req, res) => {
 });
 
 //! server is listening
-app.listen(port, () => {
+app.listen(process.env.PORT1, () => {
   console.log(`The server is running at http://localhost:${process.env.PORT1}`);
 });

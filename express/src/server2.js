@@ -103,6 +103,6 @@ app.get('*',(req,res)=>{
 
 
 //! Server is Listening
-app.listen(port,()=>{
+app.listen(process.env.PORT2,()=>{
     console.log(`Server is listening at http://localhost:${process.env.PORT2}`)
 })
