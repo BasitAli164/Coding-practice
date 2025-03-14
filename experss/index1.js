@@ -1,6 +1,6 @@
 import express from "express";
-import { searchController, userLogin, usernameController, userRegister } from "./controller.js";
-import router from "./route.js";
+import { searchController, userLogin, usernameController, userRegister } from "./controller1.js";
+import router from "./route1.js";
 const app = express();
 
 const port = 3000;
