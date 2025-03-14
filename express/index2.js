@@ -1,13 +1,9 @@
+//! Here we are dealing with multiple route parameter and regx in route with parameter
+
 import express from 'express'
 
 const app=express();
 
-
-//! Middleware
-app.use((req,res,next)=>{
-    console.log("A new request received at"+Date.now()) 
-    next()
-})
 app.get('/',(req,res)=>{
     console.log("object")
     res.send("Now, Again working on Experss js and this is second experss server")
