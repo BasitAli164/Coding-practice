@@ -8,7 +8,12 @@ app.get('/',(req,res)=>{
 
 //!  multiple route parameter(multiple params in url)
 app.get('/things/:name/:id',(req,res)=>{
-    
+    const {name,id}=req.params;
+    res.json({
+        id,
+        name
+    })
+
 })
 
 
