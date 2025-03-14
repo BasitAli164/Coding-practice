@@ -1,10 +1,12 @@
 //! Here we are dealing with different type of routes
 
 import express from 'express'
+import dotenv from 'dotenv'
 import { searchController, userLogin, usernameController, userRegister } from "./controller/controller1.js";
 
 
 const app=express();
+dotenv.config()
 
 
 // For Home Page

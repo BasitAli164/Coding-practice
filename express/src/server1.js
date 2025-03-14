@@ -1,8 +1,11 @@
 //! Here we concentration about the Basic of the express
 
 import express from "express";
+import dotenv from 'dotenv';
 import router from "./routes/route1.js";
+
 const app = express();
+dotenv.config()
 
 
 //! Define a simple route
