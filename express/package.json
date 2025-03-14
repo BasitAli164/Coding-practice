@@ -1,7 +1,7 @@
 {
   "name": "experss",
   "version": "1.0.0",
-  "main": "index2.js",
+  "main": "server3.js",
   "type": "module",
   "scripts": {
     "start": "nodemon index.js"
