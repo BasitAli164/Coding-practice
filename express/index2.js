@@ -10,6 +10,7 @@ app.get('/',(req,res)=>{
 app.get('/things/:name/:id',(req,res)=>{
     const {name,id}=req.params;
     res.json({
+        message:"Get Data from URL ",
         id,
         name
     })
