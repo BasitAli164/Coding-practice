@@ -2,7 +2,7 @@
 
 import express from 'express'
 import dotenv from 'dotenv'
-import { searchController, userLogin, usernameController, userRegister } from "./controller/controller1.js";
+import { searchController, userLogin, usernameController, userRegister } from "../src/controller/controller1.js";
 
 
 const app=express();
