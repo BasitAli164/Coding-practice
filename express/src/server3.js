@@ -63,7 +63,9 @@ app.use((err,req,res,next)=>{
     res.send("Internal Server Error")
 
 })
-app.listen(process.env.PORT3,()=>{
-    console.log(`Server is running at http://localhost:${process.env.PORT3}`)
 
-})
+//! Server is listening
+// app.listen(process.env.PORT3,()=>{
+//     console.log(`Server is running at http://localhost:${process.env.PORT3}`)
+
+// })
