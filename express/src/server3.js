@@ -9,16 +9,29 @@ dotenv.config()
 
 //! Types of Middleware
 
+// Here we discuss about the tow types of middleware 
+
 //? 1- Application Level Middleware
 
 app.use((req,res,next)=>{ // this middleware is applied on all middleware
     console.log("A new request accepting  at",+Date.now())
+    console.log("Start")
+    res.on('finish',()=>{
+
+       setTimeout(() => {
+        console.log("End")
+        
+       }, 3000);
+    })
     next()// this middleware run on whole application 
 })
 
 
 app.get('/',(req,res)=>{
+    setTimeout(()=>{
+        console.log("middle")
     res.send("This is the 3rd server")
+    },3000)
 })
 
 //? 2-Router Level middleware 
