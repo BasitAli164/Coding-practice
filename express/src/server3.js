@@ -12,6 +12,7 @@ dotenv.config()
 
 //? 1- Application Level Middleware
 
+// Middleware
 app.use((req,res,next)=>{ // this middleware is applied on all middleware
     console.log("A new request accepting  at",+Date.now())
     console.log("Start")
@@ -25,7 +26,7 @@ app.use((req,res,next)=>{ // this middleware is applied on all middleware
     next()// this middleware run on whole application 
 })
 
-
+// exmaple
 app.get('/',(req,res)=>{
     setTimeout(()=>{
         console.log("middle")
@@ -34,11 +35,13 @@ app.get('/',(req,res)=>{
 })
 
 //? 2-Router Level middleware 
+// Middleware
 app.use('/welcom',(req,res,next)=>{
     console.log('A new Request at the welcom route at '+Date.now())
     next();
 
 })
+// exmaple
 app.get('/welcom',(req,res)=>{
     res.send("Welcom to the Express Course/App ⚒️⚒️⚒️⚒️⚒️")
 })
@@ -48,9 +51,15 @@ app.get('/welcom',(req,res)=>{
 //  e.g: express.json() is a built-in middleware which i use in server2 in detail see there
 
 //? 4-Error-Handling middleware
- 
+// Middleware
+app.use((err,req,res,next)=>{
 
+})
+// exmaple:
 
+app.get('/error',()=>{
+    throw new Error('This is the new error')
+})
 app.listen(process.env.PORT3,()=>{
     console.log(`Server is running at http://localhost:${process.env.PORT3}`)
 
