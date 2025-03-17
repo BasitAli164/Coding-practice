@@ -1,3 +1,4 @@
+//! Here we use the ejs( emmeded javascript files)
 import express from "express";
 import dotenv from 'dotenv';
 
@@ -5,8 +6,14 @@ import dotenv from 'dotenv';
 
 const app = express();
 dotenv.config()
+
+
+//? Set EJS as the view engine
+app.set('view engine','ejs')
+
 app.get("/", (req, res) => {
-  res.send("I am talking from Server Four");
+  const username="Khatija Batool"
+  res.render('index',{username})
 });
 
 //! Server Listening
