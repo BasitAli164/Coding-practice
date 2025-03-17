@@ -17,7 +17,7 @@ app.use((req,res,next)=>{
 })
 
 app.get('/',(req,res)=>{
-    res.send("Hi! I am 3rd Server")
+    res.send("This is the 3rd server")
 })
 app.listen(process.env.PORT3,()=>{
     console.log(`Server is running at http://localhost:${process.env.PORT3}`)
