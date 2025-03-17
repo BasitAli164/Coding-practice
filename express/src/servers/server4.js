@@ -3,17 +3,19 @@ import express from "express";
 import dotenv from 'dotenv';
 
 
+//? time 1:18 min
 
 const app = express();
 dotenv.config()
 
 
 //? Set EJS as the view engine
-app.set('view engine','ejs')
+app.set('view engine','ejs') // here we define our engine
+
 
 app.get("/", (req, res) => {
   const username="Khatija Batool"
-  res.render('index',{username})
+  res.render('index',{username:username})
 });
 
 //! Server Listening
