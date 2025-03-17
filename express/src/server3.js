@@ -51,14 +51,17 @@ app.get('/welcom',(req,res)=>{
 //  e.g: express.json() is a built-in middleware which i use in server2 in detail see there
 
 //? 4-Error-Handling middleware
-// Middleware
-app.use((err,req,res,next)=>{
 
-})
 // exmaple:
 
 app.get('/error',()=>{
     throw new Error('This is the new error')
+})
+// Middleware and it useage is up ⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️
+app.use((err,req,res,next)=>{
+    console.error(err.message)
+    res.send("Internal Server Error")
+
 })
 app.listen(process.env.PORT3,()=>{
     console.log(`Server is running at http://localhost:${process.env.PORT3}`)
