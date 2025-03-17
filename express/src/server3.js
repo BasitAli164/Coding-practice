@@ -9,7 +9,6 @@ dotenv.config()
 
 //! Types of Middleware
 
-// Here we discuss about the tow types of middleware 
 
 //? 1- Application Level Middleware
 
