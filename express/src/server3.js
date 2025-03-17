@@ -44,6 +44,9 @@ app.get('/welcom',(req,res)=>{
 })
 
 
+//? 3-Built-in middleware
+
+
 
 app.listen(process.env.PORT3,()=>{
     console.log(`Server is running at http://localhost:${process.env.PORT3}`)
