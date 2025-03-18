@@ -6,7 +6,7 @@ const app=express();
 
 dotenv.config();
 app.set("view engine", "ejs");//! here i set the view engine as ejs
-app.use(express.urlencoded({extended:true}))// this code purpose  is to parse our data which are comes thorugh the url into object format if we don't use this then recive undefined
+app.use(express.urlencoded({extended:true}))// this code purpose  is to parse our data which are comes thorugh the url into object format if we don't use this then recive undefined, this is only for string data means through this we cann't give any file datatype like vedios image, and audio etc for that purpose we use third party library like multer
 app.get('/',(req,res)=>{
     res.render('form')
     // res.send("Hi ! I am talking from server 5") //! we cann't give double response
