@@ -16,8 +16,11 @@ app.get("/", (req, res) => {
 });
 
 //! Handle the static data like file, image, and audio etc
+// 1st Method
+app.use(express.static('public')) //? this help us to fetch static data from image , for this i make the public folder and its uri is http://localhost:3000/fileName
 
-app.use(express.static('public')) // this help us to fetch static data from image , for this i make the public folder
+// 2nd Method
+// app.use('/public',express.static('public')) //? both are same means we can access data by using both technique but the difference is in URI means if we use this option then our uri is                                   http://localhost:3000/folderName/fileName
 
 //! Server Listening
 
