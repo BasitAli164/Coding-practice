@@ -15,6 +15,10 @@ app.get("/", (req, res) => {
   res.render("index", { username: username });
 });
 
+//! Handle the static data like file, image, and audio etc
+
+app.use(express.static('public')) // this help us to fetch static data from image , for this i make the public folder
+
 //! Server Listening
 
 app.listen(process.env.PORT4, () => {
