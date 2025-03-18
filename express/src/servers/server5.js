@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 const app=express();
 
 dotenv.config();
-app.set("view engine", "ejs");
+app.set("view engine", "ejs");//! here i set the view engine as ejs
 app.use(express.urlencoded({extended:true}))// this code purpose  is to parse our data which are comes thorugh the url into object format if we don't use this then recive undefined
 app.get('/',(req,res)=>{
     res.render('form')
