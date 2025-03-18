@@ -6,14 +6,15 @@ const app=express();
 
 dotenv.config();
 app.set("view engine", "ejs");
-app.use(express.urlencoded({extended:true}))// this code purpose  is to parse our data which are comes thorugh the url into object format
+app.use(express.urlencoded({extended:true}))// this code purpose  is to parse our data which are comes thorugh the url into object format if we don't use this then recive undefined
 app.get('/',(req,res)=>{
-    res.send("Hi ! I am talking from server 5")
     res.render('form')
+    // res.send("Hi ! I am talking from server 5") //! we cann't give double response
 })
 
 app.post('/form',(req,res)=>{
     console.log(req.body)
+    res.send("Form submitted success fully")
     
 })
 
