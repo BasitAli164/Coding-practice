@@ -14,7 +14,7 @@ app.set('view engine','ejs') // here we define our engine
 
 
 app.get("/", (req, res) => {
-  const username="Khatija Batool"
+  const username=" Batool"
   res.render('index',{username:username})
 });
 
