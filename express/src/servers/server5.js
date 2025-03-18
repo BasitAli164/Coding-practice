@@ -6,7 +6,7 @@ const app=express();
 
 dotenv.config();
 app.set("view engine", "ejs");
-app.use(express.urlencoded({extended:true}))// this code work is parse the url data into json formate
+app.use(express.urlencoded({extended:true}))// this code purpose  is to parse our data which are comes thorugh the url into object format
 app.get('/',(req,res)=>{
     res.send("Hi ! I am talking from server 5")
     res.render('form')
