@@ -6,9 +6,9 @@ import multer from 'multer'
 
 
 //! Storage configration for multer means where the file type data are stored in our system, device or and folder
-    const storage=multer.diskStorage({
+    const storage=multer.diskStorage({ // this is for stroage the file data in our system or folder or app
         destination:'upload',
-        filename:(req,file,cb)=>{
+        filename:(req,file,cb)=>{//? this is for  to set the file name properly
             cb(null,file.fildename+"_"+Date.now()+file.originalname)
 
         }
@@ -25,7 +25,12 @@ const app=express();
   size: 2651253
 }
 */
-const upload=multer({storage}) //? if we use this then we get the data in this form
+const upload=multer({
+    storage,
+    limits:{ //? this is for to set max size of the file data type 
+        fileSize:1024*1000 
+    }
+}) //? if we use this then we get the data in this form
 /*
 {
   fieldname: 'image',
