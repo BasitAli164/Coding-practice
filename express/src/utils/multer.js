@@ -1,4 +1,4 @@
-import multer from "multer"
+import multer from 'multer'
 export const storage=multer.diskStorage({
     distination:"upload",
     filename:(req,file,cb)=>{
