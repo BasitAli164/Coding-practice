@@ -9,12 +9,18 @@ const upload=multer()
 dotenv.config();
 
 app.use(express.static('public'))// this is for fetching static data form public folder
-app.use(upload.array())// Here i use the multer functionality and use the array to catch multipart data in it
+// app.use(upload.array())//? Here i use the multer functionality and use the array to catch multipart data in it
+app.use(upload.single('image'))// here we must be give te field name if we are using the single property , 
+
 
 app.get('/',(req,res)=>{
     res.send("Hi! I am talking from server 6")
 })
 
+app.post('/form',(req,res)=>{
+    console.log(req.body)
+    res.send("Successfully!")
+})
 
 
 app.listen(process.env.PORT6,()=>{
