@@ -28,7 +28,7 @@ const app=express();
 const upload=multer({
     storage,
     limits:{ //? this is for to set max size of the file data type 
-        fileSize:1024*1000 
+        fileSize:1024*100000
     }
 }) //? if we use this then we get the data in this form
 /*
