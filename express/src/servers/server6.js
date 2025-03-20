@@ -19,6 +19,7 @@ app.get('/',(req,res)=>{
 
 app.post('/form',(req,res)=>{
     console.log(req.body)
+    console.log(req.file) // this give me buffer data
     res.send("Successfully!")
 })
 
