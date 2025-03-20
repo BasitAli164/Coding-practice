@@ -1,16 +1,11 @@
 import express from 'express';
 import dotenv from 'dotenv'
 import multer from 'multer';
-import { storage } from '../utils/multer.js';
+import { upload } from '../utils/multer.js';
 
 const app=express();
 dotenv.config();
-const upload=multer(
-    {storage,
-        limits:{
-            filesize:5*1024*1025
-        }}
-)
+
 app.use(upload.single('image'))
 app.post('/form',(req,res)=>{
     console.log(req.body)
