@@ -10,11 +10,14 @@ app.get('/',(req,res)=>{
     res.send("Talking from server 7")
 })
 
+const port=process.env.PORT7|| 4545;
 
-
-
-
-app.listen(process.env.PORT8,()=>{
-    dbConnection()
-    console.log(`Server is running at http://localhost:3007`)
-})
+    dbConnection().then(()=>{
+        app.listen(port,()=>{
+            console.log(`Server is running at http://localhost:${port}`)
+          
+        })
+    }).catch((err)=>{
+        console.log(`DB connection error ${err}`);
+        
+    })
