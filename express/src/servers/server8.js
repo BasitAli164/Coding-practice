@@ -15,6 +15,6 @@ app.get('/',(req,res)=>{
 
 
 app.listen(process.env.PORT8,()=>{
-    console.log(`Server is running at http://localhost:3007`)
     dbConnection()
+    console.log(`Server is running at http://localhost:3007`)
 })

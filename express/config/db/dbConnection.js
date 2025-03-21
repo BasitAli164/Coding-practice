@@ -14,5 +14,8 @@ const dbConnection=async()=>{
         console.log(`Database Error ${error}`)
         
     }
+    mongoose.connection.on("disconnected", () => {
+        console.log("MongoDB Disconnected!");
+})
 }
 export default dbConnection
