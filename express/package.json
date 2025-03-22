@@ -1,10 +1,10 @@
 {
   "name": "experss",
   "version": "1.0.0",
-  "main": "server8.js",
+  "main": "server9.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon src/servers/server8.js"
+    "start": "nodemon src/servers/server9.js"
   },
   "keywords": [],
   "author": "",
