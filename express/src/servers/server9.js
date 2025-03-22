@@ -9,6 +9,13 @@ dotenv.config();
 app.get('/',(req,res)=>{
     res.send("I am talking from server 9")
 })
+
+
+app.post('/addPerson',express.json(),(req,res)=>{
+    console.log(req.body)
+    res.send('Person Added ')
+})
+
 const port=process.env.PORT9 || 4433;
 
 
