@@ -27,6 +27,13 @@ app.post('/addPerson',async(req,res)=>{
 })
 
 app.put('/updatePerson',async(req,res)=>{
+    const {email,id}=req.body
+    const personData=await Person.findById(id)
+    personData.age=50;
+    await personData.save();
+    console.log('Person Data: ',personData)
+
+    res.send("Update Successfully..")
 
 })
 
