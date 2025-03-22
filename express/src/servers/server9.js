@@ -6,13 +6,13 @@ import { Person } from '../models/person.js';
 
 const app=express();
 dotenv.config();
-
+app.use(express.json())
 app.get('/',(req,res)=>{
     res.send("I am talking from server 9")
 })
 
 
-app.post('/addPerson',express.json(),async(req,res)=>{
+app.post('/addPerson',async(req,res)=>{
     // console.log(req.body)
     const {name,age,email}=req.body;
 
@@ -23,6 +23,10 @@ app.post('/addPerson',express.json(),async(req,res)=>{
     res.send('Person Added ')
     console.log(`New person is: `,newPerson);
     
+
+})
+
+app.put('/updatePerson',async(req,res)=>{
 
 })
 
