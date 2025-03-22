@@ -1,6 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import dbConnection2 from '../../config/db/dbConnection2.js';
+import { Person } from '../models/person.js';
 
 
 const app=express();
@@ -11,9 +12,18 @@ app.get('/',(req,res)=>{
 })
 
 
-app.post('/addPerson',express.json(),(req,res)=>{
-    console.log(req.body)
+app.post('/addPerson',express.json(),async(req,res)=>{
+    // console.log(req.body)
+    const {name,age,email}=req.body;
+
+    const newPerson=new Person({
+        name,age,email
+    })
+    await newPerson.save();
     res.send('Person Added ')
+    console.log(`New person is: `,newPerson);
+    
+
 })
 
 const port=process.env.PORT9 || 4433;
