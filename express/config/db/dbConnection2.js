@@ -3,10 +3,17 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const dbConnection=async()=>{
+const dbConnection2=async()=>{
     try {
-        mongoose.connect(process.env.URI)
+        mongoose.connect(process.env.URI,{
+
+        })
     } catch (error) {
         console.log(`Database error: ${error}`)
     }
+    mongoose.connection.on("Disconnected",()=>{
+        console.log('MongoDB Disconnected....!')
+    })
+
 }
+export default dbConnection2
