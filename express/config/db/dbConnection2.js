@@ -5,9 +5,7 @@ dotenv.config();
 
 const dbConnection2=async()=>{
     try {
-        mongoose.connect(process.env.URI,{
-
-        })
+        mongoose.connect(process.env.URI)
         console.log(`Database connected at ${process.env.URI} successfully...!`);
         
     } catch (error) {
