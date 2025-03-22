@@ -8,6 +8,8 @@ const dbConnection2=async()=>{
         mongoose.connect(process.env.URI,{
 
         })
+        console.log(`Database connected at ${process.env.URI} successfully...!`);
+        
     } catch (error) {
         console.log(`Database error: ${error}`)
     }
