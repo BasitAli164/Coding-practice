@@ -34,7 +34,7 @@ app.put('/updates',async(req,res)=>{
    try {
     const {name,age}=req.body
     console.log(req.body)
-    const personData=await Person.find({name}); //
+    const personData=await Person.find({name}); // this mongoose query used to find a data or information on the basis of credential which are we provide , it return the first match data or information 
    
     console.log(personData)
     if (personData.length === 0) {
