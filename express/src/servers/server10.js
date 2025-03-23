@@ -1,3 +1,4 @@
+//! Here we perform the crud operation by using the mongoose query 
 import express from 'express';
 import dotenv from 'dotenv';
 import dbConnection3 from '../../config/db/dbConnection3.js';
@@ -10,9 +11,10 @@ app.use(express.json()) // Built-in middleware, it parse the data in the json fo
 app.get('/',(req,res)=>{
     res.send("I am talking from the server 10")
 })
-
+//? Creating document
 app.post('/add',async(req,res)=>{
     // console.log(req.body)
+   try {
     const {name,email,password,age,gender}=req.body;
     const newUser=new Person({
         name,
@@ -27,8 +29,13 @@ app.post('/add',async(req,res)=>{
         message:"Successfully added",
         data,
     })
+    
+   } catch (error) {
+    console.error("Failed to add data into the db")
+    
+   }
 })
-
+//? Updating Document
 app.put('/updates',async(req,res)=>{
     
    try {
@@ -75,6 +82,16 @@ app.put('/updates',async(req,res)=>{
     console.log(error)
     
    }
+
+})
+//? Deleting Document
+app.delete('/delete/:id',async(req,res)=>{
+    const {id}=req.params;
+    await Person.findByIdAndDelete(id)
+    res.json({
+        message:"Successfully deleted!"
+    })
+
 
 })
 
