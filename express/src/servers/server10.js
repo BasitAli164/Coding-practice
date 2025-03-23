@@ -29,8 +29,25 @@ app.post('/add',async(req,res)=>{
     })
 })
 
-app.put('/update',(req,res)=>{
+app.put('/updates',async(req,res)=>{
     
+   try {
+    const {name,age}=req.body
+    console.log(req.body)
+    const personData=await Person.find({name,age}); //
+   
+    console.log(personData)
+
+    res.json({
+        message:"Update Successfull",
+        personData
+    })
+
+    
+   } catch (error) {
+    console.log(error)
+    
+   }
 
 })
 
