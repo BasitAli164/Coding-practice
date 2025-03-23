@@ -34,9 +34,14 @@ app.put('/updates',async(req,res)=>{
    try {
     const {name,age}=req.body
     console.log(req.body)
-    const personData=await Person.find({name,age}); //
+    const personData=await Person.find({name}); //
    
     console.log(personData)
+    if (personData.length === 0) {
+        return res.status(404).json({
+            message: "No matching documents found",
+        });
+    }
 
     res.json({
         message:"Update Successfull",
