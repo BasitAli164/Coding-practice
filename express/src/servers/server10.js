@@ -32,22 +32,28 @@ app.post('/add',async(req,res)=>{
 app.put('/updates',async(req,res)=>{
     
    try {
-    const {name,age}=req.body
+    const {name,age,id}=req.body
     console.log(req.body)
-    // const personData=await Person.find({age,name}); //! this mongoose query used to find a data or information on the basis of credential which are we provide , it return all data or information  which match with our credential
-   
 
-    const findOnlyOne=await Person.findOne({name}) //! this query return first added document or inforamtion if we are add many document related to same credential
-    console.log(findOnlyOne)
-    if (findOnlyOne.length === 0) {
-        return res.status(404).json({
-            message: "No matching documents found",
-        });
-    }
+    //! Here first we explore how to find data from db , so the following quersion are use
+    //! find()
+    // const personData=await Person.find({age,name}); //? this mongoose query used to find a data or information on the basis of credential which are we provide , it return all data or information  which match with our credential
+   
+    //! findOne
+    // const findOnlyOne=await Person.findOne({name}) //? this query return first added document or inforamtion if we are add many document related to same credential
+
+    //!findById
+    const findById=await Person.findById(id) //? this quersy return data or document on the basis of Id 
+    console.log(findById)
+    // if (findOnlyOne.length === 0) {
+    //     return res.status(404).json({
+    //         message: "No matching documents found",
+    //     });
+    // }
 
     res.json({
         message:"Update Successfull",
-        findOnlyOne
+        findById
     })
 
     
