@@ -1,6 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import dbConnection3 from '../../config/db/dbConnection3';
+import dbConnection3 from '../../config/db/dbConnection3.js';
 
 const app=express();
 dotenv.config();
