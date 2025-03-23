@@ -1,14 +1,36 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import dbConnection3 from '../../config/db/dbConnection3.js';
+import { Person } from '../models/person.js';
 
 const app=express();
 dotenv.config();
 
-
+app.use(express.json()) // Built-in middleware, it parse the data in the json formate
 app.get('/',(req,res)=>{
     res.send("I am talking from the server 10")
 })
+
+app.post('/add',async(req,res)=>{
+    // console.log(req.body)
+    const {name,email,password,age,gender}=req.body;
+    const newUser=new Person({
+        name,
+        email,
+        password,
+        age,
+        gender
+    })
+    console.log(newUser)
+   const data= await newUser.save();// save is the moongose query which is used to save data into mongodb
+    res.json({
+        message:"Successfully added",
+        data,
+    })
+})
+
+
+
 
 const port=process.env.PORT10 || 4332;
 
