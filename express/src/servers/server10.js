@@ -67,7 +67,7 @@ app.put('/updates',async(req,res)=>{
 
 
     //! Second Method
-    const personsData=await Person.findByIdAndUpdate(id,{
+    const personsData=await Person.findByIdAndUpdate(id,{//? here i find the document and update at time , mostly we can use this
         age:45
     })
     const findByIdAndUpdate=await perData.save();
@@ -87,7 +87,7 @@ app.put('/updates',async(req,res)=>{
 //? Deleting Document
 app.delete('/delete/:id',async(req,res)=>{
     const {id}=req.params;
-    await Person.findByIdAndDelete(id)
+    await Person.findByIdAndDelete(id)//? this query of mongoose ,first find that document on the basis of id which are porvided then delete means this query work tow things at a time
     res.json({
         message:"Successfully deleted!"
     })
