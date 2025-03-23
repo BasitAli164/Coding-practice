@@ -36,24 +36,38 @@ app.put('/updates',async(req,res)=>{
     console.log(req.body)
 
     //! Here first we explore how to find data from db , so the following quersion are use
-    //! find()
+    //! First Method: find()
     // const personData=await Person.find({age,name}); //? this mongoose query used to find a data or information on the basis of credential which are we provide , it return all data or information  which match with our credential
    
-    //! findOne
+    //! Second Method: findOne()
     // const findOnlyOne=await Person.findOne({name}) //? this query return first added document or inforamtion if we are add many document related to same credential
 
-    //!findById
+    //! Third Method: findById
     const findById=await Person.findById(id) //? this quersy return data or document on the basis of Id 
     console.log(findById)
+    //! there are many other method to find data or document from db like findMany
     // if (findOnlyOne.length === 0) {
     //     return res.status(404).json({
     //         message: "No matching documents found",
     //     });
     // }
+    //! Here i explore that query which are help to modify or update the document or information
+    
+    //! First Method
+        const perData=await Person.findById(id) //? here i find the document
+        // perData.age=50; //? here i change the age of above document which i find through id 
+        await perData.save(); //? here i save after change
+
+
+    //! Second Method
+    const personsData=await Person.findByIdAndUpdate(id,{
+        age:45
+    })
+    const findByIdAndUpdate=await perData.save();
 
     res.json({
         message:"Update Successfull",
-        findById
+        findByIdAndUpdate
     })
 
     
