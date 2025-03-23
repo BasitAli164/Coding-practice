@@ -34,10 +34,12 @@ app.put('/updates',async(req,res)=>{
    try {
     const {name,age}=req.body
     console.log(req.body)
-    const personData=await Person.find({name}); // this mongoose query used to find a data or information on the basis of credential which are we provide , it return the first match data or information 
+    // const personData=await Person.find({age,name}); //! this mongoose query used to find a data or information on the basis of credential which are we provide , it return all data or information  which match with our credential
    
-    console.log(personData)
-    if (personData.length === 0) {
+
+    const findOnlyOne=await Person.findOne({name}) //! this query return first added document or inforamtion if we are add many document related to same credential
+    console.log(findOnlyOne)
+    if (findOnlyOne.length === 0) {
         return res.status(404).json({
             message: "No matching documents found",
         });
@@ -45,7 +47,7 @@ app.put('/updates',async(req,res)=>{
 
     res.json({
         message:"Update Successfull",
-        personData
+        findOnlyOne
     })
 
     
