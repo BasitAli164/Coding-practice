@@ -6,7 +6,7 @@ import { Person } from '../models/person.js';
 const app=express();
 dotenv.config();
 
-app.use(express.json()) // Built-in middleware, it parse the data in the json formate
+app.use(express.json()) // Built-in middleware, it parse the data in the json formate and 
 app.get('/',(req,res)=>{
     res.send("I am talking from the server 10")
 })
@@ -27,6 +27,11 @@ app.post('/add',async(req,res)=>{
         message:"Successfully added",
         data,
     })
+})
+
+app.put('/update',(req,res)=>{
+    
+
 })
 
 
