@@ -22,7 +22,7 @@ app.post("/adduser", async (req, res) => {
     });
     await newData.save(); //! here we are saving the created instance
 
-    res.json({
+    res.status(201).json({
       message: "User Add Successfully....",
       newData,
     });
@@ -33,13 +33,15 @@ app.post("/adduser", async (req, res) => {
   }
 });
 
-app.put("/", async (req, res) => {
+app.put("/updateuser", async (req, res) => {
   try {
     const { id } = req.body; //? we are trying to update the exiting data or document through id
     const updatedData = await User.findByIdAndUpdate(id, {
-      userName: "Basit Ali",
-    });// here we find first the existing data through its id and update the userName 
+      userName: "King Ali",
+    }); // here we find first the existing data through its id and update the userName
     await updatedData.save(); // here save after updating
+
+    res.status(200).json({ message: "User Updated Successfully", updatedData });
   } catch (error) {
     res
       .status(500)
