@@ -8,5 +8,8 @@ const dbConnect=async()=>{
         console.error(`MongoDB Error: ${error}`)
         
     }
+    mongoose.connection.on("Error",()=>{
+        console.error("Failed to connect with database")
+    })
 }
 export default dbConnect

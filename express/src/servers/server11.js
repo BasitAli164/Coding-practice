@@ -1,6 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
-import dbConnect from "../../config/db/dbConnection4.js";
+import dbConnect from "../config/db/dbConnection4.js";
 import { User } from "../models/user.models.js";
 
 const app = express();
@@ -13,12 +13,13 @@ app.get("/", (req, res) => {
 
 app.post("/adduser", async (req, res) => {
   try {
-    const { name, email, password } = req.body;
+    const { name, email, password,orders } = req.body;
     const newData = new User({
       //! First crate instance then we save that
       userName: name, // the name give from frontend but in backend i handle for this i use usrname so i write like above
       email,
       password,
+      userOrder:orders
     });
     await newData.save(); //! here we are saving the created instance
 

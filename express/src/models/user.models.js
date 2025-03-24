@@ -13,9 +13,14 @@ const userSchem=new mongoose.Schema({
     password:{
         type:String,
         required:true,
+    },
+    userOrder:{
+        type:Object,
+        default:{}
     }
 },{
-    timestamps:true
+    timestamps:true,
+    minimize:false
 })
 
 export const User=mongoose.model("User",userSchem)
