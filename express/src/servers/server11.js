@@ -33,7 +33,14 @@ app.post("/adduser", async (req, res) => {
   }
 });
 
-app.put("/", (req, res) => {});
+app.put("/", (req, res) => {
+  try {
+  } catch (error) {
+    res
+      .status(500)
+      .json({ message: "Internal Server Error", error: error.message });
+  }
+});
 
 const port = process.env.PORT11 || 4343;
 
