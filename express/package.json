@@ -1,10 +1,10 @@
 {
   "name": "experss",
   "version": "1.0.0",
-  "main": "server12.js",
+  "main": "server13.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon src/servers/server12.js"
+    "start": "nodemon src/servers/server13.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +15,7 @@
     "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
+    "express-session": "^1.18.1",
     "mongoose": "^8.12.1",
     "multer": "^1.4.5-lts.1",
     "nodemon": "^3.1.9"
