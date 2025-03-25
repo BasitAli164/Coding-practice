@@ -1,5 +1,7 @@
+//! Here we study about cookies related topics and used third party library to manage cookie which is cookie parser
 import express from 'express';
 import dotenv from 'dotenv';
+import cookieParser from 'cookie-parser';
 
 
 const app=express();
