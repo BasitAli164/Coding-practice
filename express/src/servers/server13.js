@@ -1,17 +1,45 @@
-import express from 'express';
-import dotenv from 'dotenv';
-import cookieParser from 'cookie-parser';
+//! Here i am talking or  exploring topics related to session
+import express from "express";
+import dotenv from "dotenv";
+import cookieParser from "cookie-parser";
+import session from "express-session";
 
-const app=express();
+const app = express();
 dotenv.config();
-app.use(cookieParser())// This middleware use to cookieParser
+app.use(cookieParser()); // This middleware use for cookieParser
+app.use(
+  session({
+    secret: "smaple secret", //This is the secret used to sign the session ID cookie
+    resave: false, //orces the session to be saved back to the session store, even if the session was never modified during the request.
+    saveUninitialized: false, //Forces a session that is "uninitialized" to be saved to the store. A session is uninitialized when it is new but not modified. Choosing false is useful for implementing login sessions, reducing server storage usage, or complying with laws that require permission before setting a cookie. Choosing false will also help with race conditions where a client makes multiple parallel requests without a session.
 
+    //? see more detail through hover on each key
+  })
+); // This middleware use for session
 
-app.get('/',(req,res)=>{
-    res.send('Hi! I am talking from server 13')
-})
-const port=process.env.PORT13 || 3434;
+app.get("/", (req, res) => {
+  try {
+    res.send("Hi! I am talking from server 13");
+  } catch (error) {
+    res.status(500).json({ message: "Internal Server Error", erorr: error });
+  }
+});
 
-app.listen(port,()=>{
-    console.log(`Server is running at http://localhost:${port}`)
-})
+app.get("/visit", (req, res) => {
+  try {
+    if(req.session.page_views){
+       const count= req.session.page_views++;
+        res.send(`You visited this page ${count} times`)
+    }else{
+        req.session.page_views=1;
+        res.send("Welcome to this page for the first time!")
+    }
+  } catch (error) {
+    res.status(500).json({ message: "Internal Server Error", erorr: error });
+  }
+});
+const port = process.env.PORT13 || 3434;
+
+app.listen(port, () => {
+  console.log(`Server is running at http://localhost:${port}`);
+});
