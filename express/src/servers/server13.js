@@ -1,11 +1,10 @@
 import express from 'express';
 import dotenv from 'dotenv';
-
-
+import cookieParser from 'cookie-parser';
 
 const app=express();
 dotenv.config();
-
+app.use(cookieParser())// This middleware use to cookieParser
 
 
 app.get('/',(req,res)=>{
