@@ -6,12 +6,24 @@
 import express from "express";
 import dotenv from "dotenv";
 import dbConnect from "../config/db/dbConnection5.js";
-
+import cookieParser from 'cookie-parser';
+import session from 'express-session';
 const app = express();
 dotenv.config();
 
+//? Middlewares
+// We required these middleware for authentication proccess
+app.use(cookieParser())
+app.use(session({
+    secret:"secret-api",
+    resave:false,
+    saveUninitialized:false,
+
+}))
+
 app.get("/", (req, res) => {
   try {
+    res.send("Hi! I am talking from server 14")
     console.log("I am talking from server 14");
   } catch (error) {
     res.status(500).json({ message: "Internal Server Error", error: error });
