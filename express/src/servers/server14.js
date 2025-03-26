@@ -23,6 +23,8 @@ app.use(
   })
 );
 
+app.use(express.json())// this middleware use to parser the data in a understanding format
+
 app.get("/", (req, res) => {
   try {
     res.send("Hi! I am talking from server 14");
