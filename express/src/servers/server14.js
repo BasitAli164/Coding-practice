@@ -45,35 +45,35 @@ app.post("/register", async (req, res) => {
     res.status(500).json({ message: "Internal Server Error", error: error });
   }
 });
-app.post("/login",async(req,res)=>{
-    try {
-        const {username,password}=req.body;
-        const user=users.find((user)=>user.username===username)
-        if(!username || password!==user.password){
-
-            return res.status(404).json({message:"No found any user base of the given credientails"})
-        }
-        req.session.user=user;
-
-        res.status(200).json({message:"User Login Successfully.."})
-        
-    } catch (error) {
-        res.status(500).json({message:"Internal Server Error",error:error})
-        
+app.post("/login", async (req, res) => {
+  try {
+    const { username, password } = req.body;
+    const user = users.find((user) => user.username === username);
+    if (!username || password !== user.password) {
+      return res
+        .status(404)
+        .json({ message: "No found any user base of the given credientails" });
     }
-})
+    req.session.user = user;
 
-app.get('/dashboard',(req,res)=>{
-    try {
-        if(!req.session.user){
-            return res.status(404).json({message:"Not found any user! Please register first"})
-        }
-        res.status(200).json({message:`Welcome, ${req.session.user.username}`})
-        
-    } catch (error) {
-        res.status(500).json({message:"Internal Server Error",error})
+    res.status(200).json({ message: "User Login Successfully.." });
+  } catch (error) {
+    res.status(500).json({ message: "Internal Server Error", error: error });
+  }
+});
+
+app.get("/dashboard", (req, res) => {
+  try {
+    if (!req.session.user) {
+      return res
+        .status(404)
+        .json({ message: "Not found any user! Please register first" });
     }
-})
+    res.status(200).json({ message: `Welcome, ${req.session.user.username}` });
+  } catch (error) {
+    res.status(500).json({ message: "Internal Server Error", error });
+  }
+});
 const port = process.env.PORT14 || 4343;
 dbConnect().then(() => {
   try {
