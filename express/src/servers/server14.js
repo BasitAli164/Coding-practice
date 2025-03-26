@@ -22,7 +22,7 @@ app.get('/',(req,res)=>{
     }
 })
 
-const port=process.env.PORT13 || 4343;
+const port=process.env.PORT14 || 4343;
 dbConnect().then(()=>{
     try {
         app.listen(port,()=>{
