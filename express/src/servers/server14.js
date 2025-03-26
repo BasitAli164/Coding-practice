@@ -65,7 +65,10 @@ app.post("/login",async(req,res)=>{
 
 app.get('/dashboard',(req,res)=>{
     try {
-        
+        if(!req.session.user){
+            return res.status(404).json({message:"Not found any user! Please register first"})
+        }
+        res.status(200).json({message:`Welcome, ${req.session.user.username}`})
         
     } catch (error) {
         res.status(500).json({message:"Internal Server Error",error})
