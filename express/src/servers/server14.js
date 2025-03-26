@@ -63,6 +63,14 @@ app.post("/login",async(req,res)=>{
     }
 })
 
+app.get('/dashboard',(req,res)=>{
+    try {
+        
+        
+    } catch (error) {
+        res.status(500).json({message:"Internal Server Error",error})
+    }
+})
 const port = process.env.PORT14 || 4343;
 dbConnect().then(() => {
   try {
