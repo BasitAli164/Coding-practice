@@ -24,11 +24,11 @@ app.get("/", (req, res) => {
     res.status(500).json({ message: "Internal Server Error", erorr: error });
   }
 });
-
+// this route purpose to handle any user how many times comes at same page by using session
 app.get("/visit", (req, res) => {
   try {
     if(req.session.page_views){
-       const count= req.session.page_views++;
+       const count= req.session.page_views++;// here i manage the numbre of count means the user how many time comes the same page and store that into backend(db) using session 
         res.send(`You visited this page ${count} times`)
     }else{
         req.session.page_views=1;
@@ -38,6 +38,18 @@ app.get("/visit", (req, res) => {
     res.status(500).json({ message: "Internal Server Error", erorr: error });
   }
 });
+
+app.get('/removeSession',(req,res)=>{
+    try {
+        req.session.destroy()// by using this method romove all session from the backend (db)
+        res.send("Session Removed")
+        
+    } catch (error) {
+        res.status(500).json({message:"Internal Server Error",erorr:error})
+
+        
+    }
+})
 const port = process.env.PORT13 || 3434;
 
 app.listen(port, () => {
