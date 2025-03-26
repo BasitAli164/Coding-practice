@@ -34,7 +34,8 @@ app.get("/", (req, res) => {
 
 app.post("/register", async (req, res) => {
   try {
-    const { username, password } = req.body;
+    const {username,password}=await req.body;
+    console.log("username:",username, "password",password)
 
     users.push({
       username,
@@ -42,6 +43,7 @@ app.post("/register", async (req, res) => {
     });
     res.status(201).json({ message: "User successfully register" });
   } catch (error) {
+    console.error(error)
     res.status(500).json({ message: "Internal Server Error", error: error });
   }
 });
