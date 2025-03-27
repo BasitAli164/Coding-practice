@@ -61,7 +61,7 @@ app.post('/login',async(req,res)=>{
 
 app.get('/dashboard',(req,res)=>{
     try {
-        const token=req.header() // the toke we get from the header because it sent there
+        const token=req.header("Authorization") // the toke we get from the header because it sent there and the key is Authorization, which is sent the server inside the  header authorize section
         
     } catch (error) {
         
