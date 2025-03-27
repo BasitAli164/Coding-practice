@@ -62,6 +62,13 @@ app.post('/login',async(req,res)=>{
 app.get('/dashboard',(req,res)=>{
     try {
         const token=req.header("Authorization") // the toke we get from the header because it sent there and the key is Authorization, which is sent the server inside the  header authorize section
+
+        const decodedToken=jwt.verify(token,process.env.JWT_SECRET_KEY)
+        if(decodedToken.userName){
+        res.json({message:`Welcom ${decodedToken.userName}`})
+        }else{
+            res.json({message:"Access denied"})
+        }
         
     } catch (error) {
         
