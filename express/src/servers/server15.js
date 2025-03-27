@@ -58,6 +58,15 @@ app.post('/login',async(req,res)=>{
         
     }
 })
+
+app.get('/dashboard',(req,res)=>{
+    try {
+        const token=req.header() // the toke we get from the header because it sent there
+        
+    } catch (error) {
+        
+    }
+})
 const port=process.env.PORT15 || 3433;
 
 dbConnect().then(()=>{
