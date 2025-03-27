@@ -66,11 +66,10 @@ app.get('/dashboard',(req,res)=>{
         const decodedToken=jwt.verify(token,process.env.JWT_SECRET_KEY)
         if(decodedToken.userName){
         res.json({message:`Welcom ${decodedToken.userName}`})
-        }else{
-            res.json({message:"Access denied"})
-        }
+        }   
         
     } catch (error) {
+        res.status.json({message:"Access denied"})
         
     }
 })
