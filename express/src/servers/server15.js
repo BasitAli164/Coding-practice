@@ -8,6 +8,7 @@ import dbConnect from '../config/db/dbConnection6';
 
 const app=express();
 dotenv.config();
+app.use(express())
 
 
 
