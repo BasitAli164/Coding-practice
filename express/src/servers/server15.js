@@ -1,5 +1,8 @@
+//! Here we handle authentication by using jwt
 import express from 'express';
 import dotenv from 'dotenv';
+import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken'
 import dbConnect from '../config/db/dbConnection6';
 
 
