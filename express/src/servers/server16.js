@@ -15,4 +15,6 @@ dbConnect().then(()=>{
         console.log(`Server is running at http://localhost:${port}`)
     })
 
+}).catch((error)=>{
+    console.error("Database failed to connect and error is: ",error)
 })
