@@ -5,7 +5,16 @@ import dbConnect from "../config/db/dbConnection7";
 const app = express();
 dotenv.config();
 
-const port = process.env.PORT17 || 3433;
+app.get("/", (req, res) => {
+  try {
+    res.send("Hi I am talking from server 16");
+  } catch (error) {
+    console.error("Internal server Error", error);
+    res.status(500).json({ message: "Internal Server error" });
+  }
+});
+
+const port = process.env.PORT16|| 3433;
 dbConnect()
   .then(() => {
     app.listen(port, () => {
