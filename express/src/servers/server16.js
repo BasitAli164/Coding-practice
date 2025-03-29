@@ -17,11 +17,17 @@ app.get("/", (req, res) => {
 
 
 app.get('/api/products',(req,res)=>{
-    const products=[
-        {id:1,name:"labtop",price:3434},
-        {id:2,name:"mobile",price:888},
-        {id:3,name:"labtop",price:443},
-    ]
+    try {
+        const products=[
+            {id:1,name:"labtop",price:3434},
+            {id:2,name:"mobile",price:888},
+            {id:3,name:"labtop",price:443},
+        ]
+        res.status(200).json({products})
+        
+    } catch (error) {
+        
+    }
 })
 const port = process.env.PORT16|| 3433;
 dbConnect()
