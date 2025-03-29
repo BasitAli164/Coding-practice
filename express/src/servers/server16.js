@@ -4,6 +4,7 @@ import dbConnect from "../config/db/dbConnection7";
 
 const app = express();
 dotenv.config();
+app.use(express.json())
 
 app.get("/", (req, res) => {
   try {
@@ -14,6 +15,14 @@ app.get("/", (req, res) => {
   }
 });
 
+
+app.get('/api/products',(req,res)=>{
+    const products=[
+        {id:1,name:"labtop",price:3434},
+        {id:2,name:"mobile",price:888},
+        {id:3,name:"labtop",price:443},
+    ]
+})
 const port = process.env.PORT16|| 3433;
 dbConnect()
   .then(() => {
