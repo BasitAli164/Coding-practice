@@ -75,9 +75,11 @@ app.get("/syn_err", (err, req, res, next) => {
 //? Async Error
 app.get('/async_err',async(req,res,next)=>{
     try {
-        
+        await Promise.reject(new Error("Async Error occured"))
+
         
     } catch (error) {
+        next(error)
         
     }
 })
