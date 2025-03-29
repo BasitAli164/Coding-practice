@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
   }
 });
 
-
+// GET ALL PRODUCTS
 app.get('/api/products',(req,res)=>{
     try {
         const products=[
@@ -26,9 +26,11 @@ app.get('/api/products',(req,res)=>{
         res.status(200).json({products})
         
     } catch (error) {
+        res.status(500).json({message:"Internal Server Error"})
         
     }
 })
+
 const port = process.env.PORT16|| 3433;
 dbConnect()
   .then(() => {
