@@ -62,6 +62,9 @@ app.post("/api/addProduct", (req, res) => {
 });
 
 // Synchronous Error
+app.get('/syn_err',(err,req,res,next)=>{ // this api handle the four parameter where err for error handling and next is a callback who perform , expose the error , req,res we know that
+
+})
  
 
 const port = process.env.PORT16 || 3433;
