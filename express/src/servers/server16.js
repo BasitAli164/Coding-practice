@@ -61,6 +61,9 @@ app.post("/api/addProduct", (req, res) => {
   }
 });
 
+// Synchronous Error
+ 
+
 const port = process.env.PORT16 || 3433;
 dbConnect()
   .then(() => {
