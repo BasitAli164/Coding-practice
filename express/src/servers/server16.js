@@ -39,13 +39,21 @@ app.get('/api/product/:id',(req,res)=>{
             {id:3,name:"labtop",price:443},
         ]
         const porduct=products.find((prod)=>prod.id===Number(req.params.id)); // here we find data through id base which are comes from url as a params
-        
+        if(!porduct){
+            return res.status(404).json({message:"Product Not Found"})
+        }
+        res.status(200).json({message:"Product found and its detail is: ",porduct})
 
         
     } catch (error) {
+        res.status(500).json({message:"Internal Server Error"})
         
     }
 })
+
+// Create a new product
+
+
 const port = process.env.PORT16|| 3433;
 dbConnect()
   .then(() => {
