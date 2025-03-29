@@ -60,12 +60,18 @@ app.post("/api/addProduct", (req, res) => {
     res.status(500).json({ message: "Internal Server Error", error });
   }
 });
+//! Handling Errors in Express js application
+//? Synchronous Error
+app.get("/syn_err", (err, req, res, next) => {
+  // this api handle the four parameter where err for error handling and next is a callback who perform , expose the error , req,res we know that
 
-// Synchronous Error
-app.get('/syn_err',(err,req,res,next)=>{ // this api handle the four parameter where err for error handling and next is a callback who perform , expose the error , req,res we know that
+  try {
+    throw new Error("Something went wrong!");
+  } catch (error) {
+    next(error);
+  }
+});
 
-})
- 
 
 const port = process.env.PORT16 || 3433;
 dbConnect()
