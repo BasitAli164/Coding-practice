@@ -26,7 +26,7 @@ app.get('/api/products',(req,res)=>{
         res.status(200).json({products})
         
     } catch (error) {
-        res.status(500).json({message:"Internal Server Error"})
+        res.status(500).json({message:"Internal Server Error",error})
         
     }
 })
@@ -46,13 +46,27 @@ app.get('/api/product/:id',(req,res)=>{
 
         
     } catch (error) {
-        res.status(500).json({message:"Internal Server Error"})
+        res.status(500).json({message:"Internal Server Error",error})
         
     }
 })
 
 // Create a new product
+app.post('/api/addProduct',(req,res)=>{
+    try {
+        const newPorduct=req.body
+    newPorduct.id=Date.now();
+    res.status(201).json({message:"Product Created Successfully",newPorduct})
 
+
+        
+    } catch (error) {
+        
+
+        
+    }
+
+})
 
 const port = process.env.PORT16|| 3433;
 dbConnect()
