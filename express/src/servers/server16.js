@@ -1,3 +1,4 @@
+//! Here we are explore or study about the rest api and error handling in express.js application
 import express from "express";
 import dotenv from "dotenv";
 import dbConnect from "../config/db/dbConnection7";
@@ -80,6 +81,8 @@ app.get("/async_err", async (req, res, next) => {
     next(error);
   }
 });
+
+//! Global error handling middleware that will catch all errors in express app
 
 const port = process.env.PORT16 || 3433;
 dbConnect()
