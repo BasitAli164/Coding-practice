@@ -7,13 +7,16 @@ const app = express();
 dotenv.config();
 app.use(express.json());
 
-//! these event listener handle the error and prevent to crash our express js application
+//! these event listener handle the error and prevent to crash our express js application 
 //?First
-process.on("uncaughtException",(err)=>{
+process.on("uncaughtException",(err)=>{ // this for uncaughtException 
     console.log(err)
     process.exit(1)// this close our application , prevent to crash , this event default value is 0 , therefore we use 1
 })
 //? Second
+process.on("unhandledRejection",(resaon , promise)=>{// this for unHandleRejection
+        console.log(resaon)
+})
 app.get("/", (req, res) => {
   try {
     res.send("Hi I am talking from server 16");
