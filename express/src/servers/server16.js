@@ -10,8 +10,8 @@ app.use(express.json());
 //! these event listener handle the error and prevent to crash our express js application
 //?First
 process.on("uncaughtException",(err)=>{
-    console.error(err)
-    process.exit(1)
+    console.log(err)
+    process.exit(1)// this close our application , prevent to crash , this event default value is 0 , therefore we use 1
 })
 //? Second
 app.get("/", (req, res) => {
