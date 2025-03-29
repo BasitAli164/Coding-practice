@@ -61,7 +61,8 @@ app.post('/api/addProduct',(req,res)=>{
 
         
     } catch (error) {
-        
+        res.status(500).json({message:"Internal Server Error",error})
+
 
         
     }
