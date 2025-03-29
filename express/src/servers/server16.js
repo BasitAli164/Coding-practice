@@ -7,6 +7,13 @@ const app = express();
 dotenv.config();
 app.use(express.json());
 
+//! these event listener handle the error and prevent to crash our express js application
+//?First
+process.on("uncaughtException",(err)=>{
+    console.error(err)
+    process.exit(1)
+})
+//? Second
 app.get("/", (req, res) => {
   try {
     res.send("Hi I am talking from server 16");
@@ -83,7 +90,11 @@ app.get("/async_err", async (req, res, next) => {
 });
 
 //! Global error handling middleware that will catch all errors in express app
-
+app.use((err,req,res,next)=>{
+    console.error(err.message)
+    console.log(err.stack)
+    res.status(500).json({message:err.message})
+})
 const port = process.env.PORT16 || 3433;
 dbConnect()
   .then(() => {
