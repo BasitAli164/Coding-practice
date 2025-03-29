@@ -73,7 +73,14 @@ app.get("/syn_err", (err, req, res, next) => {
 });
 
 //? Async Error
-app.get('/async_err')
+app.get('/async_err',async(req,res,next)=>{
+    try {
+        
+        
+    } catch (error) {
+        
+    }
+})
 
 const port = process.env.PORT16 || 3433;
 dbConnect()
