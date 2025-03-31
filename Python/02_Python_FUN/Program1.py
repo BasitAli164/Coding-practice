@@ -20,7 +20,7 @@ def loop(number):
         if(num==number):
             return "Good luck" 
         else:
-            print( num)        
+            return num
 
 loop=loop(80)
 # print("new function :",loop)
@@ -29,8 +29,10 @@ loop=loop(80)
 def func(a,b=5):
     return a+b
 
-print("Sum is:",func(2))
+# print("Sum is:",func(2))
 
 
 import math as m
 
+square=m.sqrt(9)
+print(square)
