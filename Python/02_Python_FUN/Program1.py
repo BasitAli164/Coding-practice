@@ -30,3 +30,7 @@ def func(a,b=5):
     return a+b
 
 print("Sum is:",func(2))
+
+
+import math as m
+
