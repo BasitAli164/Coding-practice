@@ -24,3 +24,9 @@ def loop(number):
 
 loop=loop(80)
 # print("new function :",loop)
+
+
+def func(a,b=5):
+    return a+b
+
+print("Sum is:",func(2))
