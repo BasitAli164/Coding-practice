@@ -35,4 +35,4 @@ def func(a,b=5):
 import math as m
 
 square=m.sqrt(9)
-print(square)
+print(int(square))
