@@ -40,6 +40,6 @@ square=m.sqrt(9)
 
 
 def circle(radius):
-    return m.pi*(radius*radius)
+    return m.floor(m.pi*(radius*radius))
 
 print("Area of circle",circle(3))
