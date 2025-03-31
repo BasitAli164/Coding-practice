@@ -35,4 +35,11 @@ def func(a,b=5):
 import math as m
 
 square=m.sqrt(9)
-print(int(square))
+# print(int(square))
+
+
+
+def circle(radius):
+    return m.pi*(radius*radius)
+
+print("Area of circle",circle(3))
