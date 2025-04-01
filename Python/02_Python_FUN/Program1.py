@@ -51,7 +51,7 @@ print("Cube by using lamda function :",cubic(30))
 
 
 def new(a):
-    for val in a:
+    for num,val in a:
         print("number is:",val)
 
 list=[1,2,3,4,"basit","aahil"]
