@@ -57,3 +57,9 @@ def new(a):
 list=[1,2,3,4,"basit","aahil"]
 dic={1:"one",2:"two"}
 new(dic)
+
+
+def sum_all(*args):
+    return sum(args)
+
+print(sum_all(3,2,4,1))
