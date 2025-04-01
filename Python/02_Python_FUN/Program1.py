@@ -45,3 +45,6 @@ def circle(radius):
 # print("Area of circle",circle(3))
 
 # lamda function 
+cube=lambda x: x**3
+cubic=cube;
+print("Cube by using lamda function :",cubic(30))
