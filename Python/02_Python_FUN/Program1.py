@@ -42,4 +42,6 @@ square=m.sqrt(9)
 def circle(radius):
     return m.floor(m.pi*(radius*radius))
 
-print("Area of circle",circle(3))
+# print("Area of circle",circle(3))
+
+# lamda function 
