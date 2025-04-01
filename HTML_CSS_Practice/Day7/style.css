@@ -6,4 +6,18 @@
 html,body{
     height: 100%;
     min-height: 100vh;
+    text-align: center;
+    margin-left: 120px;
+    margin-right: 120px;
 }
+
+header{
+    background: #bb460a;
+    padding: 20px;
+    color: #fff;
+}
+
+header .text{
+    margin-top: 10px;
+}
+
