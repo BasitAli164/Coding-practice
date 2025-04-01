@@ -48,3 +48,12 @@ def circle(radius):
 cube=lambda x: x**3
 cubic=cube;
 print("Cube by using lamda function :",cubic(30))
+
+
+def new(a):
+    for val in a:
+        print("number is:",val)
+
+list=[1,2,3,4,"basit","aahil"]
+dic={1:"one",2:"two"}
+new(dic)
