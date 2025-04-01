@@ -7,8 +7,13 @@ html,body{
     height: 100%;
     min-height: 100vh;
     text-align: center;
-    margin-left: 120px;
-    margin-right: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.container{
+    width:60%;
 }
 
 header{
@@ -16,8 +21,12 @@ header{
     padding: 20px;
     color: #fff;
 }
-
 header .text{
     margin-top: 10px;
 }
-
+main{
+    text-align: justify;
+}
+main .first{
+    padding:20px;
+}
