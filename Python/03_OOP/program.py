@@ -37,10 +37,14 @@ class Calculator:
     def __init__(self,num1,num2):
         self.number1=num1
         self.number2=num2
-    def addition(self):
-        
+    def addition(self):        
         return self.number1+self.number2
+    def subtraction(self):
+        if(self.number1>self.number2):
+            return self.number1-self.number2
+        else:
+            return self.number2-self.number1
+    def multipli
 
 cal=Calculator(3,5)
 sum=cal.addition()
-print("Sum of Tow number is:",sum)
