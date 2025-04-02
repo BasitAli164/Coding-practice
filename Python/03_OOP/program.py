@@ -3,3 +3,4 @@ class Car:
     model:2020
 
 my_car=Car()
+print(my_car)
