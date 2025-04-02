@@ -1,6 +1,7 @@
 class Car:
-    brand="Royal"
+    brand=None
     model:2020
 
 my_car=Car()
-print(my_car)
+my_car.brand="Apo"
+print(my_car.brands)
