@@ -17,3 +17,15 @@ door=my_room.door
 # print(door)
 
 
+class Teacher:
+    def __init__(self,tname,tphone):
+        self.teacherName=tname
+        self.teacherPhoneNumber=tphone
+    def displayDetailOfTeacher(self):
+        print("Teacher Detail is:")
+        print("Teacher_Name:",self.teacherName)
+        print("Teacher_Phone_Number:",self.teacherPhoneNumber)
+
+
+teacherInstance=Teacher("Basit Ali",+923475495500)
+teacherInstance.displayDetailOfTeacher()
