@@ -52,7 +52,8 @@ class Calculator:
         else:
             return self.number2/self.number1
     def reminder(self):
-        
+        return self.number1%self.number2
+    
 
 cal=Calculator(3,5)
 sum=cal.addition()
