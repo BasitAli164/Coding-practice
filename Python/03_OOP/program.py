@@ -44,7 +44,15 @@ class Calculator:
             return self.number1-self.number2
         else:
             return self.number2-self.number1
-    def multipli
+    def product(self):
+        return self.number1*self.number2
+    def division(self):
+        if(self.number1>self.number2):
+            return self.number1/self.number2
+        else:
+            return self.number2/self.number1
+    def reminder(self):
+        
 
 cal=Calculator(3,5)
 sum=cal.addition()
