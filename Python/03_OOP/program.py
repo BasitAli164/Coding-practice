@@ -4,7 +4,7 @@ class Car:
 
 my_car= Car()
 my_car.brand="Apo"
-print(my_car.brand)
+# print(my_car.brand)
 
 
 class Room:
@@ -14,4 +14,6 @@ class Room:
 
 my_room=Room(12,34)
 door=my_room.door
-print(door)
+# print(door)
+
+
