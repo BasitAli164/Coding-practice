@@ -11,3 +11,4 @@ class ElectricCar(Car):
         print("Car Brand:",self.brand,"\n","Car Model:",self.model,"\n","Car Battery Size:",self.bSize)
 
 car1=ElectricCar("Royal","R","100kwh")
+car1.display()
