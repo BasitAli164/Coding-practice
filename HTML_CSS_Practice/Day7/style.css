@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    background: #bb460a;
+    background: #f66d29;
     padding: 50px;
     color: #fff;
 }
@@ -44,6 +44,7 @@ main .second {
     padding: 20px;
     text-align: justify;
     margin-bottom: 50px;
+    margin-top: 20px;
 
 
 }
@@ -56,9 +57,33 @@ main .second div {
 }
 
 main .second div h3 {
-    color: #bb460a;
+    color: #f66d29;
 }
 
 main .second div ul li {
+    display: block;
     font-size: 14px;
+    margin-left: 10px;
+    margin-top: 3px;
 }
+
+main .third p{
+    margin-left: 29px;
+}
+main .third div{
+   text-align: center;
+   margin: 40px 0px;
+}
+main .third div button{
+    padding: 12px 24px;
+    background: #f66d29;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer
+
