@@ -59,7 +59,24 @@ class Calculator:
     def cubic(self):
         return self.number2*self.number2*self.number2
     def power(self):
-        return 
+        return self.number1**self.number2
+    def displayResult(self):
+        print("Sum of ",self.number1," and ",self.number2," is: ",self.addition())
+        if(self.number1>self.number2):
+            print("Subtract of ",self.number1," and ",self.number2," is: ",self.subtraction())
+        else:
+           print("Subtract of ",self.number2," and ",self.number1," is: ",self.subtraction())
+        
+        print("Product of ",self.number1," and ",self.number2," is: ",self.product())
+        if(self.number1>self.number2):
+            print("Division of ",self.number1," and ",self.number2," is: ",self.division())
+        else:
+           print("Division of ",self.number2," and ",self.number1," is: ",self.division())
+        
+        print("Mod of ",self.number1," and ",self.number2," is: ",self.reminder())
+        print("Square of ",self.number1," is: ",self.sqare())
+        print("Cube of ",self.number2," is: ",self.cubic())
+        print("Power of ",self.number1," and ",self.number2," is: ",self.power())
 
 cal=Calculator(3,5)
-sum=cal.addition()
+cal.displayResult()
