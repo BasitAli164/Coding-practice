@@ -32,5 +32,19 @@ main .first{
 }
 
 main .second{
-    
+    display:  flex;
+    gap: 20px;
+    padding: 20px;
+    text-align: justify;
+
+}
+main .second div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+main .second div h3{
+    color: #bb460a;
 }
