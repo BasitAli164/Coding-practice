@@ -1,9 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html,body{
+
+html,
+body {
     height: 100%;
     min-height: 100vh;
     text-align: center;
@@ -12,44 +14,51 @@ html,body{
     justify-content: center;
     width: 100%;
 }
-.container{
-    width:43%;
+
+.container {
+    width: 43%;
 }
 
-header{
+header {
     background: #bb460a;
-    padding: 20px;
+    padding: 50px;
     color: #fff;
 }
-header .text{
+
+header .text {
     margin-top: 10px;
 }
-main{
+
+main {
     text-align: justify;
 }
-main .first{
-    padding:20px;
+
+main .first {
+    padding: 30px;
+    margin-top: 20px;
 }
 
-main .second{
-    display:  flex;
-    gap: 20px;
+main .second {
+    display: flex;
+    gap: 90px;
     padding: 20px;
     text-align: justify;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
+
 
 }
-main .second div{
+
+main .second div {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
 
-main .second div h3{
+main .second div h3 {
     color: #bb460a;
 }
 
-main .second div ul li{
+main .second div ul li {
     font-size: 14px;
 }
