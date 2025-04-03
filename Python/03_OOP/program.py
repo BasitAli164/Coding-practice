@@ -54,8 +54,12 @@ class Calculator:
     def reminder(self):
         return self.number1%self.number2
     
-        
-
+    def sqare(self):
+        return self.number1*self.number2
+    def cubic(self):
+        return self.number2*self.number2*self.number2
+    def power(self):
+        return 
 
 cal=Calculator(3,5)
 sum=cal.addition()
