@@ -36,6 +36,7 @@ main .second{
     gap: 20px;
     padding: 20px;
     text-align: justify;
+    margin-bottom: 75px;
 
 }
 main .second div{
@@ -47,4 +48,8 @@ main .second div{
 
 main .second div h3{
     color: #bb460a;
+}
+
+main .second div ul li{
+    font-size: 14px;
 }
