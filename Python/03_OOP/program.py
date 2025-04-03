@@ -54,6 +54,7 @@ class Calculator:
     def reminder(self):
         return self.number1%self.number2
     
+        
 
 
 cal=Calculator(3,5)
