@@ -14,9 +14,7 @@ console.log(1/"1")
 const str="pakistan"
 
 const arr=['a','b',18,'d',100,10]
-
 const num=arr.filter((n)=>{
-    console.log(typeof n)
     if(typeof(n)==="number"){
         return n 
     }
