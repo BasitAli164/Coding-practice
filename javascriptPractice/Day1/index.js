@@ -11,3 +11,9 @@ console.log([1,2,3,4,5].map((ele)=>{
     if(ele>0)return;
     return ele*10
 }))
+
+
+var a=12
+console.log(a*12)
+
+console.log(a**12)
