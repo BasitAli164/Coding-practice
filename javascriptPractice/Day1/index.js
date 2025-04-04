@@ -3,3 +3,6 @@ function check(){
 }
 var check;
 console.log(check)
+
+
+console.log(parseInt("F78"))
