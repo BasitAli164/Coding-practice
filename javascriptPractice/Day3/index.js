@@ -26,3 +26,9 @@ const string=arr.filter((str)=>{
 })
 console.log("Number of array is:",num)
 console.log("String of array is:",string)
+
+function abc(){
+    let a=19
+}
+console.log(abc())
+
