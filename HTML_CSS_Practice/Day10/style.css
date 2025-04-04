@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 html,body{
-    border: 2px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
     
 
 }
@@ -18,9 +18,10 @@ html,body{
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    width: 50%;
+    width: 40%;
     background: #e9e9e9;
     margin: 10px 0px;
+    border-radius: 20px;
 }
 
 .first img{
@@ -41,6 +42,21 @@ html,body{
     color: darkblue;
 }
 .second p{
-    width:50% ;
+    width:80% ;
+    text-align: justify;
+}
+.third{
+    margin-bottom: 40px;
+}
+.third button{
+    padding: 15px 30px;
+    font-weight: bold;
+    background: darkblue;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+
 }
 
