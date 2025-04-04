@@ -20,4 +20,27 @@ html,body{
     gap: 50px;
     width: 50%;
     background: #e9e9e9;
+    margin: 10px 0px;
 }
+
+.first img{
+    margin-top: 5px;
+    border-radius: 50px;
+}
+.second{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;    
+}
+.second h1{
+    font-size: 40px;
+}
+.second strong{
+    font-size: 30px;
+    color: darkblue;
+}
+.second p{
+    width:50% ;
+}
+
