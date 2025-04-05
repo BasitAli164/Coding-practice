@@ -40,7 +40,7 @@ html,body{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background: palevioletred;
+    background: #e91e63;
     padding: 10px;
 }
 .firstSec .firstSecHeading{
@@ -56,7 +56,7 @@ html,body{
     border-radius: 50px;
     font-weight: bold;
     background: #fff;
-    color: palevioletred;
+    color: #e91e63;
     
 }
 .main .secondSec .secondSecfirst{
@@ -74,7 +74,7 @@ html,body{
     text-align: center;
     width: 100px;
     height: 2px;
-    background: palevioletred
+    background: #e91e63
 }
 
 .main .secondSec .secSecdiv{
@@ -100,11 +100,22 @@ html,body{
     text-align: center;
 }
 .main .secondSec .secSecdiv .card .cartPriceSec strong{
-    color: palevioletred;
+    color: #e91e63;
 }
 .main .secondSec .secSecdiv .card .cartPriceSec span{
     text-decoration: line-through;
     margin-left: 5px;
+}
+.main .secondSec .secSecdiv .card .cart-btn {
+    text-align: center;
+}
+.main .secondSec .secSecdiv .card .cart-btn button{
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    color: #fff;
+    background: #e91e63;
 }
 .footer{
     border: 2px solid orange;
