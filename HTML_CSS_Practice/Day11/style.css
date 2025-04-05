@@ -27,14 +27,36 @@ html,body{
 }
 
 .header a{
-    color: palevioletred;
+    color: rgb(212, 10, 78);
 }
 .main{
     border: 2px solid aqua;
+    width: 50%;
+}
+.main .firstSec{
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+    background: palevioletred;
+    padding: 10px;
+}
+.firstSec .firstSecHeading{
+    font-size: 40px ;
+}
+.firstSec .firstSecPara{
+    font-size: 20px;
+}
+.firstSec .firstSecdiv .firstSecbtn{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-weight: bold;
+    background: #fff;
+    color: palevioletred;
 }
 .footer{
     border: 2px solid orange;
