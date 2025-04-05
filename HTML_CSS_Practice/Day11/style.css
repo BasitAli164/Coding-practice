@@ -12,17 +12,17 @@ html,body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:30px;
+    gap:30px 0px;
     border: 2px solid red;
     
 }
 .header{
-    width: 100%;
+    width: 50%;
+    padding: 40px;    
     border: 2px solid darkred;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     font-size: 14px;
 }
 
@@ -31,6 +31,10 @@ html,body{
 }
 .main{
     border: 2px solid aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .footer{
     border: 2px solid orange;
