@@ -3,3 +3,35 @@
     margin: 0;
     box-sizing: border-box;
 }
+html,body{
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    border: 2px solid red;
+    
+}
+.header{
+    width: 100%;
+    border: 2px solid darkred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.header a{
+    color: palevioletred;
+}
+.main{
+    border: 2px solid aqua;
+}
+.footer{
+    border: 2px solid orange;
+}
