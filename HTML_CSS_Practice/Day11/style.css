@@ -78,7 +78,33 @@ html,body{
 }
 
 .main .secondSec .secSecdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 30px;
+}
+
+.main .secondSec .secSecdiv .card{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 10px;
     
+}
+.main .secondSec .secSecdiv .card .cartHeading{
+    text-align: center;
+}
+.main .secondSec .secSecdiv .card .cartPriceSec{
+    text-align: center;
+}
+.main .secondSec .secSecdiv .card .cartPriceSec strong{
+    color: palevioletred;
+}
+.main .secondSec .secSecdiv .card .cartPriceSec span{
+    text-decoration: line-through;
+    margin-left: 5px;
 }
 .footer{
     border: 2px solid orange;
