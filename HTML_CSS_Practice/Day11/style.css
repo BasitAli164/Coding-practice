@@ -12,7 +12,6 @@ html,body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:30px 0px;
     border: 2px solid red;
     
 }
@@ -23,7 +22,10 @@ html,body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
+    font-size: 15px;
+    margin-top: 105px;
+    background: #fff;
+    color: #000;
 }
 
 .header a{
@@ -57,6 +59,7 @@ html,body{
     font-weight: bold;
     background: #fff;
     color: palevioletred;
+    
 }
 .footer{
     border: 2px solid orange;
