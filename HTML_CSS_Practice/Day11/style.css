@@ -59,7 +59,27 @@ html,body{
     color: palevioletred;
     
 }
+.main .secondSec .secondSecfirst{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.main .secondSec .secondSecfirst{
+    text-align: center;
+    margin-top: 20px;    
+}
+.main .secondSec .secondSecfirst .secPara{
+    text-align: center;
+    width: 100px;
+    height: 2px;
+    background: palevioletred
+}
 
+.main .secondSec .secSecdiv{
+    
+}
 .footer{
     border: 2px solid orange;
 }
