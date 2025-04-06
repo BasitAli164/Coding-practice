@@ -9,15 +9,20 @@ body {
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
+    justify-content: center;
+    background: #000;
+    }
+.container{
+    background: #e9e9e9;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
+    border: 2px solid black;
 }
 
 .header {
-    width: 50%;
+    width: 80%;
     padding: 40px;
     display: flex;
     justify-content: center;
@@ -32,7 +37,7 @@ body {
 }
 
 .main {
-    width: 50%;
+    width: 80%;
 }
 
 .main .firstSec {
@@ -74,12 +79,15 @@ body {
 
 .main .secondSec .secondSecfirst {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
+}
+.main .secondSec .secondSecfirst .secHeading{
+    font-size: 40px;
 }
 
 .main .secondSec .secondSecfirst .secPara {
     text-align: center;
-    width: 100px;
+    width: 200px;
     height: 2px;
     background: #e91e63
 }
@@ -97,13 +105,13 @@ body {
     flex-direction: column;
     /* align-items: center; */
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
 
 }
 
 .main .secondSec .secSecdiv .card .cartHeading {
     text-align: center;
-    font-size: 23px;
+    font-size: 25px;
 }
 
 .main .secondSec .secSecdiv .card .cartPriceSec {
@@ -159,7 +167,7 @@ body {
 }
 
 .footer {
-    width: 50%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -173,6 +181,7 @@ body {
 }
 
 .footer .socail-icon a img {
+    border-radius: 5px;
     background-color: #000;
 }
 
