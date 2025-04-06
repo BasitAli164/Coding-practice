@@ -12,6 +12,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 
 }
 
@@ -35,7 +36,6 @@ body {
 }
 
 .main .firstSec {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,6 +103,7 @@ body {
 
 .main .secondSec .secSecdiv .card .cartHeading {
     text-align: center;
+    font-size: 23px;
 }
 
 .main .secondSec .secSecdiv .card .cartPriceSec {
@@ -170,7 +171,9 @@ body {
 .footer .footerHeading {
     font-size: 18px;
 }
-
+.footer .socail-icon a img{
+    background-color: #000;
+}
 .footer .footerPara {
     font-size: 14px;
     text-align: center;
