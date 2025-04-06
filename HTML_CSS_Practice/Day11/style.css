@@ -149,8 +149,14 @@ html,body{
     justify-content: center;
     align-items: center;
     padding: 40px;
+    gap: 20px;
 }
 .footer .footerHeading{
     font-size: 18px;
 }
-.footer 
+.footer .footerPara{
+    font-size: 14px;
+    text-align: center;
+    line-height: 18px;
+
+}
