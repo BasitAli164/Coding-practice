@@ -1,9 +1,11 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-html,body{  
+
+html,
+body {
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -11,11 +13,12 @@ html,body{
     justify-content: center;
     align-items: center;
     border: 2px solid red;
-    
+
 }
-.header{
+
+.header {
     width: 50%;
-    padding: 40px;    
+    padding: 40px;
     border: 2px solid darkred;
     display: flex;
     justify-content: center;
@@ -26,14 +29,16 @@ html,body{
     color: #000;
 }
 
-.header a{
+.header a {
     color: rgb(212, 10, 78);
 }
-.main{
+
+.main {
     border: 2px solid aqua;
     width: 50%;
 }
-.main .firstSec{
+
+.main .firstSec {
 
     display: flex;
     flex-direction: column;
@@ -43,13 +48,16 @@ html,body{
     background: #e91e63;
     padding: 10px;
 }
-.firstSec .firstSecHeading{
-    font-size: 40px ;
+
+.firstSec .firstSecHeading {
+    font-size: 40px;
 }
-.firstSec .firstSecPara{
+
+.firstSec .firstSecPara {
     font-size: 20px;
 }
-.firstSec .firstSecdiv .firstSecbtn{
+
+.firstSec .firstSecdiv .firstSecbtn {
     padding: 10px 20px;
     border: none;
     outline: none;
@@ -57,27 +65,30 @@ html,body{
     font-weight: bold;
     background: #fff;
     color: #e91e63;
-    
+
 }
-.main .secondSec .secondSecfirst{
+
+.main .secondSec .secondSecfirst {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5px;
 }
-.main .secondSec .secondSecfirst{
+
+.main .secondSec .secondSecfirst {
     text-align: center;
-    margin-top: 20px;    
+    margin-top: 20px;
 }
-.main .secondSec .secondSecfirst .secPara{
+
+.main .secondSec .secondSecfirst .secPara {
     text-align: center;
     width: 100px;
     height: 2px;
     background: #e91e63
 }
 
-.main .secondSec .secSecdiv{
+.main .secondSec .secSecdiv {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,31 +96,37 @@ html,body{
     padding: 30px;
 }
 
-.main .secondSec .secSecdiv .card{
+.main .secondSec .secSecdiv .card {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
     justify-content: center;
     gap: 10px;
-    
+
 }
-.main .secondSec .secSecdiv .card .cartHeading{
+
+.main .secondSec .secSecdiv .card .cartHeading {
     text-align: center;
 }
-.main .secondSec .secSecdiv .card .cartPriceSec{
+
+.main .secondSec .secSecdiv .card .cartPriceSec {
     text-align: center;
 }
-.main .secondSec .secSecdiv .card .cartPriceSec strong{
+
+.main .secondSec .secSecdiv .card .cartPriceSec strong {
     color: #e91e63;
 }
-.main .secondSec .secSecdiv .card .cartPriceSec span{
+
+.main .secondSec .secSecdiv .card .cartPriceSec span {
     text-decoration: line-through;
     margin-left: 5px;
 }
+
 .main .secondSec .secSecdiv .card .cart-btn {
     text-align: center;
 }
-.main .secondSec .secSecdiv .card .cart-btn button{
+
+.main .secondSec .secSecdiv .card .cart-btn button {
     border: none;
     outline: none;
     padding: 8px 16px;
@@ -118,7 +135,8 @@ html,body{
     background: #e91e63;
     cursor: pointer;
 }
-.main .thirdSec{
+
+.main .thirdSec {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,11 +144,12 @@ html,body{
     gap: 20px;
     padding: 30px;
 }
-.main .thirdSec .thirdSecHeading{
-    color:#e91e63
+
+.main .thirdSec .thirdSecHeading {
+    color: #e91e63
 }
 
-.main .thirdSec .third-bt button{
+.main .thirdSec .third-bt button {
     border: none;
     outline: none;
     padding: 8px 16px;
@@ -141,7 +160,8 @@ html,body{
     font-weight: bold;
 
 }
-.footer{
+
+.footer {
     border: 2px solid orange;
     width: 50%;
     display: flex;
@@ -151,10 +171,12 @@ html,body{
     padding: 40px;
     gap: 20px;
 }
-.footer .footerHeading{
+
+.footer .footerHeading {
     font-size: 18px;
 }
-.footer .footerPara{
+
+.footer .footerPara {
     font-size: 14px;
     text-align: center;
     line-height: 18px;
