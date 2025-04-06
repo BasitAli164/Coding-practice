@@ -126,7 +126,21 @@ html,body{
     gap: 20px;
 }
 .main .thirdSec .thirdSecHeading{
-    
+    color:#e91e63
+}
+.main .thirdSec .third-bt {
+    margin-bottom: 50px;
+}
+.main .thirdSec .third-bt button{
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 50px;
+    color: #fff;
+    background: #e91e63;
+    cursor: pointer;
+    font-weight: bold;
+
 }
 .footer{
     border: 2px solid orange;
