@@ -113,12 +113,19 @@ html,body{
     border: none;
     outline: none;
     padding: 8px 16px;
-    border-radius: 10px;
+    border-radius: 5px;
     color: #fff;
     background: #e91e63;
     cursor: pointer;
 }
 .main .thirdSec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.main .thirdSec .thirdSecHeading{
     
 }
 .footer{
