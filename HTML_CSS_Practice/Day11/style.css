@@ -12,19 +12,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid red;
 
 }
 
 .header {
     width: 50%;
     padding: 40px;
-    border: 2px solid darkred;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 15px;
-    /* margin-top: 76px; */
     background: #fff;
     color: #000;
 }
@@ -34,7 +31,6 @@ body {
 }
 
 .main {
-    border: 2px solid aqua;
     width: 50%;
 }
 
@@ -162,7 +158,6 @@ body {
 }
 
 .footer {
-    border: 2px solid orange;
     width: 50%;
     display: flex;
     flex-direction: column;
