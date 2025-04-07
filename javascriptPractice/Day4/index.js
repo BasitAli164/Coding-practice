@@ -28,4 +28,4 @@ function long(sent){
 // console.log(str1)
 
 
-console.log(gb)
+// console.log(gb)
