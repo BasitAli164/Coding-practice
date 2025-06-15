@@ -1,1 +1,6 @@
-{"personName":{"0":"basit","1":"ali","2":"muhammad"},"age":{"0":23,"1":44,"2":19},"gender":{"0":"male","1":"male","2":"male"},"weight":{"0":70.3,"1":70,"2":"2"}}
+{
+  "personName": { "0": "basit", "1": "ali", "2": "muhammad" },
+  "age": { "0": 23, "1": 44, "2": 19 },
+  "gender": { "0": "male", "1": "male", "2": "male" },
+  "weight": { "0": 70.3, "1": 70, "2": "2" }
+}
