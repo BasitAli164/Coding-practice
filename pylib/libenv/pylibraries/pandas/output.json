@@ -1,4 +1,5 @@
-personName,age,gender
-basit,23,male
-ali,44,male
-muhammad,19,male
+{
+  "personName": { "0": "basit", "1": "ali", "2": "muhammad" },
+  "age": { "0": 23, "1": 44, "2": 19 },
+  "gender": { "0": "male", "1": "male", "2": "male" }
+}
