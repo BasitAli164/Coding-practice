@@ -4,6 +4,7 @@ class House:
         self.color=color
     def display(self):
         print(f"Name:{self.name}\nColor:{self.color}")
+        
 
 
 myHouse=House("Ali's House","white")
