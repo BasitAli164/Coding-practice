@@ -49,3 +49,12 @@ print("Serach Element are:",searchEle)
 
 # reduce()
 
+from functools import reduce # required to import
+
+def multiply(x,y):
+    return x*y
+
+
+
+
+
