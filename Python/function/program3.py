@@ -19,23 +19,6 @@ def double(x):
 doubled=list(map(double,number))
 print("Double: ",doubled)
 
-
-
-# persons={
-#     {"name":"Basit","gender":"Male","age":23,"std":True,},
-#     {"name":"Muhammad","gender":"Male","age":19,"std":False,},
-#     {"name":"Sakina","gender":"Female","age":14,"std":True,},
-#     {"name":"Khatija","gender":"Female","age":12,"std":True,},
-#     {"name":"Kubra","gender":"Female","age":10,"std":True,},
-# }
-# def showList(per):
-#     for key,value in per:
-#         return "key:{key}  ------- value:{value}"
-# detail=list(map(showList,persons))
-
-# print("Detail is: ",detail)
-
-
 # Filter()
 def isEven(num):
     return num%2==0
@@ -72,4 +55,20 @@ print("Combine Tuple Format: ",combine)  #return the output in the form of tuple
 combine=set(zip(list2,list2))
 print("Combine Set Format: ",combine)  #return the output in the form of set because we wrap with set
 
+
+
+# enumerate()
+
+
+persons=[
+    {"name":"Basit","gender":"Male","age":23,"std":True,},
+    {"name":"Muhammad","gender":"Male","age":19,"std":False,},
+    {"name":"Sakina","gender":"Female","age":14,"std":True,},
+    {"name":"Khatija","gender":"Female","age":12,"std":True,},
+    {"name":"Kubra","gender":"Female","age":10,"std":True,},
+]
+def showList(per):
+    for key,value in enumerate(per,start=0):
+        print( f"key:{key}  ------- value:{value}")
+detail=list(map(showList,persons))
 
