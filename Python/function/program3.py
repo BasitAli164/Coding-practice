@@ -59,13 +59,17 @@ product=reduce(multiply,list1)
 print("Product is: ",product)
 
 
-
+#zip() ---  zip is like a speard concept in js which is combine many array values in one array but zip return a list which contain value in the form of tuple like [(basit,23),(muhammad,19),...-]
 
 list2=["basit","muhammad","sakina","khatija","kubra"]
 list3=[23,19,15,12,10]
-
-combine=list(zip(list2,list3)) # zip is like a speard concept in js which is combine many array values in one array but zip return a list which contain value in the form of tuple like [(basit,23),(muhammad,19),...-]
-
-print("Combine List: ",combine) 
+combine=list(zip(list2,list3)) 
+print("Combine List Format: ",combine) #return the output in the form of list because we wrap with list
+combine=dict(zip(list2,list3))
+print("Combine Dictionary format: ",combine)  #return the output in the form of dictionary because we wrap with dict
+combine=tuple(zip(list2,list2))
+print("Combine Tuple Format: ",combine)  #return the output in the form of tuple because we wrap with tuple
+combine=set(zip(list2,list2))
+print("Combine Set Format: ",combine)  #return the output in the form of set because we wrap with set
 
 
