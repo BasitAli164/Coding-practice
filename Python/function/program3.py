@@ -73,7 +73,7 @@ persons=[
 # detail=list(map(showList,persons))
 
 print("Name are:")
-for key,value in enumerate(persons,start=1):
+for key,value in enumerate(persons,start=1  ):
     # print(f"{key}.{value.items()}")
     # print(f"{key}.{value.values()}")
     print(f"{key}.{value.get("name")}")
