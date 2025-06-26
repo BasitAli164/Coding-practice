@@ -35,3 +35,17 @@ print("Double: ",doubled)
 
 # print("Detail is: ",detail)
 
+
+# Filter()
+def isEven(num):
+    return num%2==0
+
+
+searchEle=list(filter(isEven,doubled))
+
+print("Serach Element are:",searchEle)
+
+
+
+# reduce()
+
