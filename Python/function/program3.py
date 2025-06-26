@@ -59,8 +59,13 @@ product=reduce(multiply,list1)
 print("Product is: ",product)
 
 
-    
 
 
+list2=["basit","muhammad","sakina","khatija","kubra"]
+list3=[23,19,15,12,10]
+
+combine=list(zip(list2,list3)) # zip is like a speard concept in js which is combine many array values in one array but zip return a list which contain value in the form of tuple like [(basit,23),(muhammad,19),...-]
+
+print("Combine List: ",combine) 
 
 
