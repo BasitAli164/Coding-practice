@@ -5,6 +5,17 @@ Higher Order Function:
     The following are the higher order function 
     -map()
     -filter()
+    -reduce()
+    -zip()
+    -enumerate()
 '''
 
+# map() function 
+
+number=[3,2,4,5]
+def double(x):
+    return x*x
+
+doubled=list(map(double,number))
+print("Double: ",doubled)
 
