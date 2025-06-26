@@ -67,8 +67,14 @@ persons=[
     {"name":"Khatija","gender":"Female","age":12,"std":True,},
     {"name":"Kubra","gender":"Female","age":10,"std":True,},
 ]
-def showList(per):
-    for key,value in enumerate(per,start=0):
-        print( f"key:{key}  ------- value:{value}")
-detail=list(map(showList,persons))
+# def showList(per):
+#     for key,value in enumerate(per,start=4):
+#         print( f"key:{key}  ------- value:{value}")
+# detail=list(map(showList,persons))
+
+print("Name are:")
+for key,value in enumerate(persons,start=1):
+    # print(f"{key}.{value.items()}")
+    # print(f"{key}.{value.values()}")
+    print(f"{key}.{value.get("name")}")
 
