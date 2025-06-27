@@ -19,3 +19,9 @@ print("Sum of two number is:",add)
 add=sum(4,4)
 print("Sum of two number is:",add)
 
+
+def product(*arg):
+    for item in arg:
+        print(f"{item}")
+        
+product(2,3,4,5,"Basit")
