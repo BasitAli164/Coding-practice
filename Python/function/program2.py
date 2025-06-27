@@ -1,15 +1,16 @@
-# # User Define function 
-# def showMessage():
-#     ''' simply show the message'''
-#     print("Hi! I am a function ")
+# User Define function 
+def showMessage():
+    ''' simply show the message'''
+    print("Hi! I am a function ")
 
-# result=showMessage()
-# # print("Id of result 1:",id(result))
-# def showMessages(message):
-#     print(message)
-# results=showMessages("Hi! How are you")
-# # print("Id of results 2:",id(results))
+result=showMessage()
+# print("Id of result 1:",id(result))
+def showMessages(message):
+    print(message)
+results=showMessages("Hi! How are you")
+# print("Id of results 2:",id(results))
 
+print(result is results)
 
 
 def sum(a,b=9):
@@ -37,7 +38,7 @@ print(name("basit","ali","khan","anchan","king"))
 count=0
 
 def increment():
-    global count # Explicitly modifying global varibale if we don't use this line then we face error and don't update or increase the value of count
+    global count # Explicitly modifying global varibale if we don't use this line then we face error and don't update or increase the value of count ,don't use globle variable mostly
     count+=1
 increment()
 print("Counter is",count)
