@@ -31,3 +31,13 @@ def name(*agr):
     return "First Name "+agr[0] + "\n"+"Middle Name: "+agr[1] +"\n"+ "Last Name: "+agr[2]+"\n"+" Then: " +agr[3]
 
 print(name("basit","ali","khan","anchan","king"))
+
+
+
+count=0
+
+def increment():
+    global count # Explicitly modifying global varibale if we don't use this line then we face error and don't update or increase the value of count
+    count+=1
+increment()
+print("Counter is",count)
