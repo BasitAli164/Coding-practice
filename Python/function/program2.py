@@ -25,3 +25,9 @@ def product(*arg):
         print(f"{item}")
         
 product(2,3,4,5,"Basit")
+
+
+def name(*agr):
+    return "First Name "+agr[0] + "\n"+"Middle Name: "+agr[1] +"\n"+ "Last Name: "+agr[2]+"\n"+" Then: " +agr[3]
+
+print(name("basit","ali","khan","anchan","king"))
