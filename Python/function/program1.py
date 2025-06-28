@@ -31,4 +31,13 @@ print("Min price is:",min(price))
 for item in range(2):
     print(item)
 
+# id
+print("Id of userName:",id(userName))
+
+# eval
+exp="3-4*9+3"
+result=eval(exp)
+print("Result is:",result)
+
+
 
