@@ -1,17 +1,20 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-html, body{
+
+html,
+body {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     padding: 30px;
 }
-.container{
+
+.container {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -20,22 +23,26 @@ html, body{
     align-items: center;
     gap: 40px;
     align-items: center;
-    
+
 }
-.headingPart{
+
+.headingPart {
     text-align: center;
     width: 60%;
 
 }
-.headingPart h1{
+
+.headingPart h1 {
     font-size: 40px;
     margin: 10px 0px;
 }
-.headingPart p{
+
+.headingPart p {
     font-size: 18px;
     opacity: 0.6;
 }
-.carts{
+
+.carts {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -43,10 +50,12 @@ html, body{
     gap: 10px;
     padding: 10px;
 }
-.carts .special{
+
+.carts .special {
     border-color: #0957cd;
 }
-.cart{
+
+.cart {
     width: 350px;
     height: 450px;
     display: flex;
@@ -59,67 +68,77 @@ html, body{
     gap: 40px;
     border-radius: 5px;
 }
-.cart .cartHeading{
+
+.cart .cartHeading {
     text-align: center;
 }
-.cart .cartHeading h3{
+
+.cart .cartHeading h3 {
     font-size: 28px;
     font-weight: bolder;
 }
-.cart .cartHeading strong{
+
+.cart .cartHeading strong {
     font-size: 30px;
 }
-.cart .cartHeading strong sub{
+
+.cart .cartHeading strong sub {
     display: inline-block;
     font-size: 20px;
-    margin:15px 0px ;
+    margin: 15px 0px;
     font-weight: normal;
     opacity: 0.6;
 }
-.cart .cartlist{
+
+.cart .cartlist {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-.carts .cart .popular{
+
+.carts .cart .popular {
     background: #0957cd;
     padding: 8px;
     width: 113%;
     margin-top: 10px;
 
 }
-.carts .cart .most{
+
+.carts .cart .most {
     color: #fff;
     text-align: center;
-   
+
 }
 
-.btn{
+.btn {
     margin: 20px 0px;
 }
-.btn button{
+
+.btn button {
     all: unset;
     padding: 15px 50px;
     text-align: center;
     font-size: 18px;
     font-weight: bold;
-    border: 1px solid #e9e9e9 ;
+    border: 1px solid #e9e9e9;
     border-radius: 5px;
     color: #0d6efd;
     transition: all 0.5s ease-in-out;
 }
-.btn button:hover{
+
+.btn button:hover {
     color: #000;
     background: #e9e9e9;
     cursor: pointer;
 }
 
-.btn #button{
+.btn #button {
     background-color: #0d6efd;
     color: #fff;
 
 }
-.btn #button:hover{
+
+.btn #button:hover {
     background-color: #0957cd;
     color: #fff;
 
