@@ -23,4 +23,12 @@ print("Sorted Price is:",sorted(price))
 print("Length of userName:",len(userName))
 print("Length of Price:",len(price))
 
+# max and min
+print("Max price is:",max(price))
+print("Min price is:",min(price))
+
+#range
+for item in range(2):
+    print(item)
+
 
