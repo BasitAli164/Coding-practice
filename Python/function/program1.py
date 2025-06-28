@@ -1,6 +1,9 @@
 # Function 
+'''
+There are two types of function exits in python
+1.Built-in function
+2.User Define funciton 
+'''
 
-def display():
-    print("Hi! I am a function")
+#Built-function
 
-display()
