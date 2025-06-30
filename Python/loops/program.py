@@ -8,4 +8,11 @@
 '''
 
 for item in "Basit":
-    print(item)
+    print(item," value:")
+
+ # enumerate return index and value both without using enumerate we write more code
+for i,j in enumerate("King"):
+    print(f"Index- {i}:{j}")
+
+
+#
