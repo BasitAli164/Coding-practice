@@ -36,4 +36,9 @@ for i, j in car.items():
 for item in range(10):
     if item==5:
         print("skipping...")
-        
+        continue
+    elif item==8:
+        print("break..")
+        break
+    else:
+        print("item is:",item)
