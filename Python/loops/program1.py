@@ -15,3 +15,13 @@ dict={
 
 for key in dict:
     print(f"{key} : {dict[key]}")
+
+
+car={
+    "name":"Tx",
+    "model":"Royal",
+    "modelNumber":234
+}
+
+for item in car:
+    print(f"{car[item]}")
