@@ -1,7 +1,9 @@
 list1=[2,3,4,56,["basit",3,True,[(1,2,3,4,5),{"Name":"basit","age":23}]]]
+for item in list1:
+    print(item)
+list1=[2,3,4,56,["basit",3,True,[(1,2,3,4,5),{"Name":"basit","age":273}]]]
 for item in list1[4]:
     print(item)
-
 
 dict={
     "name":"Basit Ali",
