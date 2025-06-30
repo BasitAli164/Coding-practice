@@ -12,4 +12,4 @@ dict={
 
 
 for key in dict:
-    print(f"{key} and {dict[key]}")
+    print(f"{key} : {dict[key]}")
