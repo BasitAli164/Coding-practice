@@ -24,6 +24,6 @@ except FileNotFoundError:
 
 try:
     num=int(input("Enter a number:"))
-    print(10/num)
+    print(10//num)
 except ZeroDivisionError:
     print("Invalide input")
