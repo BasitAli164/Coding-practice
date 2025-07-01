@@ -20,22 +20,6 @@ try:
         print(content)
 except FileNotFoundError:
     print("Error: The file does not exits!")
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 try:
