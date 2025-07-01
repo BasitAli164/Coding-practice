@@ -69,4 +69,3 @@ except FileNotFoundError:
     print("file not found")
 finally:
     print("File closed")
-    file.close()
