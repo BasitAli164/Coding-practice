@@ -27,3 +27,10 @@ try:
     print(10%num)
 except ZeroDivisionError:
     print("Invalide input")
+
+
+
+'''
+We can use multiple except block if our code is lengthy and complex with single try
+'''
+
