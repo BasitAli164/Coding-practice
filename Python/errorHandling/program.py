@@ -54,5 +54,6 @@ try:
     num3=int(input("Enter a number"))
     num4=int(input("enter again a nmber"))
     output=num3/num4
+    print(output)
 except Exception as e:
-    print("")
+    print("error:",e)
