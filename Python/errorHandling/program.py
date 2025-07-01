@@ -34,3 +34,15 @@ except ZeroDivisionError:
 We can use multiple except block if our code is lengthy and complex with single try
 '''
 
+# program
+
+try:
+    num1=int(input("Enter first number:"))
+    num2=int(input("Enter second number"))
+    result=num1/num2
+    print("Result is:",result)
+except ZeroDivisionError:
+    print("Error: Can't divided by 0")
+except ValueError:
+    print("Error: Invalide Input! Please enter numbers only")
+
