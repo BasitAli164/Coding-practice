@@ -46,3 +46,13 @@ except ZeroDivisionError:
 except ValueError:
     print("Error: Invalide Input! Please enter numbers only")
 
+"""
+Now handle generically...
+"""
+
+try:
+    num3=int(input("Enter a number"))
+    num4=int(input("enter again a nmber"))
+    output=num3/num4
+except Exception as e:
+    print("")
