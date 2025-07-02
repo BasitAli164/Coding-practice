@@ -1,12 +1,13 @@
 '''
 How to handle errors in python:
- we use try and except ---> this is same with try catch block in javascript
-  syntax: 
+1. we use try and except ---> this is same with try catch block in javascript
+2.syntax: 
 
   try:
     logic or codes
   except
 
+3. Type of errors:
 
 '''
 
