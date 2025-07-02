@@ -8,6 +8,8 @@ How to handle errors in python:
   except
 
 3. Type of errors:
+    --> Syntax Error: this error come when we don't follow the rules and regulation of the language
+    -->
 
 '''
 
