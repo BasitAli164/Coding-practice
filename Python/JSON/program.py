@@ -12,6 +12,7 @@ import json
 # create/make json like data which also called dictionary in python
 data={"name":"basit","age":23,"city":"skardu"}
 
+
 # Writing JSON data to a file
 with open('data.json',"w") as file:
     json.dump(data,file)
