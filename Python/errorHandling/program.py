@@ -8,8 +8,9 @@ How to handle errors in python:
   except
 
 3. Type of errors:
-    --> Syntax Error: this error come when we don't follow the rules and regulation of the language
-    -->
+    --> Syntax Error: this error come when we don't follow the rules and regulation of the language , it show before the execution means at compile time
+
+    -->Run time error: this error comes when we write wrong logic like 10/0
 
 '''
 
