@@ -3,3 +3,35 @@
     margin: 0;
     box-sizing: border-box;
 }
+html, body{
+    width: 100%;
+    height: 100vh;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+}
+.header .upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e9e9e9;
+    padding: 5px 30px;
+}
+.header .upper .contactDetail{
+    display: flex;
+    gap: 15px;
+}
+.header .upper .contactDetail p{
+    font-size: 14px;
+    opacity: 0.5;
+
+}
+.header .upper .contactDetail p:hover{
+    color:blue;
+    opacity: 1;
+    cursor: pointer;
+}
+.header .upper .socail img{
+    width: 25px;
+}
