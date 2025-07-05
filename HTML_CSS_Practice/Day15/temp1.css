@@ -30,8 +30,7 @@ html body{
     font-size: 15px; 
     border-radius: 5px;   
 }
-button:hover{
-    border-bottom: 2px;
+.header .navbar ul .btn:hover{
+    border-bottom: 2px #007bff solid ;
     cursor: pointer;
-
 }
