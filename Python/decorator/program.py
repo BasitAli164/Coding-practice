@@ -7,6 +7,7 @@ def call_func(func):
     return func()
 
 
-fun=call_func(greet)
+fun=call_func(greet) # python is also a first class function or first class citzen
 
-print(fun)
+print(fun) 
+
