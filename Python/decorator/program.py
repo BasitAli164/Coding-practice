@@ -6,3 +6,7 @@ def greet():
 def call_func(func):
     return func()
 
+
+fun=call_func(greet)
+
+print(fun)
