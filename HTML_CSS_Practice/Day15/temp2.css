@@ -82,12 +82,5 @@ footer p{
         display: none;
         
     }
-    .header ul{
-        flex-wrap: wrap;
-    }
-    .main{
-        margin-top: 100px;
-    }
-
     
 }
