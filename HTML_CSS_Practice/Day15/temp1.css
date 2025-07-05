@@ -21,7 +21,7 @@ html body{
     gap: 5px;
 }
 .header .navbar h1{
-    font-size: 24px;
+    font-size: 22px;
     cursor: pointer;
 }
 .header .navbar ul .btn{
