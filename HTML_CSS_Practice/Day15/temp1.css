@@ -46,3 +46,11 @@ html body{
     border-bottom: 2px #007bff solid ;
     cursor: pointer;
 }
+.main{
+    text-align: center;
+    height: 100vh;
+}
+.main p{
+    margin-top: 100px;
+    color: #a6a6a5;
+}
