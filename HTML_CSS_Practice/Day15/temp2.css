@@ -8,15 +8,18 @@ html,body{
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(45deg,#ff005c,#4200ff);
+    position: relative;
 }
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 100px;
-    border-bottom: 1px solid rgb(255,255,253);
-    box-shadow: 0px 4px 10px rgba(255,255,244,0.9);
-    position: sticky;
+    border-bottom: 0.2px solid rgba(255,255,253,0.9);
+    box-shadow: 0px 4px 100px rgb(209, 181, 253);
+    position: fixed;
+    width: 100%;
+    background: transparent;
 }
 .header h1{
     color: #fff;
@@ -30,23 +33,61 @@ html,body{
     all:  unset;
     padding: 10px 10px;
     border-radius: 5px;
-    box-shadow: 0px 0px 1px;
+    box-shadow: 0px 0px 5px;
     font-weight: bold;
     color: #fff;
-    background: #86405a;
-    opacity: 1;
+    cursor: pointer;
+    background: linear-gradient(45deg,#ff005c,#4200ff);;
 
 }
 .header ul .btns{
     all: unset;
     font-weight: bold;
     color: #fff;
+    transition: all 0.2s ease-in-out;
+    padding: 10px 10px;
+    
 }
 
 .header ul .btns:hover{
-    padding: 10px 10px;
     border-radius: 5px;
-    box-shadow: 0px 0px 2px;
+    box-shadow: 0px 0px 5px;
     cursor: pointer;
+    background: linear-gradient(45deg,#ff005c,#4200ff);;
 
+}
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+   
+}
+footer{
+    padding: 40px;
+    text-align: center;
+
+}
+footer p{
+    font-size: 14px;
+    opacity: 0.6;
+    color: #fff;
+}
+@media (width<800px) {
+    .header h1{
+        display: none;
+        
+    }
+    .header ul{
+        flex-wrap: wrap;
+    }
+    .main{
+        margin-top: 100px;
+    }
+
+    
 }
