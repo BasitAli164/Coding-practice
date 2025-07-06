@@ -21,8 +21,8 @@ def log_Func(fun):
 
 
 @ log_Func
-def say_Hello():
+def say():
     print("hello!")
 
 
-say_Hello()
+say()
