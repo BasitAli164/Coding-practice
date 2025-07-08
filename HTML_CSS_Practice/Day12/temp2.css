@@ -95,3 +95,9 @@ body main .thirdsec .btn-1{
     border: 1px solid #047854;
     color: #54f5c2;
 }
+footer{
+    font-size: 14px;
+    text-align: center;
+    color: #e9e9e9;
+    margin: 30px 0px;
+}
