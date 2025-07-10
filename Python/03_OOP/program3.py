@@ -9,3 +9,4 @@ class Student:
 
 std1=Student("Basit","S23BSCS012")
 print(std1.display())
+
