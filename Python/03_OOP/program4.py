@@ -14,7 +14,20 @@ class Home:
 
 h1=Home("Apo ali House",12)
 
-print(h1.rooms)
-h1.set_value("Kushmara")
-h1.get_fun()
-# print(h1.address)
+# print(h1.rooms)
+# h1.set_value("Kushmara")
+# h1.get_fun()
+# # print(h1.address)
+
+
+
+
+class Vehical:
+    def __init__(self, vname,vmodel,venginNu,vBookNo):
+        self.name=vname
+        self.model=vmodel
+        self.__enginNumber=venginNu
+        self.__vbookN=vBookNo
+    def getter(self):
+        return f"Vechical Name:{self.name}\nVechical Model:{self.model}\nVechical"
+        
