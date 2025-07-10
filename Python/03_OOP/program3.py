@@ -43,4 +43,5 @@ class Students(School):
         return f"Deatils of Student and his School:\nStudent Name:{self.stdName}\nStudent Reg:{self.stdReg}\nSchool Name:{self.sname}\nSchool Phone:{self.sph}"
 
 
-std=Students("Kushmara School","08015-13233",)
+std=Students("Kushmara School","08015-13233","Basit Ali","12")
+print(std.show())
