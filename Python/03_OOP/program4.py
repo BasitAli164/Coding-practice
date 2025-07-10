@@ -38,4 +38,6 @@ print(v1.getter())
 v1.setter("red")
 v1.name="suzikii"
 print(v1.getter())
+v1.__enginNumber=32
+print(v1.getter())
         
