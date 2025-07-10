@@ -3,12 +3,12 @@
 
 class Home:
     def __init__(self,homeName,numberOfRooms):
-        self.__homeName=homeName
+        self.__homeName=homeName # homeName is become a private variable
         self.rooms=numberOfRooms
     def get_fun(self):
         print("Name:",self.__homeName,"\n","Rooms:",self.rooms,"\n","Address:",self.address)
     def set_value(self,hadd):
-        self.__address=hadd
+        self.__address=hadd # address is private variable
 
     
 
