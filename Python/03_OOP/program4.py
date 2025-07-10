@@ -29,5 +29,13 @@ class Vehical:
         self.__enginNumber=venginNu
         self.__vbookN=vBookNo
     def getter(self):
-        return f"Vechical Name:{self.name}\nVechical Model:{self.model}\nVechical"
+        return f"Vechical Detail:\nVechical Name:{self.name}\nVechical Model:{self.model}\nVechical Engine Number:{self.__enginNumber}\nVechical Book Number:{self.__vbookN}"
+    def setter(self,color):
+        self.VechicalColor=color
+
+v1=Vehical("Honda",2024,"sdf324435sdf","234")
+print(v1.getter())
+v1.setter("red")
+v1.name="suzikii"
+print(v1.getter())
         
