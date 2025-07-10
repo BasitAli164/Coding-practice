@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        <h1>Hello world!</h1>
+    
+    </div>
+    <script>
+        const app=document.getElementById("root");
+        const header=document.createElement("h1");
+        const text="Basit ali become a king on day";
+        const node=document.createTextNode(text);
+        header.appendChild(node);
+        app.appendChild(header)
+
+
+
+        const divId=document.getElementById("root");
+        const appendNew=document.createElement("p");
+        const textP="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quae ipsam quas quisquam adipisci, consequatur numquam maxime consequuntur error sapiente ratione tenetur molestias iusto voluptates iure. Itaque alias incidunt ipsa!";
+        const node1=document.createTextNode(textP);
+        appendNew.appendChild(node1);
+        divId.appendChild(appendNew)
+    </script>
+</body>
+</html>

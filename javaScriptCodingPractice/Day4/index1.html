@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operater and Mathematics</title>
+</head>
+
+<body>
+    <script>
+        //unary operater
+        let x = 10;
+        document.write("The value of x befor applying the unary operator: ", x)
+
+        x = -x;
+        document.write("<br/>The value of x after applying the unary operator: ", x)
+    </script>
+
+    <script>
+        //binary operator
+        let a = 12, c = 13, result;
+        result = a + c;
+        document.write("<br/>The sum of a and c is: ", result)
+        document.write("<br/>The difference of a and c is: ", c - a);
+        document.write("<br/>The product of a and c is: ", a * c);
+        document.write("<br/>The quotient of a and c is: ", a / c);
+        document.write("<br/>The remainder of a divided by c is: ", a % c);
+        document.write("<br/>The power of a raised to the power of c is: ", a ** c);
+        document.write("<br/>The value of a raised to the power of c is: ", Math.pow(a, c));
+
+
+
+
+    </script>
+    <script>
+        // now the operator + with string concatenation
+        document.write("<br/>The concatenation of 'Hello' and 'World' is: ", "Hello" + "World");
+        document.write("<br/>the concatenation of 1 + '1' is 11 and their types is :", z = 1 + '1    ', typeof z)
+        document.write("<br/> the '1' + 1: ", d = '1' + 1, typeof d)
+        document.write("<br/> the 2*2 is: ", '2' * "2")
+        document.write("<br/> the 2/2 is: ", '2' / "2")
+        document.write("<br/> the 2%2 is: ", '2' % "2")
+        document.write("<br/> the 2**2 is: ", '2' ** "2")
+        document.write("<br/> the 2^2 is: ", '2' ^ "2")
+        document.write("<br/> the '2'+2+'1' is: ", '2' + 2 + '1')
+        document.write("<br/> the 2+2+'5' is: ", 2 + 2 + '5')
+        document.write("<br/> the '2'+5+8 ", '2' + 5 + 8)
+    </script>
+    <script>
+        //conversion of number with unary operator
+        let num = 10;
+        document.write(" <br/>the number is :", num)
+        document.write(" <br/>the number is :", +num) // no effect apply but i don't know
+        document.write("<br> the + before true or false then the result we get : true is:  ", +true, "   false is:   ", +false)
+
+
+        let apples = "2";
+        let oranges = "3";
+
+        document.write("<br> the apples + oranges is:   ",apples + oranges); // "23", the binary plus concatenates strings but we required the answer is 5
+
+        // to resolve this problem we put the + before the apple and oranges
+        document.write("<br> the apples + oranges in mathematics is:    ",+apples+ +oranges)
+
+    </script>
+</body>
+
+</html>

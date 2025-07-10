@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 1000px;
+    height: 540px;
+    background: red;
+}
+.header{
+    width: 1000px;
+    height: 100px;
+    text-align: center;
+    background-color: purple;
+    color: white;
+    text-decoration: underline;
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+    word-spacing: 25px;
+    letter-spacing: 2px;
+}
+.navbar{
+    width: 1000px;
+    height: 40px;
+    background-color: yellowgreen;
+}
+.navlist{
+    width: 200px;
+    height: 40px;
+    float: left;
+    background: #45bd;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.body{
+    width: 1000px;
+    height: 200px;
+    background-color: darkgoldenrod;
+}
+.list{
+    width: 250px;
+    height: 200px;
+    background-color: antiquewhite;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.list>div{
+    height: 40px;
+}
+.image{
+    width: 750px;
+    height: 200px;
+    background-color: burlywood;
+    font-size: 3em;
+    float: left;
+    text-align: center;
+}
+.abovefooter{
+    width: 1000px;
+    height: 50px;
+    background: #fdd99a;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+
+}
+.client{
+    width: 1000px;
+    height: 150px;
+    background-color: blueviolet;
+}
+.client1{
+    width: 1000px;
+    height: 50px;
+    background-color: beige;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+.clientimage{
+    width: 1000px;
+    height: 100px;
+    background-color:lightcoral;
+}
+.image1{
+    width: 333px;
+    height: 100px;
+    background-color: #fdd99a;
+    float: left;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 5px solid red;
+
+}
+.footer{
+    width: 1000px;
+    height: 50px;
+    background-color: lightpink;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}

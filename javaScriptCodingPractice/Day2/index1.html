@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert , Prompt and confirm function in JavaScript</title>
+</head>
+<body>
+    
+    <script>
+        // // alert function 
+        alert("Hello World!");
+        // prompt function 
+        let age=prompt("How many year you old: ",100);
+        alert(`You are ${age} year old person!`)
+        
+        
+    </script>
+    <script>
+        // prompt mini project
+
+        let name=prompt("What you name");
+        let attendence=prompt(`Mr. ${name} is persent in the class`);
+        if(attendence==1){
+            alert(`Yes, Mr. ${name} is present in class and his/her status is: ${attendence}`)
+        }
+        else if(attendence==0){
+            alert(`No, Mr. ${name } is not present in class therefore his/her status is: ${attendence}`)
+        }
+        else{
+            alert("Your prompt is wrong !")
+        }
+    </script>
+    <script>
+        // confirm function
+        let isBoss=confirm("Are you a Boss ?");
+        
+    </script>
+</body>
+</html>

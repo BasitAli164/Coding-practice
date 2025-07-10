@@ -1,0 +1,27 @@
+h1{
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 10px 2px 1px red;
+    /* text-shadow: x-offset y-offset blur color */
+}
+h2{
+    font-size: 35px ;
+    text-align: left;
+    text-shadow: 3px 6px 0px rgb(179 179 172);
+}
+.main{
+    width: 300px;
+    height: 300px;
+    margin: 10%;
+    border: 3px dotted gray;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.main:hover{
+    transform: scale(0.95);
+    transition: all 0.6s ease;
+    box-shadow: 0px 0px 10px 5px #df9f9f inset;
+
+   
+}

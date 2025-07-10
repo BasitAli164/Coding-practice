@@ -1,0 +1,1 @@
+//! interface in typeScript

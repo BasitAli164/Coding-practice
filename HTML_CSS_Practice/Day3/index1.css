@@ -1,0 +1,10 @@
+.main{
+    width: 1000px;
+    height: 800px;
+    border: 3px solid red;
+    background-image: url(./iamge.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+}

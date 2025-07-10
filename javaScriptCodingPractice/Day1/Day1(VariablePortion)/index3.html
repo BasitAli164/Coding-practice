@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div">
+        <p class="p1">hello world</p>
+        <p class="p2"></p>
+    </div>
+<script>
+    let newtag=document.createElement("ul")
+    let node=document.createTextNode("Some different Ages...");
+    newtag.appendChild(node);
+    newtag.setAttribute("class","ul")
+    newtag.setAttribute("type","circle")
+
+    let li=document.createElement("li")
+    li.innerHTML=87
+    li.style.fontWeight='800'
+    li.style.fontSize="40px"
+    newtag.appendChild(li)
+
+    let li2=document.createElement("li")
+    li2.innerHTML=12
+    newtag.appendChild(li2)
+
+    let div=document.querySelector("#div");
+    let p=document.querySelector(".p2")
+    div.insertBefore(newtag,p)
+    
+    let p2=document.querySelector(".p2")
+    p2.innerHTML="Basit ali "
+
+    let achor=document.createElement("a");
+    let textA=document.createTextNode("Click me")
+    achor.setAttribute("href","https://www.google.com")
+    achor.setAttribute("target","_blank");
+    achor.appendChild(textA)
+
+
+    
+    div.replaceChild(achor,newtag)
+    div.removeChild(achor)
+</script>   
+</body>
+</html>
