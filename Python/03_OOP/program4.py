@@ -11,3 +11,4 @@ class Home:
 h1=Home("Apo ali House",12)
 
 print(h1.rooms)
+h1.show()
