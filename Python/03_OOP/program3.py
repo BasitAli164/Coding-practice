@@ -1,3 +1,4 @@
+#Inheritance
 class Student:
     def __init__(self, name,reg):
         self.name=name
