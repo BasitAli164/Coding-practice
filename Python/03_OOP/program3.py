@@ -24,4 +24,23 @@ class Son(Father):
         return f"Father Name:{self.fname} \nFather Address:{self.faddr} \nSon Name:{self.sname}"
 
 s1=Son("Ali","Kushmarah","Basit Ali")
-print(s1.display())
+# print(s1.display())
+
+
+
+
+class School:
+    def __init__(self,name,ph):
+        self.sname=name
+        self.sph=ph
+
+class Students(School):
+    def __init__(self,name,ph,stdName,stdReg):
+        super().__init__(name,ph)
+        self.stdName=stdName
+        self.stdReg=stdReg
+    def show(self):
+        return f"Deatils of Student and his School:\nStudent Name:{self.stdName}\nStudent Reg:{self.stdReg}\nSchool Name:{self.sname}\nSchool Phone:{self.sph}"
+
+
+std=Students("Kushmara School","08015-13233",)
