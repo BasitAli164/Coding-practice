@@ -8,7 +8,7 @@ class Home:
     def get_fun(self):
         print("Name:",self.__homeName,"\n","Rooms:",self.rooms,"\n","Address:",self.address)
     def set_value(self,hadd):
-        self.address=hadd
+        self.__address=hadd
 
     
 
@@ -17,4 +17,4 @@ h1=Home("Apo ali House",12)
 print(h1.rooms)
 h1.set_value("Kushmara")
 h1.get_fun()
-print()
+# print(h1.address)
