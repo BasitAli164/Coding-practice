@@ -20,3 +20,8 @@
 const arr=[1,2,3,4]
 arr[100]=500;
 // console.log(arr)
+
+
+//! Question-5
+ const arr1=[..."basit"]
+ console.log(arr1)
