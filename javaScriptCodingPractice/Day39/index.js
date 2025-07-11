@@ -19,4 +19,4 @@
 //! Question-4
 const arr=[1,2,3,4]
 arr[100]=500;
-console.log(arr)
+// console.log(arr)
