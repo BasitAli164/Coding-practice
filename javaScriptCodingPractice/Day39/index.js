@@ -24,4 +24,8 @@ arr[100]=500;
 
 //! Question-5
  const arr1=[..."basit"]
- console.log(arr1)
+//  console.log(arr1)
+
+console.log(parseInt("$10+2"))
+console.log(parseInt("7FM"))
+console.log(parseInt("M7F"))
