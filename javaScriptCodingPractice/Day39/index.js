@@ -7,3 +7,11 @@ let split=str.split("").reverse().join("");
 // console.log(split)
 
 //! Question-3
+    function abc(){
+        console.log(abc)
+    }
+    abc()
+    abc.xyz=400;
+    abc.xyz=200;
+    console.log(abc())
+    abc()
