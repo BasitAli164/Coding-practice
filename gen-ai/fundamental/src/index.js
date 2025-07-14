@@ -19,7 +19,7 @@ const openai = new OpenAI({
 
 
 const main =async()=>{
-    const prompt="Write a paragraph on Gilgit baltistan";    
+    const prompt="Write a code to calculate 2 number c++";    
     const completion=await openai.chat.completions.create({
         model:"gpt-4o-mini",
         store:true,
