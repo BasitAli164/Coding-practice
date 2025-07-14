@@ -22,6 +22,7 @@ const main =async()=>{
     const prompt="Write a paragraph on Gilgit baltistan";    
     const completion=await openai.chat.completions.create({
         model:"gpt-4o-mini",
+        store:true,
         messages:[
             {
                 role:"system",
