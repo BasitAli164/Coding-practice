@@ -7,8 +7,8 @@
 html, body{
     height: auto;
     width: 100%;
-    /* border: 2px solid white; */
-    padding: 20px;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .container{
     display: flex;
@@ -25,7 +25,16 @@ html, body{
     flex-direction: column;
     gap: 40px; 
 }
-
+.first img{
+    border-radius: 50px;
+}
+.second h1{
+    font-size: 50px;
+}
+.second p{
+    margin-top: 20px;
+    font-size: 15px;
+}
 .right{
     height: 300px;
     width: 50%;
