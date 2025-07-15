@@ -37,6 +37,7 @@ html,body{
 .container div p{
     text-align: justify;
     font-size: 20px;
+    margin-top: 10px;
     
 }
 div button{
@@ -45,4 +46,7 @@ div button{
     outline: none;
     font-size: 20px;
     border-radius: 5px;
+    background: #4e535b;
 }
+
+
