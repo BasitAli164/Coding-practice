@@ -7,20 +7,31 @@
 html, body{
     height: auto;
     width: 100%;
+    /* border: 2px solid white; */
+    padding: 20px;
 }
 .container{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
     width: 100%;
-    margin: 50px;
+    background: #e9e9e9;
+    padding: 30px;
 }
 .left{
-    width: 50%;
+    width: 50%;   
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
 }
+
 .right{
-    height: 200px;
+    height: 300px;
     width: 50%;
     background-image: url("../public/hero.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border-radius: 10px;
 }
