@@ -48,12 +48,16 @@ html,body{
     gap: 10px;
     margin-bottom: 20px;
 }
+.container .main .first .upper h4{
+    color: #460fa5;
+}
 
 .container .main .first .upper .headingBtn{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 20px 0px;
+  
   text-align: center;
 }
 .container .main .first .upper .headingBtn button{
@@ -76,4 +80,5 @@ html,body{
 }
 .footer{
     padding: 30px;
+    font-size: 14px;
 }
