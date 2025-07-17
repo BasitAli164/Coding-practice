@@ -30,3 +30,11 @@ html,body{
 .container .header p{
     margin-top: 15px;
 }
+
+.container .main{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 30px;
+    gap: 30px;
+}
