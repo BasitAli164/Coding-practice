@@ -19,8 +19,10 @@ html,body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
     border: 2px solid orange;
+    background: #171010;
+    box-shadow: 5px 5px 50px rgb(12, 0,120);
 }
 .container .header{
     width: 100%;
@@ -35,6 +37,31 @@ html,body{
     display: flex;
     flex-direction: column;
     text-align: start;
-    padding: 30px;
+    padding: 10px 40px;
     gap: 30px;
+}
+
+.container .main .first .upper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.container .main .first .upper .headingBtn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+.container .main .first .upper .headingBtn button{
+    padding: 10px 25px;
+    border-radius: 5px;
+    background: #460fa5;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+
 }
