@@ -39,6 +39,7 @@ html,body{
     text-align: start;
     padding: 10px 40px;
     gap: 30px;
+    
 }
 
 .container .main .first .upper{
@@ -63,5 +64,16 @@ html,body{
     border: none;
     color: #fff;
     cursor: pointer;
-
+}
+.container .main .second{
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.container .main .second p{
+    font-size: 14px;
+}
+.footer{
+    padding: 30px;
 }
