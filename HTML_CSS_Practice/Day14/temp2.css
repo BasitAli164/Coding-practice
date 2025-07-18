@@ -66,10 +66,18 @@ body{
 
     
 }
+@media (width<1000px) {
+    .container .img img{
+        width: 150px;
+         height: 300px;
+    }
+    
+}
 
 @media (width<550px) {
     .container .img img{
         width: 100px;
+        height: 300px;
     }
     .container .main {
         gap: 3px;
@@ -88,4 +96,9 @@ body{
         line-height: 20px;
     }
     
+    .container .main .btn button{
+        padding: 8px 16px;
+        font-size: 16px;
+
+    }
 }
