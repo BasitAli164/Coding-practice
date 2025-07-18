@@ -22,9 +22,8 @@ body{
     
 }
 .container:hover{
-    transition: 2s ease;
-    transform: scale(1.1);
-
+    transition: all 3s  0.5s;
+    transform: scale(1.045);
 }
 
 .container .main{
@@ -54,4 +53,39 @@ body{
     border-radius: 5px;
     cursor: pointer;
 
+}
+@media  (width<800px) {
+    .container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    
+}
+
+@media (width<550px) {
+    .container .img img{
+        width: 100px;
+    }
+    .container .main {
+        gap: 3px;
+        
+    }
+    .container .main h1 {
+        font-size: 20px;
+
+    }
+    .container .main span {
+        font-size: 16px;
+
+    }
+    .container .main p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    
 }
