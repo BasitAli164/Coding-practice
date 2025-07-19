@@ -12,7 +12,8 @@
     r: for read
     w: for write 
     a: for update or append
-    r+: 
+    r: show error if occur
+    r+: read and write both 
 
 '''
 
