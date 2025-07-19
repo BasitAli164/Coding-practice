@@ -17,4 +17,10 @@ file.close()
 
 
 
+read=open("text.txt",'r')
+content=read.read()
+read.close()
+print(content)
 
+import os
+print(os.getcwd())
