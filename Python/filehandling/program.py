@@ -23,7 +23,8 @@ file.close()
 
 
 
-read=open("text.txt",'r')
+read=open("text.txt",'r+')
+read.write("china laa kasal")
 content=read.read()
 read.close()
 print(content)
