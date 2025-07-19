@@ -8,6 +8,11 @@
     file=open("text.txt","w")----> here text.txt is a file and w is a permission of writing 
     file.write("Hello i am basit ") --> after open file and give the permit of writting we write anything through write method 
     file.close() ---> after open a file it is mendatory to close that file using close method
+    The following are the mode:
+    r: for read
+    w: for write 
+    a: for update or append
+    r+: 
 
 '''
 
