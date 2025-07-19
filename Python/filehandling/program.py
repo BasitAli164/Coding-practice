@@ -22,5 +22,9 @@ content=read.read()
 read.close()
 print(content)
 
-import os
-print(os.getcwd())
+file=open("text.txt",'a')
+file.write("I belogn to gb and i am a std")
+file.close()
+
+
+print(content)
