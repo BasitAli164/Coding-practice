@@ -6,7 +6,14 @@ JSON: Javscript Object Notation
     --> Python give a built-in function 
 '''
 
-
+# import the json built-in function 
 import json
 
-data={"name":"basit","age":"12","city":"skardu"}
+# create/make json like data which also called dictionary in python
+data={"name":"basit","age":23,"city":"skardu"}
+
+# Writing JSON data to a file
+with open('data.json',"w") as file:
+    json.dump(data,file)
+
+    
