@@ -11,6 +11,9 @@
 
 '''
 
+file=open("text.txt","w")
+file.write("My name is basit ali")
+file.close()
 
 
 
