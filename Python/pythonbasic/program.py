@@ -24,3 +24,6 @@ myAge=23 # number(int)
 myWeight=70.23 # number(float)
 isReady=True # boolean
 
+
+
+#Operators
