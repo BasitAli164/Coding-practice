@@ -1,7 +1,7 @@
 '''
 1. Write First Program in python
 2. Variable: It is container that hold the value which assign 
-    syntax: varibaleName=Value
+    syntax: varibaleName, assignment operator and Value ----> userName="Basit Ali"
 3. Rules and Regulation to create a varibble ---> only should be  create variable by using underscore(_)and letter
 
 '''
