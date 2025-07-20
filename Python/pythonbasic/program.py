@@ -1,1 +1,1 @@
-print("Hello World")
+print("Hello World") # print is a built-in function which provide python by default
