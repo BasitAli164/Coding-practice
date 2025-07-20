@@ -34,3 +34,10 @@ y=8
 result=x+y
 print("Result: ",result)
 
+
+num1=int(input("Enter a number"))
+num2=(input("Again enter a number"))
+
+result=num2*num1
+
+print("Again Result",result)
