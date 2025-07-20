@@ -27,3 +27,10 @@ isReady=True # boolean
 
 
 #Operators
+
+x=5
+y=8
+
+result=x+y
+print("Result: ",result)
+
