@@ -6,6 +6,7 @@
 '''
 print("Hello World") # print is a built-in function which provide python by default
 
-userName="Apo" # by using pascal naming formate i create a variable
-first_name="Basit" # by using snake naming formate i create a variable 
+userName="Apo" # by using camelCase naming formate i create a variable
+first_name="Basit" # by using snakeCase naming formate i create a variable 
+LastName="Ali" # by using pascal case naming format i create a varibale
 
