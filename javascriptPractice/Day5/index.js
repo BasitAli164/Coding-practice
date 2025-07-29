@@ -12,4 +12,9 @@ const include=number.includes(2)
 // console.log("Include: ",include)
 
 number.splice(1,4,3)
-console.log("Array : ",number)
+// console.log("Array : ",number)
+const sumEven=number.reduce((acc,curVal)=>{
+    return acc+curVal
+},0)
+
+console.log("Sum of Even number in an arrya: ",sumEven)
