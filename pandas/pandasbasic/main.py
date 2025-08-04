@@ -18,4 +18,8 @@ df=pd.read_csv("car_prices.csv",encoding="utf-8")
 # Read data from json:
 
 
-df1=pd.read_json("")
+df1=pd.read_json("medical_ner_entities.json")
+
+# print(df1)
+
+
