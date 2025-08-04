@@ -17,4 +17,4 @@ df.to_csv("customData.csv",index=False) # this is a method to store our custome 
 
 df.to_excel("output.xlsx",index=False)
 
-df.to_json("outputJson.json",orient="records",indent=False)
+df.to_json("outputJson.json",orient="records",lines=True)
