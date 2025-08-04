@@ -16,10 +16,16 @@ df=pd.read_csv("car_prices.csv",encoding="utf-8")
 # print(df)
 
 # Read data from json:
-
-
 df1=pd.read_json("medical_ner_entities.json")
-
 # print(df1)
 
-df2=pd.read_excel("")
+
+
+# Read data from excel:
+df2=pd.read_excel("sis.xlsx")
+# print(df2)
+
+
+# gcsfs for the clound data read
+
+
