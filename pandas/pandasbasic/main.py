@@ -22,4 +22,4 @@ df1=pd.read_json("medical_ner_entities.json")
 
 # print(df1)
 
-
+df2=pd.read_excel("")
