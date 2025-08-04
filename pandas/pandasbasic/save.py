@@ -7,7 +7,8 @@ data={
     "city":["skd","shigri",'kahpulo']
 }
 
-df=pd.DataFrame(data)
+# df=pd.Series(data) # give in a rows form
+df=pd.DataFrame(data) # give in a tabular form
 print(df)
 
 
