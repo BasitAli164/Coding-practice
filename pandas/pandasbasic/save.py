@@ -13,3 +13,6 @@ print(df)
 
 
 df.to_csv("customData.csv",index=False) # this is a method to store our custome data into file and index=false is to remove the default generate index
+
+
+df.to_excel("output.xlsx")
