@@ -9,6 +9,13 @@ In pandas there are two type of expressing format of data which are
     ii- Datafram : two dimentional array ---> combination of row and column means table
 
 '''
+
+# Read data from  csv file 
 df=pd.read_csv("car_prices.csv",encoding="utf-8")
 
-print(df)
+# print(df)
+
+# Read data from json:
+
+
+df1=pd.read_json("")
