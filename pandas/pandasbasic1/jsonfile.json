@@ -1,5 +1,1 @@
-{
-  "name": { "0": "basit", "1": "ali" },
-  "age": { "0": 23, "1": 12 },
-  "gender": { "0": "male", "1": "male" }
-}
+{"name":{"0":"basit","1":"ali"},"age":{"0":23,"1":12},"gender":{"0":"male","1":"male"}}

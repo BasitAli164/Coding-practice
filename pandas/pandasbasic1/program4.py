@@ -1,7 +1,7 @@
 import pandas as pd;
 
 df=pd.read_csv("car_Prices.csv")
-print(df)
+# print(df)
 
 
 listOfPerson={
