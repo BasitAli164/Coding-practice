@@ -42,3 +42,6 @@ How to know total rows and column in a give dataset?
         print(pd.shap)
 
 Why use head and tail method in pandas?
+    Both are use to find or see top(through head method) and bottom(through tail method)  data in the give file or dataset
+
+    Default value of both method is 5 , you can pass integer value also as a argument 
