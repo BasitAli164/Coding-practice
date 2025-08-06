@@ -1,9 +1,8 @@
 import pandas as pd;
 
 df=pd.read_csv("car_Prices.csv")
-# print(df)
-
-
+print("Informaiton of the car_prices.csv file:")
+print(df.info()) # this info show the summary of the dataset
 listOfPerson={
     "name":["basit","ali"],
     "age":[23,12],

@@ -45,3 +45,14 @@ Why use head and tail method in pandas?
     Both are use to find or see top(through head method) and bottom(through tail method)  data in the give file or dataset
 
     Default value of both method is 5 , you can pass integer value also as a argument 
+
+
+How to see the dataset information means what type of datatype are in give datatype
+    We use info() method to show the detail of the give dataset
+
+    info method give these detail:
+    -- Total number of row(RangeIndex) and column
+    -- Column name
+    -- Datatype fo the variable ( float64,int64,object) 
+    -- Non-null count
+    -- Memory Usage
