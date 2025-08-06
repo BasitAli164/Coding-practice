@@ -12,3 +12,7 @@ listOfPerson={
 
 df1=pd.DataFrame(listOfPerson)
 df1.to_json("jsonfile.json")
+
+
+print("Top data:\n ",df.head())
+print("Bottom data:\n ",df.tail())
