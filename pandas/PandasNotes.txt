@@ -1,0 +1,12 @@
+Pandas:
+    It is a python library for data manipulation (cleaning, transforming, and structuring data) and analysis (finding pattern,trends, and insights)
+
+    How to install???
+        command:
+            pip install pandas
+
+Importan Concept in Pandas:
+1.Series:
+    It is a one dimensional array means a row and each row has a unique label called index
+2.Dataframe:
+    It is a two dimensional labeled data structure means both are have row and column or the tabular form 
