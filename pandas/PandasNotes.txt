@@ -1,3 +1,4 @@
+Lecture: 1
 Pandas:
     It is a python library for data manipulation (cleaning, transforming, and structuring data) and analysis (finding pattern,trends, and insights)
 
@@ -10,3 +11,34 @@ Importan Concept in Pandas:
     It is a one dimensional array means a row and each row has a unique label called index
 2.Dataframe:
     It is a two dimensional labeled data structure means both are have row and column or the tabular form 
+
+Lecture-2
+
+--> How to read data from any file 
+    example:
+    import pandas form pd;
+    df=pd.read_csv("cars_prices.csv",index=False)
+
+    where:
+    df: Variable
+    pd: instance of pandas
+    read_csv: method to fetch data from csv file 
+    "cars_prices": file name
+    index=False: Not required the index which defauly generate
+
+
+Similar method:
+    read.json() : For reading data from json file
+    read.excel() : For reading data from excel file
+    read.html() : For reading data from html file
+
+    there are many method provide pandas to read data from different file
+
+
+How to know total rows and column in a give dataset?
+    we use this method:
+        pd.shap: this show like this (row,column)
+        e.g.,
+        print(pd.shap)
+
+Why use head and tail method in pandas?
