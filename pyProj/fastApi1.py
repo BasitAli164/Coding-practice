@@ -15,8 +15,8 @@ def read_root():
     return {"message":"hello basit ! How about the fast api "}
 
 @app.get('/hello')
-def hellow():
-        return "basit"
+def hellow(name:str):
+        return {"message":f"Hellow {name}!"}
 
 
 # This block runs the server if this file is executed directly
