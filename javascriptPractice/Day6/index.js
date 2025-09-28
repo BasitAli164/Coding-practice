@@ -1,4 +1,4 @@
-const arr=["basit","kng"];
+const arr=["basit","ing"];
 
 function checkSubString(arr) {
     let arr1=arr[0].split("")
