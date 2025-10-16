@@ -37,3 +37,10 @@
 // }
 
 // abc(10,8,7)
+
+
+let str="my name is basit"
+str.trim(" ")
+console.log(str.length)
+let arr=str.split("")
+
