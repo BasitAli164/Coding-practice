@@ -30,3 +30,10 @@ combine2=f'{message}, {name}. Welcome!'
 print(combine1)
 print(combine2)
 
+
+
+#! Helpful Method:
+
+print(dir(name)) # it give whole method and attribute related to the string
+print(help(str)) # it give the detail note for each method and attribute
+
