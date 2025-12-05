@@ -34,5 +34,5 @@ if(n<2){
 
     }
     console.log("prime")
-    return 0
+    return 0;
 }
