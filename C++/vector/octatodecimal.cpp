@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
 	
-int num=77,rem,ans=0,mul=1;
+int num=77n,rem,ans=0,mul=1;
    while(num>0){
        rem=num%8;
        num=num/8;
