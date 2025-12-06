@@ -22,17 +22,19 @@
 
 //! Prime number
 
-let n=3;
-if(n<2){
-    console.log("Not Prime")
-}else{
-    for(let i=2;i<n;i++){
-        if(n%i==0){
-            console.log("Composite")
-            return 0
-        }
+// let n=3;
+// if(n<2){
+//     console.log("Not Prime")
+// }else{
+//     for(let i=2;i<n;i++){
+//         if(n%i==0){
+//             console.log("Composite")
+//             return 0
+//         }
 
-    }
-    console.log("prime")
-    return 0;
-}
+//     }
+//     console.log("prime")
+//     return 0;
+// }
+
+
