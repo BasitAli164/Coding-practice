@@ -1,3 +1,4 @@
+//! Reverser of Digit
 // function reverseDigit(num){
 //     let rem,ans=0;
 //     while(num>0){
@@ -9,8 +10,9 @@
 //     console.log("Answer is: ",ans)
 // }
 
-// // reverseDigit(73248)
+// reverseDigit(73248)
 
+//! Power of Two
 // function powerOfTwo(num){
 //     if(num<1){
 //         console.log("Not comes")
@@ -29,7 +31,7 @@
 // }
 // powerOfTwo(20)
 
-
+//! Find element in an array and return the index if elements is exits
 // function searchEle(arr){
 //     let x=3
 //     for(let i=0;i<arr.length;i++){
@@ -45,7 +47,7 @@
 // arr=[1,2,3,4,5]
 // searchEle(arr)
 
-
+//! Find the reverse of Array
 // function reverseArray(arr){
 //     let i=0;
 //     let j=arr.length
@@ -62,8 +64,8 @@
 
 // reverseArray([1,2,3,4,5,4])
 
-
-// function findMinMax(arr){
+//! Find Maximum number
+// function findMax(arr){
 //     let x=arr[0]
 //     for(let i=0;i<arr.length;i++){
 //         if(arr[i]>x){
@@ -72,11 +74,11 @@
 //     }
 //     console.log("Large number in array is: ",x)
 // }
-// findMinMax([32,4,54,1,90])
+// findMax([32,4,54,1,90])
 
 
-
-function findMinMax(arr){
+//! Find Minimum number
+function findMin(arr){
     let x=arr[0]
     for(let i=0;i<arr.length;i++){
         if(arr[i]<x){
@@ -85,4 +87,4 @@ function findMinMax(arr){
     }
     console.log("Large number in array is: ",x)
 }
-findMinMax([32,4,54,1,90])
+findMin([32,4,54,1,90])
