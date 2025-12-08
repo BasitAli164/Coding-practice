@@ -46,18 +46,43 @@
 // searchEle(arr)
 
 
-function reverseArray(arr){
-    let i=0;
-    let j=arr.length
-    while(i<j){
-        let tem=arr[i]
-        arr[i]=arr[j]
-        arr[j]=tem;
-        i++
-        j--
-    }
-    console.log(arr)
-}
+// function reverseArray(arr){
+//     let i=0;
+//     let j=arr.length
+//     while(i<j){
+//         let tem=arr[i]
+//         arr[i]=arr[j]
+//         arr[j]=tem;
+//         i++
+//         j--
+//     }
+//     console.log(arr)
+// }
 // console.log(reverseArray([1,2,3,4,5]))
 
-reverseArray([1,2,3,4,5,4])
+// reverseArray([1,2,3,4,5,4])
+
+
+// function findMinMax(arr){
+//     let x=arr[0]
+//     for(let i=0;i<arr.length;i++){
+//         if(arr[i]>x){
+//             x=arr[i]
+//         }
+//     }
+//     console.log("Large number in array is: ",x)
+// }
+// findMinMax([32,4,54,1,90])
+
+
+
+function findMinMax(arr){
+    let x=arr[0]
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]<x){
+            x=arr[i]
+        }
+    }
+    console.log("Large number in array is: ",x)
+}
+findMinMax([32,4,54,1,90])
