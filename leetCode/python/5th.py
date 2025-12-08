@@ -17,8 +17,13 @@ class ReverseDigit:
             num=num//2
         print("Comes in power of two")
         return 1
+    def reverseArr(self,arr:list)->list:
+        i=0
+        j=arr
 
 obj1=ReverseDigit()
 obj1.reversedigits(457)
 obj1.powerOfTwo(23)
 obj1.powerOfTwo(32)
+
+ 

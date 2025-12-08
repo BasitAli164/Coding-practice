@@ -30,17 +30,32 @@
 // powerOfTwo(20)
 
 
-function searchEle(arr){
-    let x=3
-    for(let i=0;i<arr.length;i++){
-        if(arr[i]==x) {
-            console.log("return : ",i);
-            return 0
+// function searchEle(arr){
+//     let x=3
+//     for(let i=0;i<arr.length;i++){
+//         if(arr[i]==x) {
+//             console.log("return : ",i);
+//             return 0
         
-        }
+//         }
         
+//     }
+//     console.log("return :",-1)
+// }
+// arr=[1,2,3,4,5]
+// searchEle(arr)
+
+
+function reverseArray(arr){
+    let i=0;
+    let j=arr.length
+    while(i<j){
+        let tem=arr[i]
+        arr[i]=arr[j]
+        arr[j]=tem;
     }
-    console.log("return :",-1)
+    console.log(arr)
 }
-arr=[1,2,3,4,5]
-searchEle(arr)
+// console.log(reverseArray([1,2,3,4,5]))
+
+reverseArray([1,2,3,4,5])
