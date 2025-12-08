@@ -53,6 +53,8 @@ function reverseArray(arr){
         let tem=arr[i]
         arr[i]=arr[j]
         arr[j]=tem;
+        i++
+        j--
     }
     console.log(arr)
 }
