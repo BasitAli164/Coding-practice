@@ -5,7 +5,11 @@ int main (){
 	int i=0,j=4;
 	while(i<j){
 		swap(arr[i],arr[j]);
+		i++;
+		j--;
 	}
-	cout<<arr<<endl;
-	
+	for(int k=0;k<5;k++){
+			cout<<arr[k]<<ends;
+
+	}	
 }
