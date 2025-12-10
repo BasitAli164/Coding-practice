@@ -14,3 +14,12 @@ function towSum(arr, target) {
 console.log("Tow sum is: ", towSum([1, 6, 3, 12, 8], 20));
 
 
+function duplicateValue(arr){
+    let left=0,right=1,count=1;
+    while(left<right){
+        if(arr[left]!=arr[right]){
+            
+        }
+    }
+}
+
