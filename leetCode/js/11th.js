@@ -12,3 +12,5 @@ function towSum(arr, target) {
   return 0;
 }
 console.log("Tow sum is: ", towSum([1, 6, 3, 12, 8], 20));
+
+
