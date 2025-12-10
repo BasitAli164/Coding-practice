@@ -65,4 +65,4 @@ console.log(arr.length)
 let last=arr[arr.length-1]
 console.log(last)
 */
-console.log("Rotate:",rotateArrayByOne([12,3,4,54,600]))
+// console.log("Rotate:",rotateArrayByOne([12,3,4,54,600]))
