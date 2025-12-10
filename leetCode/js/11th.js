@@ -1,5 +1,5 @@
 function towSum(arr, target) {
-    arr.sort((a,b)=>a-b)
+    // arr.sort((a,b)=>a-b) // if sort is required
     console.log("array is: ",arr)
   let left = 0,
     right = arr.length - 1;
@@ -7,7 +7,8 @@ function towSum(arr, target) {
     if (arr[left] + arr[right] == target) return [arr[left], arr[right]];
     else if (arr[left] + arr[right] > target) right--;
     else if (arr[left] + arr[right] < target) left++;
-    else return 0;
+    
   }
+  return 0;
 }
-console.log("Tow sum is: ", towSum([1, 6, 3, 12, 8], 14));
+console.log("Tow sum is: ", towSum([1, 6, 3, 12, 8], 20));
