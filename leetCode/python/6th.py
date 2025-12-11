@@ -17,7 +17,7 @@
 
 def binarySearch(arr:list,key:int)->int:
     left=0
-    right=9
+    right=len(arr)
     while(left<=right):
         mid=left+right//2
         if(arr[mid]==key):
