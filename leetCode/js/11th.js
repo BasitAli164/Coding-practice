@@ -28,5 +28,7 @@ function duplicateValue(arr){
     }
     console.log("Unique Ele exit in array:",count)
 }
-duplicateValue([1,1,1,1,1,2,2,2,3,3,4,4,5])
+// duplicateValue([1,1,1,1,1,2,2,2,3,3,4,4,5])
+
+
 
