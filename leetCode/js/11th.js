@@ -31,16 +31,12 @@ function duplicateValue(arr) {
 // duplicateValue([1,1,1,1,1,2,2,2,3,3,4,4,5])
 
 function binarySearch(arr, key) {
-  let left = 0,mid
+  let left = 0,mid,
     right = arr.length;
-    console.log(right)
-    while (left < right) {
-    // console.log("object")
+    while (left <= right) {
     mid = Math.floor(left + right / 2);
-    console.log("mid: ",mid)
     if (arr[mid] == key) {
-      // return mid;
-      console.log(mid,"mid")
+      return mid;      
     } else if (arr[mid] > key) {
       end = mid - 1;
     } else {

@@ -14,3 +14,18 @@
 # result=obj.reverseArr([34,4,6,767,3,2])
 # print(result)
 
+
+def binarySearch(arr:list,key:int)->int:
+    left=0
+    right=9
+    while(left<=right):
+        mid=left+right//2
+        if(arr[mid]==key):
+            return mid
+        elif arr[mid]>key:
+            left=mid-1
+        else:
+            right=mid+1
+    return -1
+
+print(binarySearch([1,2,3,4,5,6,7,8,9],6))
