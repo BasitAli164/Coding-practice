@@ -32,17 +32,17 @@ function duplicateValue(arr) {
 
 function binarySearch(arr, key) {
   let left = 0,mid,
-    right = arr.length;
+    right = arr.length-1;
     while (left <= right) {
-    mid = Math.floor(left + right / 2);
+    mid = Math.floor((left + right) / 2);
     if (arr[mid] == key) {
       return mid;      
     } else if (arr[mid] > key) {
-      end = mid - 1;
+      right = mid - 1;
     } else {
-      start = mid + 1;
+      left = mid + 1;
     }
   }
   return -1;
 }
-console.log(binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9], 6));
+console.log(binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9], 10));
