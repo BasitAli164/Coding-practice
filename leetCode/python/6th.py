@@ -30,5 +30,25 @@
 
 # print(binarySearch([1,2,3,4,5,6,7,8,9],6))
 
+class Solution:
+    def findTargetValue(self,arr:list,target:int)->list:
+        left=0
+        right=len(arr)-1
+        temp=[]
+        while left<=right:
+            if arr[left]==target:
+                temp.append(left)
+                left+=1
+            elif arr[right]==target:
+                temp.append(right)
+                right-=1
+            else:
+                temp.append(-1)
+        return temp
 
+
+
+
+obj=Solution()
+print(obj.findTargetValue([5,7,7,8,8,10],8))
 
