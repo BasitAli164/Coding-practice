@@ -32,19 +32,21 @@
 
 class Solution:
     def findTargetValue(self,arr:list,target:int)->list:
+        # first occurance
         left=0
         right=len(arr)-1
-        temp=[]
+        first=-1
+        last=-1
         while left<=right:
-            if arr[left]==target:
-                temp.append(left)
-                left+=1
-            elif arr[right]==target:
-                temp.append(right)
-                right-=1
+            mid=((left+right)//2)
+            if arr[mid]==target:
+                first+=mid
+                right=mid-1
+            elif arr[mid]>target:
+                right=mid-1
             else:
-                temp.append(-1)
-        return temp
+                left=mid+1
+        return [first,last]
 
 
 

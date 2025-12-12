@@ -55,11 +55,9 @@ function findTarget(arr, target) {
     temp = [];
   console.log("left:", left, "right:", right);
   while (left <= right) {
-    // console.log("object1")
 
     if (arr[left] == target) {
       console.log("object2");
-
       temp.push(left);
       left++;
     } else if (arr[right] == target) {
