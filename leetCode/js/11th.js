@@ -31,12 +31,13 @@ function duplicateValue(arr) {
 // duplicateValue([1,1,1,1,1,2,2,2,3,3,4,4,5])
 
 function binarySearch(arr, key) {
-  let left = 0,mid,
-    right = arr.length-1;
-    while (left <= right) {
+  let left = 0,
+    mid,
+    right = arr.length - 1;
+  while (left <= right) {
     mid = Math.floor((left + right) / 2);
     if (arr[mid] == key) {
-      return mid;      
+      return mid;
     } else if (arr[mid] > key) {
       right = mid - 1;
     } else {
@@ -47,23 +48,27 @@ function binarySearch(arr, key) {
 }
 // console.log(binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9], 10));
 
+function findTarget(arr, target) {
+  console.log("object");
+  let left = 0,
+    right = arr.length - 1,
+    temp = [];
+  console.log("left:", left, "right:", right);
+  while (left <= right) {
+    // console.log("object1")
 
+    if (arr[left] == target) {
+      console.log("object2");
 
-function findTarget(arr,target){
-  console.log("object")
-   let left=0,right=arr.length-1,temp=[]
-   while(left<=right){
-      console.log("object1")
-
-    if(arr[left]==target){
-      temp.push(left)
-      left++
+      temp.push(left);
+      left++;
+    } else if (arr[right] == target) {
+      temp.push(right);
+      right--;
+    } else {
+      console.log("ab");
     }
-    else if(arr[right]==target){
-      temp.push(right)
-      right--
-    }
-   }
-   return -1
+  }
+  return -1;
 }
-console.log(findTarget([5,7,7,8,8,9],8))
+console.log(findTarget([5, 7, 7, 8, 8, 9], 8));
