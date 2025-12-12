@@ -49,3 +49,21 @@ function binarySearch(arr, key) {
 
 
 
+function findTarget(arr,target){
+  console.log("object")
+   let left=0,right=arr.length-1,temp=[]
+   while(left<=right){
+      console.log("object1")
+
+    if(arr[left]==target){
+      temp.push(left)
+      left++
+    }
+    else if(arr[right]==target){
+      temp.push(right)
+      right--
+    }
+   }
+   return -1
+}
+console.log(findTarget([5,7,7,8,8,9],8))
