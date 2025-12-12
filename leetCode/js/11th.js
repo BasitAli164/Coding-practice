@@ -31,13 +31,12 @@ function duplicateValue(arr) {
 // duplicateValue([1,1,1,1,1,2,2,2,3,3,4,4,5])
 
 function binarySearch(arr, key) {
-  let left = 0,
-    mid,
-    right = arr.length - 1;
-  while (left <= right) {
+  let left = 0,mid,
+    right = arr.length-1;
+    while (left <= right) {
     mid = Math.floor((left + right) / 2);
     if (arr[mid] == key) {
-      return mid;
+      return mid;      
     } else if (arr[mid] > key) {
       right = mid - 1;
     } else {
@@ -48,25 +47,37 @@ function binarySearch(arr, key) {
 }
 // console.log(binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9], 10));
 
-function findTarget(arr, target) {
-  console.log("object");
-  let left = 0,
-    right = arr.length - 1,
-    temp = [];
-  console.log("left:", left, "right:", right);
-  while (left <= right) {
 
-    if (arr[left] == target) {
-      console.log("object2");
-      temp.push(left);
-      left++;
-    } else if (arr[right] == target) {
-      temp.push(right);
-      right--;
-    } else {
-      console.log("ab");
+
+function findTarget(arr,target){
+  let first=last=-1,left=0,right=arr.length-1,mid
+  while(left<=right){
+    mid=Math.floor((left+right)/2)
+    if(arr[mid]==target){
+      first=mid
+      right=mid-1
+    }
+    else if(arr[mid]>target){
+      right=mid-1
+    }
+    else{
+      left=mid+1
     }
   }
-  return -1;
+  left=0, right=arr.length-1
+
+  while(left<=right){
+    mid=Math.floor((left+right)/2)
+    if(arr[mid]==target){
+      last=mid
+      left=mid+1
+    }else if(arr[mid]>target){
+      right=mid-1
+    }else{
+      left=mid+1
+    }
+
+  }
+  return [first,last]
 }
-console.log(findTarget([5, 7, 7, 8, 8, 9], 8));
+console.log(findTarget([5,7,7,8,8,9],8))
