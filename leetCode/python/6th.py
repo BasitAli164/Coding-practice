@@ -68,6 +68,7 @@ class Solution:
             mid=((left+right)//2)
             if arr[mid]==target:
                 index=mid
+                break
             elif arr[mid]>target:
                 index=mid
                 right=mid-1
@@ -80,5 +81,5 @@ class Solution:
 
 obj=Solution()
 print(obj.findTargetValue([5,7,7,8,8,10],8))
-print(obj.findPositionOfEle([1,4,6,8,10,12,16,18],5))
+print(obj.findPositionOfEle([1,4,6,8,10,12,16,18],4))
 
