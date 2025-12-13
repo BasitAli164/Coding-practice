@@ -59,10 +59,26 @@ class Solution:
                 left=mid+1
 
         return [first,last]
+    def findPositionOfEle(self,arr:list,target:int)->int:
+        left=0
+        right=len(arr)-1
+        index=len(arr)
+        print(index)
+        while left<=right:
+            mid=((left+right)//2)
+            if arr[mid]==target:
+                index=mid
+            elif arr[mid]>target:
+                index=mid
+                right=mid-1
+            else:
+                left=mid+1
+        return index
 
 
 
 
 obj=Solution()
 print(obj.findTargetValue([5,7,7,8,8,10],8))
+print(obj.findPositionOfEle([1,4,6,8,10,12,16,18],5))
 
