@@ -75,11 +75,32 @@ class Solution:
             else:
                 left=mid+1
         return index
-
+    def sqrt(self,num:int)->int: 
+        left=0
+        if num>0:
+            right=num-1
+        else:
+            right=num+1
+        
+        index=num
+        while left<=right:
+            mid=((left+right)//2)
+            square=mid*mid
+            if square==num:
+                index=mid
+                break
+            elif square>num:
+                right=mid-1
+            else:
+                index=mid
+                left=mid+1
+            
+        return index    
 
 
 
 obj=Solution()
 print(obj.findTargetValue([5,7,7,8,8,10],8))
 print(obj.findPositionOfEle([1,4,6,8,10,12,16,18],4))
+print(obj.sqrt(80))
 
