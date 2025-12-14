@@ -96,11 +96,27 @@ class Solution:
                 left=mid+1
             
         return index    
+    def peakEleOfArr(self,arr:list)->int:
+        left=0
+        rigth=len(arr)-1
+        while(left<=rigth):
+            mid=((left+rigth)//2)
+            if(arr[mid]>arr[mid-1] and arr[mid]>arr[mid+1]):
+                return mid
+            elif arr[mid]>arr[mid-1]:
+                left=mid+1
+            else:
+                rigth=mid-1
+        return -1
 
+            
+                
 
 
 obj=Solution()
-print(obj.findTargetValue([5,7,7,8,8,10],8))
-print(obj.searchInsert([1,4,6,8,10,12,16,18],4))
-print(obj.sqrt(80))
+# print(obj.findTargetValue([5,7,7,8,8,10],8))
+# print(obj.searchInsert([1,4,6,8,10,12,16,18],4))
+# print(obj.sqrt(80))
+print(obj.peakEleOfArr([2,4,6,8,10,8,5]))
+print(obj.peakEleOfArr([1,6,3,2,1]))
 
