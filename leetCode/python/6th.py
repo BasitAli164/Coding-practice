@@ -108,7 +108,19 @@ class Solution:
             else:
                 rigth=mid-1
         return -1
-
+    def dublicate(self,arr:list)->int:
+        left=0
+        right=1
+        unique=1
+        while right<=len(arr)-1:
+            if arr[left]==arr[right]:
+                right+=1
+            else:
+                unique+=1
+                left=right
+                right+=1
+        return unique
+    
             
                 
 
@@ -117,6 +129,7 @@ obj=Solution()
 # print(obj.findTargetValue([5,7,7,8,8,10],8))
 # print(obj.searchInsert([1,4,6,8,10,12,16,18],4))
 # print(obj.sqrt(80))
-print(obj.peakEleOfArr([2,4,6,8,10,8,5]))
-print(obj.peakEleOfArr([1,6,3,2,1]))
+# print(obj.peakEleOfArr([2,4,6,8,10,8,5]))
+# print(obj.peakEleOfArr([1,6,3,2,1]))
+print(obj.dublicate([1,1,1,2,2,2,3,3,3,4,4,5,5,5,5,6,6,6,6,6,6,6,6,66]))
 
