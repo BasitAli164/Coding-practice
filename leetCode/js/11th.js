@@ -93,4 +93,18 @@ function maxNumberIndex(arr){
   return index
 
 }
-console.log("Max number index is: ",maxNumberIndex([2,4,6,8,10,8,5,100]))
+function maxNumberIndex2(arr){
+  let max=arr[0],left=0,right=arr.length-1;
+  while(left<=right){
+    mid=Math.floor((left+right)/2)
+    if(arr[mid]>max){
+      max=arr[mid]
+      left=mid+1
+    }
+    else{
+      right=mid-1
+    }
+  }
+  return max
+}
+console.log("Max number index is: ",maxNumberIndex2([2,4,6,8,10,12,14,8,5,3]))
