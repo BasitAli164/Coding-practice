@@ -70,3 +70,5 @@ function minNumInd2(arr){
 
 }
 console.log("Minimum number index is: ",minNumInd([6,8,10,12,14,2,4]))
+
+
