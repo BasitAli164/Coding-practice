@@ -41,6 +41,7 @@ function maxNumberIndex2(arr){
 
 
 //? using bruteforce approach
+// time complexity is O(n)
 function minNumInd(arr){
     min=arr[0]
     for(let i=1;i<=arr.length-1;i++){
@@ -53,6 +54,7 @@ function minNumInd(arr){
 
 //? using optimize approach
 function minNumInd2(arr){
-    
+
+
 
 }
