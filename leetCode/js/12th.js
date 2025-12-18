@@ -52,9 +52,21 @@ function minNumInd(arr){
     return min;
 }
 
+console.log("Minimum number index is: ",minNumInd([10,12,14,2,4,6,8]))
 //? using optimize approach
 function minNumInd2(arr){
+    let min=arr[0],left=0,right=arr.length-1
+    while(left<=right){
+        mid=Math.floor((left+right)/2)
+        if(arr[mid]<min){
+            min=mid
+            right=mid-1
+        }else{
+            left=mid+1
+        }
+    }
 
-
+    return min
 
 }
+console.log("Minimum number index is: ",minNumInd([6,8,10,12,14,2,4]))
