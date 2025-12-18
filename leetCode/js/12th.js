@@ -71,4 +71,18 @@ function minNumInd2(arr){
 }
 console.log("Minimum number index is: ",minNumInd([6,8,10,12,14,2,4]))
 
+//? bruteForce approach
+function findTripletSum(arr){
 
+  for(let i=0;i<=arr.length-1;i++){
+    for(let j=i+1; j<=arr.length-1;j++){
+      for(let k=j+1;k<=arr.length-1;k++){
+        if(arr[i]+arr[j]+arr[k]==0){
+          return [arr[i],arr[j],arr[k]]
+        }
+      }
+    }
+  }
+  return -1
+}
+console.log("Triplate sum is:",findTripletSum([0,1,-1,2,3,4,-4]))
