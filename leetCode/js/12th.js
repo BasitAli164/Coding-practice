@@ -1,4 +1,7 @@
-//!
+//! find the peak index of mountain 
+
+//? bruteforce solution of this problem 
+// time complexity of this program is O(n)
 function maxNumberIndex(arr){
   let max=arr[0], index=0;
   for(let i=1;i<=arr.length;i++){
@@ -10,6 +13,11 @@ function maxNumberIndex(arr){
   return index
 
 }
+
+
+
+//? optimize solution of this problem 
+// time complexity of this program is O(logn)
 function maxNumberIndex2(arr){
   let max=arr[0],left=0,right=arr.length-1;
   while(left<=right){
@@ -24,5 +32,9 @@ function maxNumberIndex2(arr){
   }
   return max
 }
-console.log("Max number index is: ",maxNumberIndex([2,4,6,8,10,12,14,8,5,3])) // bruteforce  approach
-console.log("Max number index is: ",maxNumberIndex2([2,4,6,8,10,12,14,8,5,3]))// optimize approach
+// console.log("Max number index is: ",maxNumberIndex([2,4,6,8,10,12,14,8,5,3])) // bruteforce  approach
+// console.log("Max number index is: ",maxNumberIndex2([2,4,6,8,10,12,14,8,5,3]))// optimize approach
+
+
+
+//! find minimum value fromm the rotate array
