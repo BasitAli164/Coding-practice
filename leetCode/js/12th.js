@@ -85,4 +85,4 @@ function findTripletSum(arr){
   }
   return -1
 }
-console.log("Triplate sum is:",findTripletSum([0,1,-1,2,3,4,-4]))
+console.log("Triplate sum is:",findTripletSum([1,1,1,-2,3,4,-4]))
