@@ -80,4 +80,17 @@ function findTarget(arr,target){
   }
   return [first,last]
 }
-console.log(findTarget([5,7,7,8,8,9],8))
+// console.log(findTarget([5,7,7,8,8,9],8))
+
+function maxNumberIndex(arr){
+  let max=arr[0], index=0;
+  for(let i=1;i<=arr.length;i++){
+    if(arr[i]>max){
+      max=arr[i]
+      index=i
+    }
+  }
+  return index
+
+}
+console.log("Max number index is: ",maxNumberIndex([2,4,6,8,10,8,5,100]))
