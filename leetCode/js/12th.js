@@ -52,7 +52,7 @@ function minNumInd(arr){
     return min;
 }
 
-console.log("Minimum number index is: ",minNumInd([10,12,14,2,4,6,8]))
+// console.log("Minimum number index is: ",minNumInd([10,12,14,2,4,6,8]))
 //? using optimize approach
 function minNumInd2(arr){
     let min=arr[0],left=0,right=arr.length-1
@@ -69,7 +69,35 @@ function minNumInd2(arr){
     return min
 
 }
-console.log("Minimum number index is: ",minNumInd([6,8,10,12,14,2,4]))
+// console.log("Minimum number index is: ",minNumInd([6,8,10,12,14,2,4]))
+
+
+const towSumWithDuplicate=function(arr,target){
+  let left=0,right=arr.length-1
+  while(left<=right){
+    if(arr[left]+arr[right]==target){
+      left++
+      right--
+      while(arr[left]==arr[left-1]){
+        left++
+      }
+      while(arr[right]==arr[right+1]){
+        right--
+      }
+    }
+    else if(arr[left]+arr[right]>target){
+      right--
+    }else{
+      left++
+    }
+  }
+  return [arr[left],arr[right]]
+
+}
+console.log("Two sum with dublicate value is: ",towSumWithDuplicate([1,1,1,2,2,2,3,3,3],3))
+
+
+
 
 //? bruteForce approach
 function findTripletSum(arr){
@@ -85,4 +113,4 @@ function findTripletSum(arr){
   }
   return -1
 }
-console.log("Triplate sum is:",findTripletSum([1,1,1,-2,3,4,-4]))
+// console.log("Triplate sum is:",findTripletSum([1,1,1,-2,3,4,-4]))
